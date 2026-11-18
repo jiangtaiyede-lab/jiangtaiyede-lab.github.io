@@ -8,11 +8,16 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body { background:#fff; color:#111; font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif; -webkit-font-smoothing:antialiased; }
   a { color:#111; }
-  .promo { background:#f6f6f6; text-align:center; font-size:12px; padding:10px 12px; letter-spacing:.04em; }
-  header { display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:64px; border-bottom:1px solid #e5e5e5; }
-  .logo { font-size:23px; font-weight:900; letter-spacing:.18em; }
-  nav.main a { text-decoration:none; font-size:15px; margin:0 16px; font-weight:600; }
+  /* Header: 60px, white (Nike mobile measured) */
+  header { display:flex; align-items:center; justify-content:space-between; height:60px; padding:0 20px 0 12px; background:#fff; }
+  .brandmark { display:flex; align-items:center; text-decoration:none; }
+  .brandmark svg { display:block; }
+  nav.main a { text-decoration:none; font-size:15px; margin-left:22px; font-weight:600; }
   nav.main a:hover { text-decoration:underline; }
+  /* Promo band: 76px, #f5f5f5, two centred lines, 16px/24px (Nike mobile measured) */
+  .promo { background:#f5f5f5; height:76px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .promo .l1 { font-size:16px; line-height:24px; }
+  .promo .l2 { font-size:16px; line-height:24px; text-decoration:underline; }
   .stage { background:#f6f6f6; display:flex; align-items:center; justify-content:center; overflow:hidden; }
   .stage img { width:100%; height:100%; object-fit:contain; display:block; }
   .hero-stage { aspect-ratio:16/8.4; }
@@ -25,17 +30,17 @@
   .card-stage img { padding:18px; }
   .cat-stage { aspect-ratio:4/3; }
   .cat-stage img { padding:22px; }
-  .hero-text { text-align:center; padding:40px 20px 0; }
-  .catch { font-size:17px; margin-bottom:10px; }
-  .headline { font-size:clamp(46px,7.6vw,84px); font-weight:900; line-height:1.08; letter-spacing:.01em; }
-  .headline-mid { font-size:clamp(36px,5.6vw,62px); font-weight:900; line-height:1.12; }
-  .sub { font-size:16px; margin-top:12px; }
+  .hero-text { text-align:center; padding:36px 20px 0; }
+  .catch { font-size:16px; margin-bottom:10px; }
+  .headline { font-size:clamp(44px,7.6vw,84px); font-weight:900; line-height:1.08; }
+  .headline-mid { font-size:clamp(32px,5.6vw,62px); font-weight:900; line-height:1.12; }
   .price { font-size:16px; font-weight:700; margin-top:10px; }
-  .btn { display:inline-block; background:#111; color:#fff; font-size:15px; padding:12px 34px; border-radius:999px; text-decoration:none; margin-top:22px; }
+  /* Pill button: height ~38px, radius = height/2 (Nike mobile measured) */
+  .btn { display:inline-block; background:#111; color:#fff; font-size:16px; line-height:20px; padding:9px 30px; border-radius:999px; text-decoration:none; margin-top:22px; }
   .btn:hover { background:#444; }
-  .btn-s { font-size:14px; padding:10px 28px; margin-top:16px; }
+  .btn-s { font-size:14px; padding:8px 26px; margin-top:16px; }
   .btn-w { background:#fff; color:#111; }
-  section { margin-top:96px; }
+  section { margin-top:88px; }
   .tiles { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:0 48px; }
   .tile-text { text-align:center; padding:24px 12px 0; }
   .tile-name { font-size:clamp(21px,2.6vw,29px); font-weight:900; line-height:1.3; margin-top:2px; }
@@ -48,46 +53,52 @@
   .card-cat { font-size:14px; color:#757575; margin-top:2px; }
   .card-price { font-size:16px; font-weight:700; margin-top:6px; }
   .statement { text-align:center; padding:30px 24px 6px; }
-  .statement .big { font-size:clamp(34px,5.4vw,58px); font-weight:900; line-height:1.25; }
+  .statement .big { font-size:clamp(32px,5.4vw,58px); font-weight:900; line-height:1.25; }
   .statement p { font-size:16px; margin-top:16px; }
   .cats { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; padding:0 48px; }
   .cat { text-decoration:none; }
   .cat-name { font-size:19px; font-weight:900; margin-top:14px; }
   .cat-sub { font-size:13px; color:#757575; margin-top:2px; }
-  .banner { background:#111; color:#fff; text-align:center; padding:76px 20px; margin-top:104px; }
-  .banner .logo { color:#fff; font-size:32px; }
+  .banner { background:#111; color:#fff; text-align:center; padding:76px 20px; margin-top:96px; }
+  .banner .wm { font-size:30px; font-weight:900; letter-spacing:.18em; margin-top:14px; }
   .banner p { font-size:15px; margin-top:16px; line-height:1.8; }
-  footer { background:#111; color:#fff; margin-top:0; padding:56px 48px 40px; }
+  /* Footer: white, stacked groups on mobile / columns on desktop (Nike measured structure) */
+  footer { background:#fff; color:#111; padding:48px; }
   .fcols { display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; }
   .fcols h4 { font-size:15px; font-weight:700; margin-bottom:16px; }
-  .fcols a { display:block; color:#c8c8c8; text-decoration:none; font-size:13px; margin-bottom:10px; }
-  .fcols a:hover { color:#fff; }
-  .flegal { border-top:1px solid #333; margin-top:40px; padding-top:20px; font-size:11px; color:#8d8d8d; line-height:1.9; }
+  .fcols a { display:block; color:#555; text-decoration:none; font-size:13px; margin-bottom:10px; }
+  .fcols a:hover { color:#111; text-decoration:underline; }
+  .flegal { border-top:1px solid #e5e5e5; margin-top:40px; padding-top:20px; font-size:11px; color:#757575; line-height:1.9; }
   @media (max-width:680px) {
-    header { padding:0 20px; height:56px; }
-    nav.main a { font-size:13px; margin:0 7px; }
+    nav.main a { font-size:13px; margin-left:14px; }
     .tiles, .cats { grid-template-columns:1fr; padding:0 20px; }
-    .fcols { grid-template-columns:1fr; }
+    .fcols { grid-template-columns:1fr; gap:28px; }
     footer { padding:40px 20px 32px; }
     .rail-head, .rail { padding-left:20px; padding-right:20px; }
     .card { flex-basis:240px; }
-    .hero-stage, .feature-stage { aspect-ratio:4/3.3; }
+    .hero-stage { aspect-ratio:1/1.02; }
+    .feature-stage { aspect-ratio:4/3.2; }
     .hero-stage img, .feature-stage img { padding:20px; }
-    section { margin-top:68px; }
+    section { margin-top:64px; }
+    .banner { margin-top:72px; }
   }
 </style>
 </head>
 <body>
 
-<div class="promo">動画で紹介した商品だけを、まとめています</div>
-
 <header>
-  <div class="logo">オシバズ</div>
+  <a class="brandmark" href="#" aria-label="オシバズ">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="34" height="34" role="img" aria-label="オシバズ"><g transform="skewX(-5)"><text x="60" y="88" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif" font-size="84" font-weight="900" fill="#111111">推</text></g><rect x="30" y="100" width="66" height="9" rx="4.5" fill="#111111" transform="skewX(-24)"/></svg>
+  </a>
   <nav class="main">
     <a href="#sec-kaden">家電</a><a href="#sec-kitchen">キッチン</a><a href="#sec-food">食品・雑貨</a><a href="#rail">商品一覧</a>
   </nav>
-  <div style="width:60px;"></div>
 </header>
+
+<div class="promo">
+  <div class="l1">動画で紹介した商品だけを、まとめています</div>
+  <div class="l2">商品一覧を見る</div>
+</div>
 
 <!-- 1. Hero: SwitchBot -->
 <div id="sec-kaden">
@@ -231,7 +242,7 @@
   </a>
 </section>
 
-<!-- 10. Feature: cooker (single-product feature) -->
+<!-- 10. Feature: cooker -->
 <section>
   <div class="stage feature-stage"><img src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/cooker.jpg" alt="foodable 自動調理鍋"></div>
   <div class="hero-text">
@@ -244,12 +255,13 @@
 
 <!-- 11. Brand banner -->
 <div class="banner">
-  <div class="logo">オシバズ</div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="54" height="54" role="img" aria-label="オシバズ"><g transform="skewX(-5)"><text x="60" y="88" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN','Hiragino Sans','Noto Sans JP',sans-serif" font-size="84" font-weight="900" fill="#ffffff">推</text></g><rect x="30" y="100" width="66" height="9" rx="4.5" fill="#ffffff" transform="skewX(-24)"/></svg>
+  <div class="wm">オシバズ</div>
   <p>動画で紹介した商品だけを集めた、公式まとめページです。<br>一人暮らしの「これ、便利」を届けます。</p>
   <a class="btn btn-w" href="#rail">商品一覧を見る</a>
 </div>
 
-<!-- 12. Thick footer -->
+<!-- 12. Footer -->
 <footer>
   <div class="fcols">
     <div>
