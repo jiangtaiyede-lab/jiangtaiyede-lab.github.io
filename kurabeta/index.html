@@ -15,10 +15,10 @@
   nav.main a { text-decoration:none; font-size:15px; margin-left:22px; font-weight:600; }
   nav.main a:hover { text-decoration:underline; }
   /* Promo band: 76px, #f5f5f5, two centred lines, 16px/24px (Nike mobile measured). Messages rotate (Nike measured: rotation) */
-  .promo { background:#f5f5f5; height:76px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
-  .promo .l1 { font-size:16px; line-height:24px; transition:opacity .35s; }
-  .promo .l2 { font-size:16px; line-height:24px; transition:opacity .35s; }
-  .promo .l2 a { color:#111; text-decoration:underline; font-weight:700; }
+  .promo { background:#f5f5f5; padding:24px 16px 26px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .promo .l1 { font-size:18px; font-weight:700; line-height:26px; transition:opacity .35s; }
+  .promo .l2 { margin-top:14px; transition:opacity .35s; }
+  .promo .l2 a { display:inline-block; background:#111; color:#fff; text-decoration:none; font-weight:700; font-size:15px; line-height:20px; padding:11px 30px; border-radius:999px; box-shadow:0 3px 10px rgba(0,0,0,.22); }
   .stage { background:#f6f6f6; display:flex; align-items:center; justify-content:center; overflow:hidden; }
   .stage img { width:100%; height:100%; object-fit:contain; display:block; }
   .hero-stage { aspect-ratio:16/8.4; }
@@ -115,6 +115,10 @@
   .chip { font-size:15px; font-weight:700; padding:10px 18px; border-radius:999px; border:2px solid #111; background:#fff; color:#111; cursor:pointer; }
   .chip.on { background:#111; color:#fff; }
   .finder-none { text-align:center; font-size:14px; color:#555; margin-top:16px; }
+
+  /* Video cards (2026-11-20) */
+  .vcard .card-stage { position:relative; }
+  .play { position:absolute; right:10px; bottom:10px; width:34px; height:34px; border-radius:50%; background:rgba(17,17,17,.88); color:#fff; display:flex; align-items:center; justify-content:center; font-size:13px; }
 </style>
 </head>
 <body>
@@ -205,6 +209,21 @@
     </a>
   </div>
 </section>
+<!-- Video rail: reels (2026-11-20) -->
+<section id="videos">
+  <div class="rail-head">動画で見る</div>
+  <div class="rail">
+    <a class="card vcard" href="https://px.a8.net/svt/ejp?a8mat=4BGINR+DH8D4A+4MRW+5YRHE" target="_blank" rel="nofollow sponsored noopener">
+      <div class="stage card-stage"><img src="https://image1.shopserve.jp/minamotobed.jp/pic-labo/llimg/th_sakuyareal_01.jpg" alt="咲夜レアルの紹介動画"><span class="play">▶</span></div>
+      <div class="card-label">Instagramリール</div><div class="card-name">咲夜レアルマットレス</div><div class="card-cat">比べる3つの数字（厚み／硬さ／寝返り）を動画で紹介</div><div class="card-price">¥49,990（税込）〜</div>
+    </a>
+    <a class="card vcard" href="https://px.a8.net/svt/ejp?a8mat=4BGINR+CWZMJU+53JI+BWVTE" target="_blank" rel="nofollow sponsored noopener">
+      <div class="stage card-stage"><img src="https://image.office-com.jp/168_168_/k/CELVO-LOC-W14D75/CELVO-LOC-W14D75_001.jpg" alt="オフィスコムの紹介動画"><span class="play">▶</span></div>
+      <div class="card-label">Instagramリール</div><div class="card-name">オフィスコム</div><div class="card-cat">デスクまわりの収納を、動画で紹介しています</div><div class="card-price">24,990円</div>
+    </a>
+  </div>
+</section>
+
 
 <!-- 3. Logo band + Feature: Dani (paragraph type) -->
 <div class="logoband" id="sec-nichiyo">
