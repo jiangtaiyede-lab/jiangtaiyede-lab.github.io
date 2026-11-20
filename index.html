@@ -106,6 +106,15 @@
     .after-band { margin-top:24px; }
     .banner { margin-top:72px; }
   }
+
+  /* Finder (2026-11-20) */
+  .finder { padding:28px 20px 4px; max-width:680px; margin:0 auto; }
+  .finder-title { font-size:20px; font-weight:900; text-align:center; margin-bottom:14px; }
+  .finder input { width:100%; font-size:16px; padding:14px 18px; border:2px solid #111; border-radius:999px; background:#fff; color:#111; outline:none; box-sizing:border-box; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:14px; }
+  .chip { font-size:15px; font-weight:700; padding:10px 18px; border-radius:999px; border:2px solid #111; background:#fff; color:#111; cursor:pointer; }
+  .chip.on { background:#111; color:#fff; }
+  .finder-none { text-align:center; font-size:14px; color:#555; margin-top:16px; }
 </style>
 </head>
 <body>
@@ -159,6 +168,14 @@
 </div>
 
 <!-- 2. Product rail -->
+
+<!-- Finder: search + category chips (2026-11-20) -->
+<div class="finder" id="finder">
+  <div class="finder-title">商品を探す</div>
+  <input id="finderInput" type="search" placeholder="商品名で検索（例：フライパン）" aria-label="商品名で検索">
+  <div class="chips" id="finderChips"></div>
+  <div class="finder-none" id="finderNone" hidden>該当する商品がありません。下のカテゴリからも探せます。</div>
+</div>
 <section id="rail">
   <div class="rail-head">商品一覧</div>
   <div class="rail">
@@ -437,5 +454,68 @@
   })();
 </script>
 
+
+<script>
+(function(){
+  var CATMAP = {"SwitchBot ハブ3": "家電", "グリーンパン フライパン": "キッチン", "KISEKI 三徳包丁": "キッチン", "スケーター キッチン雑貨": "キッチン", "foodable 自動調理鍋": "キッチン", "foodable コンパクトベーカリー": "キッチン", "Oisix おためしセット": "食品・雑貨"};
+  var ORDER = ["家電", "キッチン", "食品・雑貨"];
+  function norm(s){ return (s||'').replace(/\s+/g,'').toLowerCase(); }
+  var blocks = [];
+  function tag(el, nameEl){
+    if(!el || !nameEl) return;
+    var name = nameEl.textContent.trim();
+    if(!(name in CATMAP)) return;
+    el.setAttribute('data-name', name);
+    el.setAttribute('data-cat', CATMAP[name]);
+    blocks.push(el);
+  }
+  document.querySelectorAll('a.card').forEach(function(el){ tag(el, el.querySelector('.card-name')); });
+  document.querySelectorAll('.tile-name').forEach(function(el){
+    var wrap = el.closest('section.tiles > div') || el.parentElement;
+    tag(wrap, el);
+  });
+  document.querySelectorAll('section.after-band').forEach(function(el){
+    if(el.querySelector('a.btn')) tag(el, el.querySelector('.headline-mid'));
+  });
+  var bands = document.querySelectorAll('.logoband');
+  var chipsBox = document.getElementById('finderChips');
+  var input = document.getElementById('finderInput');
+  var noneMsg = document.getElementById('finderNone');
+  var activeCat = 'すべて';
+  var cats = ORDER.filter(function(c){ return blocks.some(function(b){ return b.getAttribute('data-cat')===c; }); });
+  ['すべて'].concat(cats).forEach(function(c){
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip' + (c==='すべて' ? ' on' : '');
+    b.textContent = c;
+    b.addEventListener('click', function(){
+      activeCat = c;
+      chipsBox.querySelectorAll('.chip').forEach(function(x){ x.classList.toggle('on', x.textContent===c); });
+      apply();
+      document.getElementById('rail').scrollIntoView({behavior:'smooth', block:'start'});
+    });
+    chipsBox.appendChild(b);
+  });
+  function apply(){
+    var q = norm(input.value);
+    var visible = 0;
+    blocks.forEach(function(b){
+      var ok = (activeCat==='すべて' || b.getAttribute('data-cat')===activeCat)
+               && (!q || norm(b.getAttribute('data-name')).indexOf(q) >= 0);
+      b.style.display = ok ? '' : 'none';
+      if(ok) visible++;
+    });
+    bands.forEach(function(band){
+      var catEl = band.querySelector('.band-cat');
+      var cat = catEl ? catEl.textContent.trim() : '';
+      band.style.display = (!q && (activeCat==='すべて' || cat===activeCat)) ? '' : 'none';
+    });
+    noneMsg.hidden = visible > 0;
+  }
+  input.addEventListener('input', apply);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); document.getElementById('rail').scrollIntoView({behavior:'smooth', block:'start'}); }
+  });
+})();
+</script>
 </body>
 </html>
