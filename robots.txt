@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jiangtaiyede-lab.github.io/mattress/sitemap.xml
