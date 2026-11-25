@@ -56,6 +56,13 @@ footer.site{border-top:1px solid var(--line);background:#fff;margin-top:40px}
 footer.site .in{max-width:1080px;margin:0 auto;padding:18px 16px 30px}
 .best{color:var(--org);font-weight:900}
 td.num,th.num{text-align:center}
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
 </style>
 </head>
 <body>
@@ -67,6 +74,7 @@ td.num,th.num{text-align:center}
 
 <h1>運営者情報</h1>
 <p class="meta">公開日：2026年11月25日／更新日：2026年11月25日</p>
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>各ページで案内しているデン太です。このサイトは、各社の公式仕様に基づいて比べる方針で運営しています。</p></div></div>
 
 <h2>このサイトについて</h2>
 <p>「デスク・椅子くらべマガジン」は、在宅ワーク向けのデスクと椅子を、各社公式サイトの仕様をもとに比較する情報サイトです。2026年11月25日に開設しました。見た目や宣伝文句ではなく、座面の高さ・本体のサイズと重さ・耐荷重・調節できる箇所の数といった、公式に確認できる数値を比べる軸にそろえて整理しています。</p>
