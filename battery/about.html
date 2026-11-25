@@ -71,6 +71,13 @@ footer.site .in{max-width:1080px;margin:0 auto}
 .official p{margin:4px 0}
 .official ul{margin:8px 0 4px;padding-left:22px}
 .official li{margin:5px 0;font-weight:700}
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
@@ -93,6 +100,7 @@ footer.site .in{max-width:1080px;margin:0 auto}
 <div class="lead">
 <p>「モバイルバッテリー安全くらべマガジン」は、モバイルバッテリーのリコール確認と安全な選び方で迷う人に向けて、公式情報に基づいて手順と比較の材料を整理する情報サイトです。このページでは、誰が・何を根拠に・どういう方針で情報をまとめているかを明記します。</p>
 </div>
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>各ページで案内しているデン太です。「事実は公式情報が正本」という方針は、ぼくの案内でも同じです。</p></div></div>
 
 <h2>このサイトについて</h2>
 <div class="tscroll"><table>
@@ -117,7 +125,7 @@ footer.site .in{max-width:1080px;margin:0 auto}
 <p>リコールの対象や手続きは更新されることがあります。手続きの時点での最終確認は、公式の案内が正本です。当サイトの掲載内容と公式の表示が異なる場合は、公式の表示を正しいものとして扱ってください。</p>
 
 <h2>広告について</h2>
-<p>このサイトにはアフィリエイト広告が含まれます。「安全な選び方」と「買い替え候補の比較」のページに、楽天アフィリエイトのリンクを設置します。リコール対象の確認方法のページには、広告リンクを置いていません。リンク経由で購入があると紹介料が発生する場合がありますが、前述のとおり比較の並びは基準だけで決めています。</p>
+<p>このサイトにはアフィリエイト広告が含まれます。「安全な選び方」と「買い替え候補の比較」のページと、トップページ（リコール対象の確認方法）の「買い替えを検討する方へ」の案内に、楽天アフィリエイトのリンクを設置します。リンク経由で購入があると紹介料が発生する場合がありますが、前述のとおり比較の並びは基準だけで決めています。</p>
 
 <h2>お問い合わせについて</h2>
 <p>現在、このサイトでは個別のお問い合わせ窓口を設けていません。リコールの手続きについてはメーカーの受付窓口へ、製品個別の確認は各メーカーの公式サイトでお願いします。掲載内容に公式情報との食い違いを見つけた場合は、公式の表示を正本としてご判断ください。</p>

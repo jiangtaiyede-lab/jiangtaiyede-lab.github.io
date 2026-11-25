@@ -71,6 +71,13 @@ footer.site .in{max-width:1080px;margin:0 auto}
 .official p{margin:4px 0}
 .official ul{margin:8px 0 4px;padding-left:22px}
 .official li{margin:5px 0;font-weight:700}
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
@@ -91,6 +98,7 @@ footer.site .in{max-width:1080px;margin:0 auto}
 <h1>リコール対象だったら｜対応の流れと、安全な手放し方</h1>
 <div class="meta"><span>↻ 2026年11月25日</span><span class="who">執筆・編集　モバイルバッテリー安全くらべマガジン編集部</span></div>
 <img class="hero" src="img/hero_disposal.svg" alt="リコール対象だった場合の手続きの流れの図">
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>対象と分かっても、あわてなくて大丈夫です。使うのを止める→申し込む→キットで返送する、の順に進めれば完了します。</p></div></div>
 <div class="concl"><div class="ttl">結論</div>
 <p>対象と分かったら、<span class="marker">使用と充電を止めて、専用の受付で回収の手続き</span>を進めます。自治体のごみには出さず、買い替えの下取りとも分けて考えます。</p></div>
 
@@ -124,10 +132,12 @@ footer.site .in{max-width:1080px;margin:0 auto}
 <h3>Ankerの下取りは「買い替えに伴う回収」</h3>
 <p>Anker公式の回収サービスは、買い替えに伴ってAnker製品を引き取る形で案内されています（他社製品は対象外です）。リコール対象品は、この下取りではなく、専用の回収手続きを優先してください。</p>
 
+<div class="talk"><img src="img/chara_denta_warn.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>膨らみや異常な熱は、リコール対象かどうかに関係なく「止めどき」のサインです。当てはまったら、その日から使うのを止めてください。</p></div></div>
 <h2>膨らみ・異常があるとき</h2>
 <div class="warn"><div class="ttl">異常があれば、対象かどうかに関係なく止める</div>
 <p>膨らんで変形している、充電中に以前より異常に熱くなる、焦げた臭いがする、残量の減りが急に早くなった——こうした変化は、使用を中止すべき異常の例として、製品評価技術基盤機構（NITE）も挙げています。当てはまる場合は使用と充電を止め、メーカーや販売店に相談してください。</p></div>
 <p>買い替えを考える場合は、「<a href="choose.html">安全な選び方</a>」で買う前の確認項目を確かめてから、「<a href="compare.html">買い替え候補の比較</a>」へ進んでください。</p>
+<div class="talk"><img src="img/chara_denta_ok.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>迷ったら、ごみに混ぜず公式の窓口へ。それがいちばん安全な手放し方です。</p></div></div>
 <p class="src">出典：消費者庁「消費生活用製品の重大製品事故：リコール製品で火災等（リチウム電池内蔵充電器）」（2026年11月20日公表）／アンカー・ジャパン「弊社モバイルバッテリー4製品に関するお詫びと自主回収のお知らせ」／製品評価技術基盤機構（NITE）の公表資料。確認日：2026年11月25日。</p>
 <p class="disc">※このページにはアフィリエイト広告リンクは設置していません。本文のリンクは、公式情報への案内です。</p>
 
