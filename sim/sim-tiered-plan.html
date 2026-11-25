@@ -14,7 +14,7 @@ header{border-bottom:1px solid var(--line);padding:12px 16px;display:flex;justif
 nav a{color:var(--sub);text-decoration:none;font-size:13px;margin-left:12px}
 main{max-width:840px;margin:0 auto;padding:0 16px 48px}
 h1{font-size:27px;line-height:1.5;margin:14px 0 10px;font-weight:900}
-h2{font-size:21px;font-weight:900;background:var(--bg);border-left:6px solid var(--acc);padding:10px 14px;margin:36px 0 14px;line-height:1.55}
+h2{font-size:21px;font-weight:900;background:#00bcd1;color:#fff;border-radius:8px;padding:10px 14px;margin:36px 0 14px;line-height:1.55}
 h3{font-size:18px;font-weight:700;border-bottom:2px solid var(--line);padding-bottom:6px;margin:26px 0 10px}
 .lead{font-size:16.5px}
 .pr{background:#fff8e1;border:1px solid #e6cf7a;border-radius:8px;padding:10px 14px;font-size:13px;color:#6b5d1e;margin:14px 0}
@@ -55,24 +55,6 @@ img.rkimg{height:26px;vertical-align:middle;margin-right:6px;border-radius:4px}
 .tabpanel.on{display:block}
 .tabpanel .cpcard{margin-top:0;border-radius:0 0 14px 14px}
 
-.cpbox{border:2px solid #e6007e;border-radius:18px;overflow:hidden;margin:18px 0;background:#fff}
-.cphead{background:linear-gradient(90deg,#ff5f9e,#e6007e);color:#fff;font-weight:900;text-align:center;padding:14px 10px;font-size:20px}
-.cptabs{display:flex;gap:10px;padding:14px 14px 0}
-.cptabs button{flex:1;border:none;border-radius:12px 12px 0 0;padding:12px 6px;font-family:inherit;cursor:pointer;background:#eef1f5;color:#8a94a6;font-weight:700;font-size:16px;line-height:1.45}
-.cptabs button small{display:block;font-size:14px;font-weight:700}
-.cptabs button.on{background:#e6007e;color:#fff}
-.cppanel{display:none;padding:18px}
-.cppanel.on{display:block}
-.cppill{display:table;margin:4px auto 10px;background:#e6007e;color:#fff;font-weight:700;border-radius:999px;padding:6px 22px;font-size:15.5px}
-.cpname{text-align:center;font-weight:900;font-size:23px;margin:6px 0 12px}
-.cpbig{text-align:center;margin:16px 0 4px}
-.cpbig .amt{color:#e6007e;font-weight:900;font-size:44px}
-.cpbig .sub{font-weight:700;font-size:19px}
-.condbox{background:#fdf0f6;border-radius:12px;padding:16px 18px;margin:14px 0}
-.condbox .ct{color:#e6007e;font-weight:900;font-size:18px;margin-bottom:8px}
-.condbox ol{list-style:none;margin:0;padding:0;counter-reset:c}
-.condbox li{counter-increment:c;position:relative;padding-left:46px;margin:12px 0;font-weight:500}
-.condbox li::before{content:counter(c);position:absolute;left:0;top:1px;width:32px;height:32px;border-radius:50%;background:#e6007e;color:#fff;font-weight:900;text-align:center;line-height:32px}
 .floatbtns{position:fixed;right:10px;bottom:14px;display:flex;flex-direction:column;gap:10px;z-index:50}
 .floatbtns a{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);border:2px solid #4dd0e1;color:#0097a7;text-decoration:none;font-size:11px;font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.2}
 .lead strong{color:#009ad6}
@@ -80,7 +62,8 @@ img.rkimg{height:26px;vertical-align:middle;margin-right:6px;border-radius:4px}
 
 picture{display:block;width:100%}picture img{width:100%;height:auto;display:block}
 table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size:13.5px}.cta small{font-size:13px}.hist{font-size:14px}
-.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}.prnote{font-size:12px;color:#78909c;margin:2px 0 10px}</style>
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}.prnote{font-size:12px;color:#78909c;margin:2px 0 10px}.mk{background:linear-gradient(transparent 62%,#ffe500 62%);font-weight:700;padding:0 2px}.rb{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;border-radius:50%;background:#00838b;color:#fff;font-weight:900;font-size:13px;margin-right:6px;vertical-align:middle;padding:0 4px}.rb.gold{background:#b8860b}tr.best td{background:#fff8e1}td.hl,th.hl{background:#fff8e1}
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
 <script>
@@ -100,7 +83,7 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <div class="concl"><h2>結論：段階制は「使う量が月で変わる人」のための料金の決まり方</h2>
 <ul>
 <li>契約時に容量を選ばず、その月に使った量で料金が自動で決まる</li>
-<li>代表格はBB.exciteモバイル Fit（6段階・495円〜2,990円）と楽天モバイル（3段階・1,078円〜3,278円）</li>
+<li>代表格はBB.exciteモバイル Fit（6段階・<span class="mk">495円〜2,990円</span>）と楽天モバイル（3段階・1,078円〜3,278円）</li>
 <li>注意点は「境目」。少しでも高速通信を使うと最初の段階の料金になる</li>
 </ul></div>
 <h2>段階制と定額制の違い</h2>
@@ -121,7 +104,7 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <div class="concl"><h2>迷ったら、この数字で判断</h2>
 <ul>
 <li>多い月と少ない月の差が<strong>5GB以内</strong> → 使う量が読めるので、定額制でも無駄は出にくい</li>
-<li>差が<strong>10GB以上</strong>開く → 段階制が有利。少ない月に自動で安くなる分が効く</li>
+<li>差が<strong>10GB以上</strong>開く → <span class="mk">段階制が有利</span>。少ない月に自動で安くなる分が効く</li>
 <li>毎月ほぼ上限まで使う → 定額の大容量プランと総額で比べる</li>
 </ul></div>
 <h2>段階制が向いている人・向いていない人</h2>
@@ -140,12 +123,12 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <h2>使用量シミュレーション（Fitと楽天モバイル）</h2>
 <img class="fig" src="img/tiered_sim.svg" alt="使用量ごとの料金シミュレーション">
 <table class="tbl"><tr><th>使った量</th><th>BB.excite Fit</th><th>楽天モバイル</th></tr>
-<tr><td>1GB</td><td>690円</td><td>1,078円</td></tr>
-<tr><td>3GB</td><td>690円</td><td>1,078円</td></tr>
-<tr><td>5GB</td><td>1,190円</td><td>2,178円</td></tr>
-<tr><td>10GB</td><td>1,890円</td><td>2,178円</td></tr>
-<tr><td>15GB</td><td>2,750円</td><td>2,178円</td></tr>
-<tr><td>25GB</td><td>2,990円</td><td>3,278円（無制限）</td></tr></table>
+<tr><td>1GB</td><td><span class="mk">690円</span></td><td>1,078円</td></tr>
+<tr><td>3GB</td><td><span class="mk">690円</span></td><td>1,078円</td></tr>
+<tr><td>5GB</td><td><span class="mk">1,190円</span></td><td>2,178円</td></tr>
+<tr><td>10GB</td><td><span class="mk">1,890円</span></td><td>2,178円</td></tr>
+<tr><td>15GB</td><td>2,750円</td><td><span class="mk">2,178円</span></td></tr>
+<tr><td>25GB</td><td><span class="mk">2,990円</span></td><td>3,278円（無制限）</td></tr></table>
 <ul>
 <li>12GBくらいまではFitが安い。それ以上を毎月使うなら楽天モバイルのほうが安くなる</li>
 <li>楽天は20GBを超えると3,278円で無制限。Fitの上限は25GB・2,990円</li>

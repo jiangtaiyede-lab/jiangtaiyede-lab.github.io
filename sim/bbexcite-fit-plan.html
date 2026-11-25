@@ -17,7 +17,7 @@ header{border-bottom:1px solid var(--line);padding:12px 16px;display:flex;justif
 nav a{color:var(--sub);text-decoration:none;font-size:13px;margin-left:12px}
 main{max-width:840px;margin:0 auto;padding:0 16px 48px}
 h1{font-size:27px;line-height:1.5;margin:14px 0 10px;font-weight:900}
-h2{font-size:21px;font-weight:900;background:var(--bg);border-left:6px solid var(--acc);padding:10px 14px;margin:36px 0 14px;line-height:1.55}
+h2{font-size:21px;font-weight:900;background:#00bcd1;color:#fff;border-radius:8px;padding:10px 14px;margin:36px 0 14px;line-height:1.55}
 h3{font-size:18px;font-weight:700;border-bottom:2px solid var(--line);padding-bottom:6px;margin:26px 0 10px}
 .lead{font-size:16.5px}
 .pr{background:#fff8e1;border:1px solid #e6cf7a;border-radius:8px;padding:10px 14px;font-size:13px;color:#6b5d1e;margin:14px 0}
@@ -58,24 +58,6 @@ img.rkimg{height:26px;vertical-align:middle;margin-right:6px;border-radius:4px}
 .tabpanel.on{display:block}
 .tabpanel .cpcard{margin-top:0;border-radius:0 0 14px 14px}
 
-.cpbox{border:2px solid #e6007e;border-radius:18px;overflow:hidden;margin:18px 0;background:#fff}
-.cphead{background:linear-gradient(90deg,#ff5f9e,#e6007e);color:#fff;font-weight:900;text-align:center;padding:14px 10px;font-size:20px}
-.cptabs{display:flex;gap:10px;padding:14px 14px 0}
-.cptabs button{flex:1;border:none;border-radius:12px 12px 0 0;padding:12px 6px;font-family:inherit;cursor:pointer;background:#eef1f5;color:#8a94a6;font-weight:700;font-size:16px;line-height:1.45}
-.cptabs button small{display:block;font-size:14px;font-weight:700}
-.cptabs button.on{background:#e6007e;color:#fff}
-.cppanel{display:none;padding:18px}
-.cppanel.on{display:block}
-.cppill{display:table;margin:4px auto 10px;background:#e6007e;color:#fff;font-weight:700;border-radius:999px;padding:6px 22px;font-size:15.5px}
-.cpname{text-align:center;font-weight:900;font-size:23px;margin:6px 0 12px}
-.cpbig{text-align:center;margin:16px 0 4px}
-.cpbig .amt{color:#e6007e;font-weight:900;font-size:44px}
-.cpbig .sub{font-weight:700;font-size:19px}
-.condbox{background:#fdf0f6;border-radius:12px;padding:16px 18px;margin:14px 0}
-.condbox .ct{color:#e6007e;font-weight:900;font-size:18px;margin-bottom:8px}
-.condbox ol{list-style:none;margin:0;padding:0;counter-reset:c}
-.condbox li{counter-increment:c;position:relative;padding-left:46px;margin:12px 0;font-weight:500}
-.condbox li::before{content:counter(c);position:absolute;left:0;top:1px;width:32px;height:32px;border-radius:50%;background:#e6007e;color:#fff;font-weight:900;text-align:center;line-height:32px}
 .floatbtns{position:fixed;right:10px;bottom:14px;display:flex;flex-direction:column;gap:10px;z-index:50}
 .floatbtns a{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);border:2px solid #4dd0e1;color:#0097a7;text-decoration:none;font-size:11px;font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.2}
 .lead strong{color:#009ad6}
@@ -83,7 +65,8 @@ img.rkimg{height:26px;vertical-align:middle;margin-right:6px;border-radius:4px}
 picture{display:block;width:100%}picture img{width:100%;height:auto;display:block}
 
 table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size:13.5px}.cta small{font-size:13px}.hist{font-size:14px}
-.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}.prnote{font-size:12px;color:#78909c;margin:2px 0 10px}</style>
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}.prnote{font-size:12px;color:#78909c;margin:2px 0 10px}.mk{background:linear-gradient(transparent 62%,#ffe500 62%);font-weight:700;padding:0 2px}.rb{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;border-radius:50%;background:#00838b;color:#fff;font-weight:900;font-size:13px;margin-right:6px;vertical-align:middle;padding:0 4px}.rb.gold{background:#b8860b}tr.best td{background:#fff8e1}td.hl,th.hl{background:#fff8e1}
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
 <script>
@@ -103,7 +86,7 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <ul>
 <li>音声SIMは6段階：低速のみ495円／〜3GB 690円／〜7GB 1,190円／〜12GB 1,890円／〜17GB 2,750円／〜25GB 2,990円</li>
 <li>容量を選んで契約する必要がない。使った量で自動的にその月の料金が決まる</li>
-<li>初期費用は無料（新規契約事務手数料とSIM発行手数料が無償化）</li>
+<li><span class="mk">初期費用は無料</span>（新規契約事務手数料とSIM発行手数料が無償化）</li>
 <li>通話は「エキモバでんわ」が自動で付き、国内11円/30秒</li>
 </ul></div>
 <a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGR96+6C196Q+7JY+2BD44I" rel="nofollow sponsored noopener" target="_blank">BB.exciteモバイル Fit 公式サイトを見る</a>
@@ -163,7 +146,7 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <p>BB.exciteモバイルには、定額制の「Flatプラン」もあります。どちらが安いかは使う量で変わります。</p>
 <img class="fig" src="img/bb_fitflat.svg" alt="FitプランとFlatプランの比較">
 <table class="tbl"><tr><th>使う量</th><th>Fit（段階制）</th><th>Flat（定額制）</th><th>安い方</th></tr>
-<tr><td>〜3GB</td><td>690円</td><td>設定なし</td><td>Fit</td></tr>
+<tr class="best"><td>〜3GB</td><td>690円</td><td>設定なし</td><td>Fit</td></tr>
 <tr><td>5GB</td><td>1,190円（〜7GB）</td><td>1,210円</td><td>ほぼ同額</td></tr>
 <tr><td>14GB</td><td>2,750円（〜17GB）</td><td>1,650円</td><td>Flat</td></tr>
 <tr><td>30GB</td><td>設定なし（25GBが上限）</td><td>1,980円</td><td>Flat</td></tr>
@@ -199,7 +182,7 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 </ul>
 <h2 id="compare">他社との料金比較</h2>
 <p>音声SIMで「〜3GB」の料金を比べると、Fitは690円です（公式サイトの他社比較、2026年10月1日時点のBB.excite調べ）。</p>
-<table class="tbl"><tr><th>使い方</th><th>Fit</th><th>楽天モバイル</th><th>LINEMO</th><th>mineo</th></tr><tr><td>低速のみ</td><td>495円</td><td>―</td><td>―</td><td>―</td></tr><tr><td>〜3GB</td><td>690円</td><td>1,078円</td><td>990円</td><td>1,298円</td></tr><tr><td>〜7GB</td><td>1,190円</td><td>2,178円</td><td>2,090円</td><td>1,518円</td></tr><tr><td>〜25GB</td><td>2,990円</td><td>3,278円</td><td>―</td><td>2,178円（30GB）</td></tr></table>
+<table class="tbl"><tr><th>使い方</th><th><span class="rb gold">推</span>Fit</th><th>楽天モバイル</th><th>LINEMO</th><th>mineo</th></tr><tr><td>低速のみ</td><td><span class="mk">495円</span></td><td>―</td><td>―</td><td>―</td></tr><tr><td>〜3GB</td><td><span class="mk">690円</span></td><td>1,078円</td><td>990円</td><td>1,298円</td></tr><tr><td>〜7GB</td><td><span class="mk">1,190円</span></td><td>2,178円</td><td>2,090円</td><td>1,518円</td></tr><tr><td>〜25GB</td><td>2,990円</td><td>3,278円</td><td>―</td><td><span class="mk">2,178円（30GB）</span></td></tr></table>
 <p class="note">※他社料金はBB.excite公式サイトの比較表（2026年10月1日時点・同社調べ）から転記。キャンペーン・割引適用時を除きます。</p>
 <p>定額制のIIJmioと比べると、2GB 850円／5GB 950円（公式料金）。「毎月だいたい5GB」と決まっている人はIIJmioのほうが安く、使う量が月で変わる人はFitの段階制が向きます。</p>
 
@@ -237,7 +220,7 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <div class="faq"><h3>Q. 通話料はいくらですか？</h3><p>A. 国内通話は11円/30秒です。「エキモバでんわ」が自動で付き、初期費用・基本料金は無料です。</p></div>
 <h2>まとめ</h2>
 <ul>
-<li>Fitは「使う量が月ごとに変わる人」のための段階制。安い月は495円、上限は2,990円</li>
+<li>Fitは「使う量が月ごとに変わる人」のための段階制。<span class="mk">安い月は495円、上限は2,990円</span></li>
 <li>初期費用無料・通話11円/30秒・追加SIMが安いのが強み</li>
 <li>毎月大容量を使う人は、定額プランや他社の大容量プランと比べて選ぶのがおすすめ</li>
 </ul>

@@ -14,7 +14,7 @@ header{border-bottom:1px solid var(--line);padding:12px 16px;display:flex;justif
 nav a{color:var(--sub);text-decoration:none;font-size:13px;margin-left:12px}
 main{max-width:840px;margin:0 auto;padding:0 16px 48px}
 h1{font-size:27px;line-height:1.5;margin:14px 0 10px;font-weight:900}
-h2{font-size:21px;font-weight:900;background:var(--bg);border-left:6px solid var(--acc);padding:10px 14px;margin:36px 0 14px;line-height:1.55}
+h2{font-size:21px;font-weight:900;background:#00bcd1;color:#fff;border-radius:8px;padding:10px 14px;margin:36px 0 14px;line-height:1.55}
 h3{font-size:18px;font-weight:700;border-bottom:2px solid var(--line);padding-bottom:6px;margin:26px 0 10px}
 .lead{font-size:16.5px}
 .pr{background:#fff8e1;border:1px solid #e6cf7a;border-radius:8px;padding:10px 14px;font-size:13px;color:#6b5d1e;margin:14px 0}
@@ -55,24 +55,6 @@ img.rkimg{height:26px;vertical-align:middle;margin-right:6px;border-radius:4px}
 .tabpanel.on{display:block}
 .tabpanel .cpcard{margin-top:0;border-radius:0 0 14px 14px}
 
-.cpbox{border:2px solid #e6007e;border-radius:18px;overflow:hidden;margin:18px 0;background:#fff}
-.cphead{background:linear-gradient(90deg,#ff5f9e,#e6007e);color:#fff;font-weight:900;text-align:center;padding:14px 10px;font-size:20px}
-.cptabs{display:flex;gap:10px;padding:14px 14px 0}
-.cptabs button{flex:1;border:none;border-radius:12px 12px 0 0;padding:12px 6px;font-family:inherit;cursor:pointer;background:#eef1f5;color:#8a94a6;font-weight:700;font-size:16px;line-height:1.45}
-.cptabs button small{display:block;font-size:14px;font-weight:700}
-.cptabs button.on{background:#e6007e;color:#fff}
-.cppanel{display:none;padding:18px}
-.cppanel.on{display:block}
-.cppill{display:table;margin:4px auto 10px;background:#e6007e;color:#fff;font-weight:700;border-radius:999px;padding:6px 22px;font-size:15.5px}
-.cpname{text-align:center;font-weight:900;font-size:23px;margin:6px 0 12px}
-.cpbig{text-align:center;margin:16px 0 4px}
-.cpbig .amt{color:#e6007e;font-weight:900;font-size:44px}
-.cpbig .sub{font-weight:700;font-size:19px}
-.condbox{background:#fdf0f6;border-radius:12px;padding:16px 18px;margin:14px 0}
-.condbox .ct{color:#e6007e;font-weight:900;font-size:18px;margin-bottom:8px}
-.condbox ol{list-style:none;margin:0;padding:0;counter-reset:c}
-.condbox li{counter-increment:c;position:relative;padding-left:46px;margin:12px 0;font-weight:500}
-.condbox li::before{content:counter(c);position:absolute;left:0;top:1px;width:32px;height:32px;border-radius:50%;background:#e6007e;color:#fff;font-weight:900;text-align:center;line-height:32px}
 .floatbtns{position:fixed;right:10px;bottom:14px;display:flex;flex-direction:column;gap:10px;z-index:50}
 .floatbtns a{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);border:2px solid #4dd0e1;color:#0097a7;text-decoration:none;font-size:11px;font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.2}
 .lead strong{color:#009ad6}
@@ -80,7 +62,8 @@ img.rkimg{height:26px;vertical-align:middle;margin-right:6px;border-radius:4px}
 
 picture{display:block;width:100%}picture img{width:100%;height:auto;display:block}
 table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size:13.5px}.cta small{font-size:13px}.hist{font-size:14px}
-.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}.prnote{font-size:12px;color:#78909c;margin:2px 0 10px}</style>
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}.prnote{font-size:12px;color:#78909c;margin:2px 0 10px}.mk{background:linear-gradient(transparent 62%,#ffe500 62%);font-weight:700;padding:0 2px}.rb{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;border-radius:50%;background:#00838b;color:#fff;font-weight:900;font-size:13px;margin-right:6px;vertical-align:middle;padding:0 4px}.rb.gold{background:#b8860b}tr.best td{background:#fff8e1}td.hl,th.hl{background:#fff8e1}
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
 <script>
@@ -99,13 +82,13 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <p class="meta">↻ 2026年11月24日  執筆・編集 格安SIMくらべマガジン編集部 ｜ 読了目安 約5分</p>
 <div class="concl"><h2>結論：3GB帯の最安はBB.exciteモバイル Fitの690円</h2>
 <ul>
-<li>音声SIMで3GB前後が使えるプランの最安は、BB.exciteモバイル Fitの690円（段階制）</li>
+<li>音声SIMで3GB前後が使えるプランの最安は、<span class="mk">BB.exciteモバイル Fitの690円</span>（段階制）</li>
 <li>次点はNUROモバイルの792円（3GB）。povo2.0とLINEMOは990円</li>
 <li>Fitは段階制なので、使わない月は495円まで下がり、多く使った月も自動で次の段階に移るだけ</li>
 </ul></div>
 <a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGR96+6C196Q+7JY+2BD44I" rel="nofollow sponsored noopener" target="_blank">BB.exciteモバイル Fit 公式サイトを見る</a>
 <h2>3GB帯の料金比較（音声SIM）</h2>
-<table class="tbl"><tr><th>サービス</th><th>3GB前後の料金</th><th>1年の合計</th><th>最安との差額（1年）</th></tr><tr style="background:#fff3e0;font-weight:700"><td>BB.exciteモバイル Fit<br><span style="font-weight:400;font-size:13px">段階制（〜3GB）</span></td><td>690円</td><td>8,280円</td><td>―</td></tr><tr><td>NUROモバイル<br><span style="font-weight:400;font-size:13px">定額（3GB）</span></td><td>792円</td><td>9,504円</td><td>+1,224円</td></tr><tr><td>povo2.0<br><span style="font-weight:400;font-size:13px">トッピング（3GB・30日）</span></td><td>990円</td><td>11,880円</td><td>+3,600円</td></tr><tr><td>LINEMO<br><span style="font-weight:400;font-size:13px">定額（3GB）</span></td><td>990円</td><td>11,880円</td><td>+3,600円</td></tr><tr><td>楽天モバイル<br><span style="font-weight:400;font-size:13px">段階制（〜3GB）</span></td><td>1,078円</td><td>12,936円</td><td>+4,656円</td></tr><tr><td>IIJmio<br><span style="font-weight:400;font-size:13px">定額（3GBの設定なし）</span></td><td>850円（2GB）／950円（5GB）</td><td>11,400円（5GB）</td><td>+3,120円（5GB）</td></tr></table>
+<table class="tbl"><tr><th>サービス</th><th>3GB前後の料金</th><th>1年の合計</th><th>最安との差額（1年）</th></tr><tr class="best"><td><span class="rb gold">1</span>BB.exciteモバイル Fit<br><span style="font-weight:400;font-size:13px">段階制（〜3GB）</span></td><td>690円</td><td>8,280円</td><td>―</td></tr><tr><td><span class="rb">2</span>NUROモバイル<br><span style="font-weight:400;font-size:13px">定額（3GB）</span></td><td>792円</td><td>9,504円</td><td>+1,224円</td></tr><tr><td>povo2.0<br><span style="font-weight:400;font-size:13px">トッピング（3GB・30日）</span></td><td>990円</td><td>11,880円</td><td>+3,600円</td></tr><tr><td>LINEMO<br><span style="font-weight:400;font-size:13px">定額（3GB）</span></td><td>990円</td><td>11,880円</td><td>+3,600円</td></tr><tr><td>楽天モバイル<br><span style="font-weight:400;font-size:13px">段階制（〜3GB）</span></td><td>1,078円</td><td>12,936円</td><td>+4,656円</td></tr><tr><td>IIJmio<br><span style="font-weight:400;font-size:13px">定額（3GBの設定なし）</span></td><td>850円（2GB）／950円（5GB）</td><td>11,400円（5GB）</td><td>+3,120円（5GB）</td></tr></table>
 <p class="note">※料金は2026年11月23日に各社公式サイトで確認した税込価格。キャンペーン・割引適用時を除きます。1年の合計は月額×12の単純計算です（povo2.0は30日トッピングを12回分として計算）。</p>
 <h2>なぜFitが3GBで最安なのか</h2>
 <ul>
@@ -145,7 +128,7 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <div class="faq"><h3>Q. Fitで3GBを超えたらどうなりますか？</h3><p>A. 自動で次の段階（〜7GB 1,190円）になります。速度制限で止まるのではなく、料金の段階が上がる仕組みです。</p></div>
 <h2>まとめ</h2>
 <ul>
-<li>月3GB以下なら、BB.exciteモバイル Fitの690円が最安（2026年11月時点・公式料金の比較）</li>
+<li>月3GB以下なら、BB.exciteモバイル Fitの<span class="mk">690円が最安</span>（2026年11月時点・公式料金の比較）</li>
 <li>使う量が月で変わる人ほど、段階制のFitは無駄が出にくい</li>
 </ul>
 <a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGR96+6C196Q+7JY+2BD44I" rel="nofollow sponsored noopener" target="_blank">BB.exciteモバイル Fit 公式サイトを見る</a>
