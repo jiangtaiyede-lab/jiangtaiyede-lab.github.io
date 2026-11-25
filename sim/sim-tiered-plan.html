@@ -63,6 +63,14 @@ img.rkimg{height:26px;vertical-align:middle;margin-right:6px;border-radius:4px}
 picture{display:block;width:100%}picture img{width:100%;height:auto;display:block}
 table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size:13.5px}.cta small{font-size:13px}.hist{font-size:14px}
 .disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}.prnote{font-size:12px;color:#78909c;margin:2px 0 10px}.mk{background:linear-gradient(transparent 62%,#ffe500 62%);font-weight:700;padding:0 2px}.rb{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;border-radius:50%;background:#00838b;color:#fff;font-weight:900;font-size:13px;margin-right:6px;vertical-align:middle;padding:0 4px}.rb.gold{background:#b8860b}tr.best td{background:#fff8e1}td.hl,th.hl{background:#fff8e1}
+
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
@@ -80,6 +88,8 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 
 <h1>格安SIMの段階制プランとは？使った分だけ払う仕組みと境目の注意点【2026年11月】</h1>
 <p class="meta">↻ 2026年11月24日  執筆・編集 格安SIMくらべマガジン編集部 ｜ 読了目安 約5分</p>
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>こんにちは、デン太です。段階制プランの仕組みと、境目で損をしないための見方を整理しています。</p></div></div>
+
 <div class="concl"><h2>結論：段階制は「使う量が月で変わる人」のための料金の決まり方</h2>
 <ul>
 <li>契約時に容量を選ばず、その月に使った量で料金が自動で決まる</li>
@@ -94,6 +104,8 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 <table class="tbl"><tr><th>使った量</th><th>料金</th></tr><tr><td>〜3GB</td><td>1,078円</td></tr><tr><td>〜20GB</td><td>2,178円</td></tr><tr><td>無制限</td><td>3,278円</td></tr></table>
 <p class="note">※料金は2026年11月23〜24日に各社公式で確認した税込価格です。</p>
 <p class="src">公式条件の照合：このページの段階表は、BB.exciteモバイルと楽天モバイルの公式料金プランを同じ物差し（使った量ごとの税込価格）で照合したものです。出典：各社公式サイト／確認日：2026年11月23〜24日。</p>
+
+<div class="talk"><img src="img/chara_denta_warn.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>注意したいのは段階の「境目」です。境目を少し超えるだけで、その月の料金が一段上がることがあります。</p></div></div>
 <h2>境目の注意点（ここで差が出る）</h2>
 <ul>
 <li>Fit：高速データ通信を少しでも使うと、その月は「〜3GB＝690円」から始まる。495円で抑えたい月は、月初に高速通信をOFFにする</li>
@@ -154,6 +166,8 @@ table{font-size:15px}.note{font-size:13.5px}.notes{font-size:14px}.src{font-size
 </ul>
 <p><a href="https://jiangtaiyede-lab.github.io/sim/">格安SIMおすすめ比較ランキングに戻る</a></p>
 
+
+<div class="talk"><img src="img/chara_denta_ok.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>まとめです。使う量が月で変わる人は段階制、毎月ほぼ同じ人は定額制、という分け方で考えると選びやすくなります。</p></div></div>
 <p class="disc">※このページにはアフィリエイト広告が含まれます。リンク経由で申し込みがあると紹介料が発生しますが、順位と点数は料金・条件の比較基準だけで付けています。</p><p class="src"><a href="index.html">格安SIMおすすめ比較ランキング（トップ）</a>｜<a href="about.html">運営者情報</a></p></main>
 </body>
 </html>
