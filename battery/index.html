@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>モバイルバッテリーのリコール対象の確認方法｜A1257など4型番の見方</title>
+<meta name="description" content="Ankerのモバイルバッテリー4型番（A1257・A1647・A1652・A1642）がリコール対象かどうかを、型番とシリアルナンバーで確認する手順を、消費者庁とAnker公式の情報に基づいてまとめました。">
+<style>
+:root{--ink:#20262b;--mut:#5b6b7a;--line:#d8dee3;--bg:#f7f7f7;--card:#fff;--acc:#19448e;--acc2:#eef3fa;--yel:#ffd900;--red:#e60033;--grn:#4c8462}
+*{box-sizing:border-box}body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;font-size:16.5px;letter-spacing:.025em}
+a{color:var(--acc)}
+header.site{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+header.site .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:900;font-size:18px;color:var(--ink);text-decoration:none;line-height:1.3}.logo span{color:var(--red)}
+nav.g{display:flex;gap:14px;font-size:14px;margin-left:auto}nav.g a{color:var(--mut);text-decoration:none}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:clamp(24px,4.5vw,36px);line-height:1.4;margin:14px 0 10px}
+h2{font-size:clamp(20px,3.4vw,26px);background:var(--acc);padding:.75em 1em;position:relative;margin:40px 0 14px;line-height:1.5;color:#fff}h2::before{content:"";position:absolute;display:block;pointer-events:none;top:-4px;left:0;width:100%;height:calc(100% + 4px);box-sizing:content-box;border-top:solid 2px var(--acc);border-bottom:solid 2px var(--acc)}
+h3{font-size:19px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--acc);line-height:1.5}
+.hero{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:#5c676d;margin:6px 0 4px}
+.meta .who{background:#eef1f5;border-radius:6px;padding:2px 10px}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
+.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
+.warn{background:#fdf2f2;border:1px solid #f0c4c4;border-radius:12px;padding:16px 18px;margin:16px 0}
+.warn .ttl{font-weight:900;color:var(--red);margin-bottom:4px}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat .num{font-size:30px;font-weight:900;color:var(--acc);line-height:1.2}
+.stat .lbl{font-size:13.5px;color:var(--mut)}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:#fff;margin:12px 0}
+table{border-collapse:collapse;min-width:560px;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--acc);color:#fff;font-weight:800}
+td.hl{background:var(--acc2);font-weight:800}
+.steps{display:grid;gap:12px;margin:14px 0}
+.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;gap:14px}
+.step .no{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:var(--acc);color:#fff;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center}
+.step h3{border:none;padding:0;margin:0 0 4px;font-size:18px}
+.step p{margin:4px 0}
+.chip{display:inline-block;border-radius:999px;padding:1px 10px;font-size:13px;font-weight:800}
+.chip.han{background:#eaf5ee;color:var(--grn)}.chip.rin{background:#eef3fa;color:var(--acc)}.chip.na{background:#f1eaf8;color:#7b5ea7}.chip.nan{background:#fdf3e0;color:#a86e00}
+.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 22px;margin:8px 0}
+.prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.prod h3{margin-top:0}
+.faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 18px;margin:12px 0}
+.faq dt{font-weight:900;margin:14px 0 4px;color:var(--acc)}
+.faq dd{margin:0 0 14px}
+.src{font-size:13.5px;color:var(--mut)}
+.nexts{display:grid;gap:10px;margin:14px 0}
+.nexts a{display:block;background:#fff;border:1px solid var(--line);border-left:8px solid var(--acc);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700}
+footer.site{border-top:1px solid var(--line);background:#fff;padding:24px 16px;font-size:13px;color:var(--mut)}
+footer.site .in{max-width:1080px;margin:0 auto}
+@media (max-width:640px){nav.g{display:none}table{font-size:13.5px}.stat .num{font-size:26px}}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FXZPJWXX71');
+</script>
+</head>
+<body>
+<header class="site"><div class="in">
+<a class="logo" href="./">モバイルバッテリー安全<span>くらべ</span>マガジン</a>
+<nav class="g"><a href="./">リコール確認</a><a href="disposal.html">対応と処分</a><a href="choose.html">安全な選び方</a><a href="compare.html">買い替え比較</a><a href="about.html">運営者情報</a></nav>
+</div></header>
+<main>
+
+<h1>モバイルバッテリーのリコール対象か確認する方法｜対象は4型番だけです</h1>
+<div class="meta"><span>↻ 2026年11月25日</span><span class="who">執筆・編集　モバイルバッテリー安全くらべマガジン編集部</span></div>
+<img class="hero" src="img/hero_check.svg" alt="モバイルバッテリー裏面の型番とシリアルナンバーの確認イメージ">
+<div class="concl"><div class="ttl">結論</div>
+<p>回収（リコール）が続いているのは、Ankerのモバイルバッテリー<span class="marker">4型番だけ</span>です。Anker製のすべてが対象ではありません。まずは本体の裏面を見て、型番を確かめてください。対象かどうかは、このページの手順で確認できます。</p></div>
+<div class="lead"><p>2026年11月20日、消費者庁が「重大製品事故」として、回収中のモバイルバッテリーで火災が起きていたことを公表しました。手元の1台が対象かどうかを、公式情報に基づいて順番に確かめられるよう整理しました。</p></div>
+
+<h2>何が起きたのか（全体像）</h2>
+<p>アンカー・ジャパンは2025年6月26日から、モバイルバッテリー4製品の自主回収（回収・交換）を続けています。理由は、電池のセルを作る委託先が、品質基準を満たさない部材を無断で使っていたことが分かったためで、その部材では電池の内部で電気が本来の通り道以外でつながる「内部短絡（ショート）」が起きるおそれがある、と説明されています。</p>
+<p>その回収中の製品の1つ、Anker Power Bank（10000mAh, 22.5W）（型番A1257）で、2026年10月14日に東京都内で火災が起きていたことが、消費者庁の公表で明らかになりました。異音がしたため確認すると、本体とその周りが焼けていたという報告です。</p>
+<div class="warn"><div class="ttl">原因は「調査中」です</div>
+<p>この火災の原因は、消費者庁の公表では<span class="marker">調査中</span>とされています。回収の理由になった部材の問題がこの火災の原因かどうかも、現時点では分かっていません。「回収中の製品で火災が起きた」ことと「回収の理由がそのまま火災の原因だった」ことは、分けて読んでください。</p></div>
+
+<h2>数字で見る、今回の規模</h2>
+<div class="stats">
+<div class="stat"><div class="num">401,771台</div><div class="lbl">A1257の対象台数（販売期間は2024年5月16日〜2025年6月6日）</div></div>
+<div class="stat"><div class="num">55.8%</div><div class="lbl">回収率（2026年11月19日時点）</div></div>
+<div class="stat"><div class="num">約18万台</div><div class="lbl">まだ回収・交換を終えていない計算の台数</div></div>
+</div>
+<p>回収は2025年6月26日から続いています。対象製品での火災は、消費者庁への報告では2025年度に7件、2026年度に1件（今回の公表分）が数えられています（原因調査中のものを含みます）。「知らないまま、かばんや引き出しに入っている」製品が、まだ多い計算です。</p>
+
+<h2>対象の4型番</h2>
+<div class="tscroll"><table>
+<tr><th>型番</th><th>製品名</th><th>対象の範囲</th></tr>
+<tr><td class="hl">A1257</td><td>Anker Power Bank（10000mAh, 22.5W）</td><td>一部の製品のみ。シリアルナンバーで判定します</td></tr>
+<tr><td class="hl">A1647</td><td>Anker Power Bank（20000mAh, 22.5W, Built-In USB-C ケーブル）</td><td>2025年6月26日までに販売されたもの全て</td></tr>
+<tr><td class="hl">A1652</td><td>Anker MagGo Power Bank（10000mAh, 7.5W, Stand）</td><td>2025年6月26日までに販売されたもの全て</td></tr>
+<tr><td class="hl">A1642</td><td>Anker 334 MagGo Battery（PowerCore 10000）</td><td>2025年6月26日までに販売されたもの全て</td></tr>
+</table></div>
+<p>製品名が似ていても別の製品があります。名前や容量の数字ではなく、<strong>型番</strong>で確かめてください。</p>
+
+<h2>確認の手順（3ステップ）</h2>
+<div class="steps">
+<div class="step"><div class="no">1</div><div><h3>裏面の型番を見る</h3>
+<p>本体の裏面（機種によって側面・底面）に、製品名と型番が印字されています。確認に必要なのは本体だけで、箱やレシートは要りません。型番がA1647・A1652・A1642で、2025年6月26日までに買ったものは、すべて回収対象です。</p></div></div>
+<div class="step"><div class="no">2</div><div><h3>A1257はシリアルナンバーで判定する</h3>
+<p>A1257は一部の製品だけが対象です。裏面の「SN：」の後に続く、Aで始まる16桁の番号を控え、アンカー・ジャパンの回収受付フォームに入力すると、対象かどうかが表示されます。「1」と「L」、「0」と「O」のような似た文字の打ち間違いに注意してください。文字がかすれて読めない場合も、回収で受け付けると案内されています。</p>
+<p><a href="https://www.ankerjapan.com/pages/202506-support">アンカー・ジャパン 回収受付フォーム（公式）</a>／<a href="https://corp.ankerjapan.com/posts/555">自主回収のお知らせ（公式）</a></p></div></div>
+<div class="step"><div class="no">3</div><div><h3>対象だったら、使用を止めて申し込む</h3>
+<p>対象と分かったら、その日から使用と充電を中止してください。申し込みをすると回収キット（返送用のレターパックと防火シートなど）が届き、本体を送ると、新品への交換か返金を選べます。電話の窓口は、アンカー・ジャパン受付窓口 <strong>0120-775-171</strong>（9時〜17時）です。</p>
+<p>対象だった場合の流れと、対象外の製品の手放し方は「<a href="disposal.html">対応と処分</a>」のページにまとめました。</p></div></div>
+</div>
+
+<h2>よくある質問</h2>
+<dl class="faq">
+<dt>Q. Ankerのモバイルバッテリーは全部が対象ですか？</dt>
+<dd>違います。対象は4つの型番だけで、A1257はシリアルナンバーで対象かどうかが分かれます。公式フォームで対象外と判定された製品は、そのまま使って大丈夫です。</dd>
+<dt>Q. 火災の原因は分かったのですか？</dt>
+<dd>分かっていません。消費者庁の公表では原因は調査中で、回収の理由になった部材の問題によるものかどうかも不明とされています。</dd>
+<dt>Q. 見た目で対象かどうか分かりますか？</dt>
+<dd>分かりません。今回の火災も、異音に気づいて確認したという報告です。型番とシリアルナンバーでの確認が確実です。</dd>
+<dt>Q. 対象外でも、膨らんでいたら使えますか？</dt>
+<dd>膨らみ・異常な熱・焦げた臭いがある製品は、対象かどうかに関係なく使用と充電を止めて、メーカーや販売店に相談してください。</dd>
+</dl>
+
+<h2>確認のあとの進み方</h2>
+<div class="nexts">
+<a href="disposal.html">対象だった場合の対応と、安全な処分方法 →</a>
+<a href="choose.html">安全なモバイルバッテリーの選び方（買う前の4項目）→</a>
+<a href="compare.html">買い替え候補の比較（安全設計と公式仕様）→</a>
+</div>
+<p class="src">出典：消費者庁「消費生活用製品の重大製品事故：リコール製品で火災等（リチウム電池内蔵充電器）」（2026年11月20日公表）／アンカー・ジャパン「弊社モバイルバッテリー4製品に関するお詫びと自主回収のお知らせ」（2025年6月26日公開、更新継続中）。確認日：2026年11月25日。内容は今後の発表で変わることがあります。手続きの前には、最新の公式案内を確認してください。</p>
+<p class="disc">※このページにはアフィリエイト広告リンクは設置していません。本文のリンクは、公式情報への案内です。</p>
+
+</main>
+<footer class="site"><div class="in">モバイルバッテリー安全くらべマガジン｜事実は消費者庁・メーカー各社の公式情報に基づきます。手続きや購入の前には、最新の公式案内を確認してください。<br><a href="./">リコール確認</a>｜<a href="disposal.html">対応と処分</a>｜<a href="choose.html">安全な選び方</a>｜<a href="compare.html">買い替え比較</a>｜<a href="about.html">運営者情報</a></div></footer>
+</body>
+</html>

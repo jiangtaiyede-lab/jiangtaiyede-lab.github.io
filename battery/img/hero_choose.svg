@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="PSEマークと買う前の確認項目のイメージ">
+<rect width="1200" height="630" fill="#f3f8fd"/>
+<circle cx="330" cy="300" r="180" fill="#ffffff" stroke="#4c8462" stroke-width="8"/>
+<text x="330" y="292" text-anchor="middle" font-family="sans-serif" font-size="96" font-weight="bold" fill="#4c8462">PSE</text>
+<text x="330" y="352" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#5b6b7a">丸形は自主確認の表示</text>
+<rect x="580" y="90" width="560" height="450" rx="20" fill="#ffffff" stroke="#19448e" stroke-width="3"/>
+<text x="620" y="152" font-family="sans-serif" font-size="30" font-weight="bold" fill="#19448e">買う前に見る4項目</text>
+<g font-family="sans-serif" font-size="26" fill="#222222">
+<path d="M622 196 l10 12 l20 -24" stroke="#4c8462" stroke-width="6" fill="none"/><text x="668" y="208">届出事業者名と日本の連絡先</text>
+<path d="M622 266 l10 12 l20 -24" stroke="#4c8462" stroke-width="6" fill="none"/><text x="668" y="278">型番でリコール検索</text>
+<path d="M622 336 l10 12 l20 -24" stroke="#4c8462" stroke-width="6" fill="none"/><text x="668" y="348">電池の種類</text>
+<path d="M622 406 l10 12 l20 -24" stroke="#4c8462" stroke-width="6" fill="none"/><text x="668" y="418">捨てるときの窓口</text>
+</g>
+<rect x="620" y="452" width="480" height="56" rx="10" fill="#fff7cc"/>
+<text x="640" y="489" font-family="sans-serif" font-size="22" font-weight="bold" fill="#7a5b00">マークの有無だけでは選ばない</text>
+</svg>

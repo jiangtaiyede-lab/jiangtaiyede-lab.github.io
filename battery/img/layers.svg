@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="燃えにくさを考える4つの層の模式図">
+<rect width="1200" height="560" fill="#ffffff"/>
+<g font-family="sans-serif">
+<rect x="130" y="36" width="940" height="104" rx="14" fill="#eef3fa" stroke="#19448e" stroke-width="2"/>
+<text x="170" y="82" font-size="27" font-weight="bold" fill="#19448e">層4　使い方（持ち主にしか変えられない）</text>
+<text x="170" y="118" font-size="22" fill="#444444">高温の場所に置かない／膨らみに気づく／異常時は使わない</text>
+<rect x="130" y="156" width="940" height="104" rx="14" fill="#eaf5ee" stroke="#4c8462" stroke-width="2"/>
+<text x="170" y="202" font-size="27" font-weight="bold" fill="#4c8462">層3　温度監視と表示</text>
+<text x="170" y="238" font-size="22" fill="#444444">温度を測って出力を絞る／温度や健康度を画面で確かめられる</text>
+<rect x="130" y="276" width="940" height="104" rx="14" fill="#fdf6e0" stroke="#c9a227" stroke-width="2"/>
+<text x="170" y="322" font-size="27" font-weight="bold" fill="#8a6d00">層2　難燃素材と内部構造</text>
+<text x="170" y="358" font-size="22" fill="#444444">燃え広がりにくい素材／セルの仕切りと放熱の設計</text>
+<rect x="130" y="396" width="940" height="104" rx="14" fill="#fdeeee" stroke="#e60033" stroke-width="2"/>
+<text x="170" y="442" font-size="27" font-weight="bold" fill="#e60033">層1　電池の種類</text>
+<text x="170" y="478" font-size="22" fill="#444444">半固体・リン酸鉄・ナトリウムイオンなど、燃えにくさの土台</text>
+</g>
+</svg>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>リコール対象だった場合の対応と安全な処分方法｜回収・下取り・リコールの違い</title>
+<meta name="description" content="リコール対象と分かった場合の対応（使用中止・申し込み・回収キットで返送・交換か返金）と、対象外・不要品の安全な手放し方を、公式情報に基づいて整理しました。">
+<style>
+:root{--ink:#20262b;--mut:#5b6b7a;--line:#d8dee3;--bg:#f7f7f7;--card:#fff;--acc:#19448e;--acc2:#eef3fa;--yel:#ffd900;--red:#e60033;--grn:#4c8462}
+*{box-sizing:border-box}body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;font-size:16.5px;letter-spacing:.025em}
+a{color:var(--acc)}
+header.site{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+header.site .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:900;font-size:18px;color:var(--ink);text-decoration:none;line-height:1.3}.logo span{color:var(--red)}
+nav.g{display:flex;gap:14px;font-size:14px;margin-left:auto}nav.g a{color:var(--mut);text-decoration:none}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:clamp(24px,4.5vw,36px);line-height:1.4;margin:14px 0 10px}
+h2{font-size:clamp(20px,3.4vw,26px);background:var(--acc);padding:.75em 1em;position:relative;margin:40px 0 14px;line-height:1.5;color:#fff}h2::before{content:"";position:absolute;display:block;pointer-events:none;top:-4px;left:0;width:100%;height:calc(100% + 4px);box-sizing:content-box;border-top:solid 2px var(--acc);border-bottom:solid 2px var(--acc)}
+h3{font-size:19px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--acc);line-height:1.5}
+.hero{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:#5c676d;margin:6px 0 4px}
+.meta .who{background:#eef1f5;border-radius:6px;padding:2px 10px}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
+.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
+.warn{background:#fdf2f2;border:1px solid #f0c4c4;border-radius:12px;padding:16px 18px;margin:16px 0}
+.warn .ttl{font-weight:900;color:var(--red);margin-bottom:4px}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat .num{font-size:30px;font-weight:900;color:var(--acc);line-height:1.2}
+.stat .lbl{font-size:13.5px;color:var(--mut)}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:#fff;margin:12px 0}
+table{border-collapse:collapse;min-width:560px;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--acc);color:#fff;font-weight:800}
+td.hl{background:var(--acc2);font-weight:800}
+.steps{display:grid;gap:12px;margin:14px 0}
+.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;gap:14px}
+.step .no{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:var(--acc);color:#fff;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center}
+.step h3{border:none;padding:0;margin:0 0 4px;font-size:18px}
+.step p{margin:4px 0}
+.chip{display:inline-block;border-radius:999px;padding:1px 10px;font-size:13px;font-weight:800}
+.chip.han{background:#eaf5ee;color:var(--grn)}.chip.rin{background:#eef3fa;color:var(--acc)}.chip.na{background:#f1eaf8;color:#7b5ea7}.chip.nan{background:#fdf3e0;color:#a86e00}
+.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 22px;margin:8px 0}
+.prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.prod h3{margin-top:0}
+.faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 18px;margin:12px 0}
+.faq dt{font-weight:900;margin:14px 0 4px;color:var(--acc)}
+.faq dd{margin:0 0 14px}
+.src{font-size:13.5px;color:var(--mut)}
+.nexts{display:grid;gap:10px;margin:14px 0}
+.nexts a{display:block;background:#fff;border:1px solid var(--line);border-left:8px solid var(--acc);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700}
+footer.site{border-top:1px solid var(--line);background:#fff;padding:24px 16px;font-size:13px;color:var(--mut)}
+footer.site .in{max-width:1080px;margin:0 auto}
+@media (max-width:640px){nav.g{display:none}table{font-size:13.5px}.stat .num{font-size:26px}}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FXZPJWXX71');
+</script>
+</head>
+<body>
+<header class="site"><div class="in">
+<a class="logo" href="./">モバイルバッテリー安全<span>くらべ</span>マガジン</a>
+<nav class="g"><a href="./">リコール確認</a><a href="disposal.html">対応と処分</a><a href="choose.html">安全な選び方</a><a href="compare.html">買い替え比較</a><a href="about.html">運営者情報</a></nav>
+</div></header>
+<main>
+
+<h1>リコール対象だったら｜対応の流れと、安全な手放し方</h1>
+<div class="meta"><span>↻ 2026年11月25日</span><span class="who">執筆・編集　モバイルバッテリー安全くらべマガジン編集部</span></div>
+<img class="hero" src="img/hero_disposal.svg" alt="リコール対象だった場合の手続きの流れの図">
+<div class="concl"><div class="ttl">結論</div>
+<p>対象と分かったら、<span class="marker">使用と充電を止めて、専用の受付で回収の手続き</span>を進めます。自治体のごみには出さず、買い替えの下取りとも分けて考えます。</p></div>
+
+<h2>まず「回収・下取り・リコール」を分ける</h2>
+<div class="tscroll"><table>
+<tr><th>区分</th><th>目的</th><th>先にすること</th></tr>
+<tr><td class="hl">リコール</td><td>製品の不具合などに対応する</td><td>公式告知で対象を確認し、専用窓口へ</td></tr>
+<tr><td class="hl">不要品の回収</td><td>使わなくなった製品を適切に処理する</td><td>製品の状態と、受付の条件を確認する</td></tr>
+<tr><td class="hl">下取り</td><td>買い替えに伴って製品を引き渡す</td><td>対象店舗・期間・購入条件を確認する</td></tr>
+</table></div>
+<p>リコール対象なら、値引きを受けるための下取りより、専用の回収手続きを優先します。対象外と分かっても、膨らんだり壊れたりした製品を使い続けてよいという意味ではありません。告知への該当と、手元の製品の状態は、両方を確かめることが大切です。</p>
+
+<h2>型番の探し方（要点）</h2>
+<p>Anker製品では、本体の裏面・底面・側面の小さな印字に「A＋数字」の型番があります。型番は「製品の種類」、その近くにある「SN：」の後の番号（シリアルナンバー）は「1台ごとの番号」です。同じ型番でも、販売時期などの条件で対象が分かれる告知があります。詳しい確認手順は「<a href="./">リコール対象の確認方法</a>」のページにまとめました。</p>
+
+<h2>対象だったら：使うのを止めて、専用受付へ</h2>
+<div class="steps">
+<div class="step"><div class="no">1</div><div><h3>使用と充電を中止する</h3><p>対象と分かった日から、使用と充電を止めます。保管するときは、燃えやすいものから離れた場所に置きます。</p></div></div>
+<div class="step"><div class="no">2</div><div><h3>公式フォームか電話で申し込む</h3><p>受付は、アンカー・ジャパンの<a href="https://www.ankerjapan.com/pages/202506-support">回収受付フォーム（公式）</a>（24時間）か、電話窓口 <strong>0120-775-171</strong>（9時〜17時）です。</p></div></div>
+<div class="step"><div class="no">3</div><div><h3>回収キットで返送する</h3><p>申し込みをすると、回収キット（返送用のレターパックと防火シートなど）が届きます。自分で宛先を探して送らず、キットの指示に沿って本体を返送します。</p></div></div>
+<div class="step"><div class="no">4</div><div><h3>新品への交換か、返金を選ぶ</h3><p>返送後、新品への交換か返金を選べます。手続きの途中で表示が読めない、受付に進めない場合は、窓口に相談してください。</p></div></div>
+</div>
+
+<h2>対象外・不要品を手放すとき</h2>
+<h3>自治体のごみには出さない</h3>
+<p>モバイルバッテリーは、自治体の通常のごみに混ぜません。メーカーの回収サービスや、自治体・協力店の回収窓口に出します。今回のリコール対象品は、ごみとして出すのではなく、必ず回収の手続きで返送してください。</p>
+<h3>JBRCの回収ボックスには条件がある</h3>
+<p>小型充電式電池の回収ボックス（JBRC）は、会員企業の製品が対象で、会員外の製品・メーカー不明の製品・膨張したものは受け付けない決まりがあります。出す前に、対象かどうかを確認してください。</p>
+<h3>Ankerの下取りは「買い替えに伴う回収」</h3>
+<p>Anker公式の回収サービスは、買い替えに伴ってAnker製品を引き取る形で案内されています（他社製品は対象外です）。リコール対象品は、この下取りではなく、専用の回収手続きを優先してください。</p>
+
+<h2>膨らみ・異常があるとき</h2>
+<div class="warn"><div class="ttl">異常があれば、対象かどうかに関係なく止める</div>
+<p>膨らんで変形している、充電中に以前より異常に熱くなる、焦げた臭いがする、残量の減りが急に早くなった——こうした変化は、使用を中止すべき異常の例として、製品評価技術基盤機構（NITE）も挙げています。当てはまる場合は使用と充電を止め、メーカーや販売店に相談してください。</p></div>
+<p>買い替えを考える場合は、「<a href="choose.html">安全な選び方</a>」で買う前の確認項目を確かめてから、「<a href="compare.html">買い替え候補の比較</a>」へ進んでください。</p>
+<p class="src">出典：消費者庁「消費生活用製品の重大製品事故：リコール製品で火災等（リチウム電池内蔵充電器）」（2026年11月20日公表）／アンカー・ジャパン「弊社モバイルバッテリー4製品に関するお詫びと自主回収のお知らせ」／製品評価技術基盤機構（NITE）の公表資料。確認日：2026年11月25日。</p>
+<p class="disc">※このページにはアフィリエイト広告リンクは設置していません。本文のリンクは、公式情報への案内です。</p>
+
+</main>
+<footer class="site"><div class="in">モバイルバッテリー安全くらべマガジン｜事実は消費者庁・メーカー各社の公式情報に基づきます。手続きや購入の前には、最新の公式案内を確認してください。<br><a href="./">リコール確認</a>｜<a href="disposal.html">対応と処分</a>｜<a href="choose.html">安全な選び方</a>｜<a href="compare.html">買い替え比較</a>｜<a href="about.html">運営者情報</a></div></footer>
+</body>
+</html>
