@@ -45,6 +45,15 @@ td.hl{background:var(--acc2);font-weight:800}
 .cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 22px;margin:8px 0}
 .prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
 .prod h3{margin-top:0}
+.pcard{display:flex;gap:16px;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:14px;margin:12px 0;align-items:flex-start}
+.pcard a.pimg{flex:0 0 auto;line-height:0}
+.pcard a.pimg img{width:150px;height:150px;object-fit:contain;border:1px solid var(--line);border-radius:10px;background:#fff;display:block}
+.pcard .pinfo{flex:1 1 auto;min-width:0}
+.pcard .pname{font-weight:900;font-size:17px;line-height:1.5;margin:2px 0 4px}
+.pcard .pname a{color:var(--ink);text-decoration:none}
+.pcard .pprice{font-size:15px;margin:4px 0 6px}
+.pcard .pprice strong{color:#ff0000;font-size:19px}
+@media (max-width:640px){.pcard{flex-direction:column;align-items:center}.pcard a.pimg img{width:200px;height:200px}.pcard .pinfo{width:100%}}
 .faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 18px;margin:12px 0}
 .faq dt{font-weight:900;margin:14px 0 4px;color:var(--acc)}
 .faq dd{margin:0 0 14px}
