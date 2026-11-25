@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="CIO SMARTCOBY TRIO 35W 2C1Aのイメージ">
+<rect width="1200" height="500" fill="#f3f8fd"/>
+<rect x="90" y="90" width="560" height="320" rx="30" fill="#ffffff" stroke="#19448e" stroke-width="5"/>
+<circle cx="180" cy="140" r="14" fill="#19448e"/>
+<circle cx="240" cy="140" r="14" fill="#19448e"/>
+<circle cx="300" cy="140" r="14" fill="#5b6b7a"/>
+<text x="370" y="245" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="bold" fill="#19448e">SMARTCOBY TRIO</text>
+<text x="370" y="302" text-anchor="middle" font-family="sans-serif" font-size="27" fill="#20262b">CIO／20,000mAh</text>
+<text x="370" y="352" text-anchor="middle" font-family="sans-serif" font-size="23" fill="#5b6b7a">3ポートで複数台を同時充電</text>
+<rect x="730" y="120" width="380" height="64" rx="32" fill="#eaf5ee"/>
+<text x="920" y="162" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="bold" fill="#4c8462">大容量20,000mAh・約328g</text>
+<rect x="730" y="208" width="380" height="64" rx="32" fill="#eef3fa"/>
+<text x="920" y="250" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="bold" fill="#19448e">最大35W（単ポート）</text>
+<rect x="730" y="296" width="380" height="64" rx="32" fill="#fdf3e0"/>
+<text x="920" y="338" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="bold" fill="#a86e00">パススルー充電対応</text>
+<text x="600" y="452" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#5b6b7a">※製品の形はイメージです。仕様は販売ページの公表値に基づきます</text>
+</svg>

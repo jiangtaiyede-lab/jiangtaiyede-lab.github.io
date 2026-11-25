@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="リコール対象の4型番のイメージ">
+<rect width="1200" height="560" fill="#f3f8fd"/>
+<text x="60" y="76" font-family="sans-serif" font-size="38" font-weight="bold" fill="#19448e">対象はこの4型番</text>
+<!-- A1257 -->
+<rect x="50" y="120" width="255" height="300" rx="26" fill="#ffffff" stroke="#19448e" stroke-width="4"/>
+<rect x="85" y="160" width="185" height="90" rx="10" fill="#eef3fa"/>
+<text x="177" y="198" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#19448e">A1257</text>
+<text x="177" y="232" text-anchor="middle" font-family="sans-serif" font-size="19" fill="#5b6b7a">10000mAh</text>
+<text x="177" y="300" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="bold" fill="#20262b">Power Bank</text>
+<text x="177" y="336" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#20262b">（10000mAh, 22.5W）</text>
+<rect x="75" y="362" width="205" height="42" rx="21" fill="#fdf3e0"/>
+<text x="177" y="391" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#a86e00">SNで判定（一部のみ）</text>
+<!-- A1647 -->
+<rect x="335" y="120" width="255" height="300" rx="26" fill="#ffffff" stroke="#19448e" stroke-width="4"/>
+<path d="M 540 150 q 60 60 30 120" fill="none" stroke="#19448e" stroke-width="7"/>
+<rect x="370" y="160" width="185" height="90" rx="10" fill="#eef3fa"/>
+<text x="462" y="198" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#19448e">A1647</text>
+<text x="462" y="232" text-anchor="middle" font-family="sans-serif" font-size="19" fill="#5b6b7a">20000mAh</text>
+<text x="462" y="300" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="bold" fill="#20262b">Power Bank</text>
+<text x="462" y="336" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#20262b">ケーブル一体型</text>
+<rect x="360" y="362" width="205" height="42" rx="21" fill="#fdf2f2"/>
+<text x="462" y="391" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#e60033">全て対象</text>
+<!-- A1652 -->
+<rect x="620" y="120" width="255" height="300" rx="26" fill="#ffffff" stroke="#19448e" stroke-width="4"/>
+<path d="M 700 400 l 60 -34 l 60 34 z" fill="#eef3fa" stroke="#19448e" stroke-width="3"/>
+<rect x="655" y="160" width="185" height="90" rx="10" fill="#eef3fa"/>
+<text x="747" y="198" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#19448e">A1652</text>
+<text x="747" y="232" text-anchor="middle" font-family="sans-serif" font-size="19" fill="#5b6b7a">10000mAh</text>
+<text x="747" y="300" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="bold" fill="#20262b">MagGo Power Bank</text>
+<text x="747" y="336" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#20262b">スタンド付き</text>
+<rect x="645" y="362" width="205" height="42" rx="21" fill="#fdf2f2"/>
+<text x="747" y="391" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#e60033">全て対象</text>
+<!-- A1642 -->
+<rect x="905" y="120" width="255" height="300" rx="26" fill="#ffffff" stroke="#19448e" stroke-width="4"/>
+<circle cx="1032" cy="205" r="34" fill="none" stroke="#19448e" stroke-width="4"/>
+<text x="1032" y="215" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#19448e">磁石</text>
+<text x="1032" y="300" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="bold" fill="#20262b">334 MagGo Battery</text>
+<text x="1032" y="336" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#20262b">（PowerCore 10000）</text>
+<rect x="930" y="362" width="205" height="42" rx="21" fill="#fdf2f2"/>
+<text x="1032" y="391" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#e60033">全て対象</text>
+<text x="600" y="492" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#20262b">「全て対象」は、2025年6月26日までに販売されたものが範囲です</text>
+<text x="600" y="530" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#5b6b7a">※製品の形はイメージです。判定は型番とシリアルナンバーで行います</text>
+</svg>

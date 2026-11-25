@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="エレコム EC-C03BKのイメージ">
+<rect width="1200" height="500" fill="#f3f8fd"/>
+<rect x="90" y="110" width="560" height="280" rx="30" fill="#ffffff" stroke="#19448e" stroke-width="5"/>
+<path d="M 370 165 l 62 22 v 52 c 0 48 -26 78 -62 96 c -36 -18 -62 -48 -62 -96 v -52 z" fill="#eaf5ee" stroke="#4c8462" stroke-width="5"/>
+<path d="M 345 240 l 18 18 l 34 -38" fill="none" stroke="#4c8462" stroke-width="8" stroke-linecap="round"/>
+<text x="370" y="385" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#5b6b7a">残量は4段階LED表示</text>
+<text x="370" y="140" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="bold" fill="#19448e">EC-C03BK</text>
+<rect x="730" y="120" width="380" height="64" rx="32" fill="#eaf5ee"/>
+<text x="920" y="162" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="bold" fill="#4c8462">6つの保護機能（メーカー説明）</text>
+<rect x="730" y="208" width="380" height="64" rx="32" fill="#eef3fa"/>
+<text x="920" y="250" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="bold" fill="#19448e">10,000mAh・合計20W</text>
+<rect x="730" y="296" width="380" height="64" rx="32" fill="#fdf3e0"/>
+<text x="920" y="338" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="bold" fill="#a86e00">JBRCの回収対象製品</text>
+<text x="600" y="452" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#5b6b7a">※製品の形はイメージです。仕様は販売ページの公表値に基づきます</text>
+</svg>

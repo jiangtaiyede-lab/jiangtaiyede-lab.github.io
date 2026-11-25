@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="リコール開始から消費者庁の公表までの経緯">
+<rect width="1200" height="520" fill="#f3f8fd"/>
+<text x="60" y="78" font-family="sans-serif" font-size="38" font-weight="bold" fill="#19448e">これまでの経緯</text>
+<line x1="110" y1="215" x2="1090" y2="215" stroke="#19448e" stroke-width="6"/>
+<circle cx="200" cy="215" r="26" fill="#19448e"/>
+<circle cx="600" cy="215" r="26" fill="#e60033"/>
+<circle cx="1000" cy="215" r="26" fill="#19448e"/>
+<text x="200" y="160" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="bold" fill="#20262b">2025年6月26日</text>
+<text x="600" y="160" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="bold" fill="#20262b">2026年10月14日</text>
+<text x="1000" y="160" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="bold" fill="#20262b">2026年11月20日</text>
+<text x="200" y="300" text-anchor="middle" font-family="sans-serif" font-size="27" fill="#20262b">アンカー・ジャパンが</text>
+<text x="200" y="342" text-anchor="middle" font-family="sans-serif" font-size="27" fill="#20262b">4製品の自主回収を開始</text>
+<text x="600" y="300" text-anchor="middle" font-family="sans-serif" font-size="27" fill="#20262b">東京都内で火災が発生</text>
+<text x="600" y="342" text-anchor="middle" font-family="sans-serif" font-size="27" fill="#20262b">（対象製品のA1257）</text>
+<text x="1000" y="300" text-anchor="middle" font-family="sans-serif" font-size="27" fill="#20262b">消費者庁が「重大製品事故」</text>
+<text x="1000" y="342" text-anchor="middle" font-family="sans-serif" font-size="27" fill="#20262b">として公表（原因は調査中）</text>
+<rect x="240" y="400" width="720" height="72" rx="14" fill="#fff7cc" stroke="#e8d98a" stroke-width="2"/>
+<text x="600" y="447" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="bold" fill="#7a5b00">回収は今も続いています。未回収は約18万台</text>
+</svg>

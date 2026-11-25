@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="不要品の手放し方（回収ボックスと自治体窓口、一般ごみは不可）">
+<rect width="1200" height="520" fill="#f3f8fd"/>
+<text x="60" y="78" font-family="sans-serif" font-size="38" font-weight="bold" fill="#19448e">不要品は「回収の窓口」へ</text>
+<!-- collection box -->
+<rect x="80" y="150" width="300" height="260" rx="16" fill="#4c8462"/>
+<rect x="120" y="195" width="220" height="54" rx="10" fill="#ffffff"/>
+<text x="230" y="232" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="bold" fill="#4c8462">回収ボックス</text>
+<rect x="150" y="290" width="160" height="26" rx="13" fill="#20262b"/>
+<text x="230" y="460" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#20262b">JBRCの回収ボックス</text>
+<text x="230" y="492" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#5b6b7a">会員企業の製品が対象</text>
+<!-- municipal -->
+<rect x="450" y="150" width="300" height="260" rx="16" fill="#ffffff" stroke="#19448e" stroke-width="4"/>
+<rect x="490" y="185" width="220" height="80" rx="8" fill="#eef3fa"/>
+<text x="600" y="222" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="bold" fill="#19448e">自治体・協力店</text>
+<text x="600" y="256" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#20262b">の窓口</text>
+<text x="600" y="330" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#20262b">メーカーの</text>
+<text x="600" y="364" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#20262b">回収サービス</text>
+<text x="600" y="460" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#20262b">自治体・メーカーの回収</text>
+<text x="600" y="492" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#5b6b7a">住んでいる地域の案内を確認</text>
+<!-- trash NG -->
+<rect x="820" y="150" width="300" height="260" rx="16" fill="#ffffff" stroke="#e60033" stroke-width="4"/>
+<path d="M 920 230 l 100 0 l -12 130 l -76 0 z" fill="#d8dee3" stroke="#5b6b7a" stroke-width="3"/>
+<rect x="905" y="205" width="130" height="18" rx="8" fill="#5b6b7a"/>
+<line x1="860" y1="180" x2="1080" y2="380" stroke="#e60033" stroke-width="12"/>
+<text x="970" y="460" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#e60033">一般ごみには出さない</text>
+<text x="970" y="492" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#5b6b7a">リコール対象品は回収手続きで返送</text>
+</svg>
