@@ -66,6 +66,14 @@ figure.chart figcaption{font-size:12.5px;color:#666;margin-top:4px}
 footer.site{margin-top:36px;border-top:1px solid var(--line);padding:16px 0 28px;font-size:13px;color:#555}
 footer.site p{margin:0 0 8px}
 .disc{font-size:12px;color:#777}
+
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--key);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--key);border-bottom:1.5px solid var(--key);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--key);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
@@ -99,6 +107,8 @@ gtag('config', 'G-FXZPJWXX71');
 <p>FXのデモトレードは、仮想資金を使って本番に近い環境で取引を練習できる仕組みです。実際のお金は動かないため、注文の流れやツールの操作、チャートの見方を確認するのに向いています。</p>
 <p>ただし、デモ口座の条件は会社ごとに異なります。仮想資金の金額、利用できる期限、スマホアプリで使えるかどうかが会社によって違うため、始める前に比べておくことが大切です。このページでは、デモ口座を用意している国内のFX会社11社について、仮想資金と利用期限を各社の公式情報で確認し、一覧で比べられるようにまとめました。</p>
 </section>
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>こんにちは、デン太です。このページでは、デモ口座のあるFX会社11社を、仮想資金と利用期限で比べています。数値は各社の公式情報で確認した内容です。</p></div></div>
+
 
 <nav class="toc"><p>目次</p><ol>
 <li><a href="#risk">取引のリスクと当社（DMM FX）の会社情報</a></li>
@@ -136,6 +146,8 @@ gtag('config', 'G-FXZPJWXX71');
 <p class="note">※上のボタンは本取引口座の開設ページに進みます。デモだけを使いたい場合は、公式サイト内のデモ取引の申込みページから登録してください。デモ取引は仮想資金での練習であり、実際のお金は動きません。</p>
 </section>
 
+
+<div class="talk"><img src="img/chara_denta_point.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>比べるときのポイントは、仮想資金の金額だけでなく、利用できる期限と、スマホアプリで使えるかどうかです。</p></div></div>
 <h2 id="list">デモ口座のあるFX会社 一覧比較</h2>
 <p>デモ口座の仮想資金と利用期限を一覧にしました。各社の公式ページで確認した内容です（2026年11月25日時点）。</p>
 <div class="tscroll"><table class="cmp">
@@ -277,6 +289,8 @@ gtag('config', 'G-FXZPJWXX71');
 <a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGHVR+B7O5EY+1WP2+69WPU" rel="nofollow sponsored">【PR】【DMM FX】について詳しくはこちら</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BGHVR+B7O5EY+1WP2+69WPU" alt="">
 <p class="note">※FXは元本が保証された取引ではありません。お取引の最終決定は、契約締結前交付書面等をご理解のうえ、ご自身の判断と責任で行ってください。</p>
 
+
+<div class="talk"><img src="img/chara_denta_ok.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>まとめです。デモトレードは、実際のお金を使わずに操作を練習するためのものです。本番の取引については、このページの冒頭にあるリスクの説明を読んでから判断してください。</p></div></div>
 <h2 id="summary">まとめ</h2>
 <p>FXのデモ口座は、仮想資金の金額も利用期限も会社ごとに異なります。長く練習したい場合は期限の長い会社、資金量を自分で決めたい場合は設定範囲の広い会社、スマホ中心ならアプリのデモが使いやすい会社、というように、練習の目的に合わせて選ぶのが基本です。</p>
 <p>このページの案内先はDMM FXです。仮想資金500万円・約3ヶ月のデモで、残高が減っても自動で回復する仕組みがあるため、初めての練習を続けやすい条件がそろっています。まずはデモで注文の流れを確認し、本番に進むかどうかはリスクを理解したうえで判断してください。</p>
