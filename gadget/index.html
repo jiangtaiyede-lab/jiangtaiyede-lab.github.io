@@ -3,100 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ガジェット判定マガジン｜料金と価格を数字で判定する</title>
-<meta name="description" content="スマホ料金・ガジェット価格のニュースを公式数字だけで判定する分析マガジン。eximo・頭金・段階制プラン・キャリア値上げを計算過程つきで読み解く。">
+<title>ガジェット判定マガジン｜ガジェットと通信費を数字で判定する</title>
+<meta name="description" content="ドコモeximoと楽天モバイルの年額差41,844円、携帯ショップの頭金の正体、BB.excite Fitの段階料金など、公式数字だけで判定する分析マガジン。">
 <style>
-:root{--ink:#313131;--mut:#5b6b7a;--line:#dcdcdc;--bg:#ffffff;--dark:#1a1d23;--acc:#19448e;--acc2:#eef3fa;--yel:#ffd900;--red:#ce0000;--grn:#4c8462}
+:root{--ink:#333;--head:#222428;--mut:#777;--line:#e3e3e3;--link:#4682b4;--red:#ce0000;--yel:#ffd900;--kaiwa:#edfbff}
 *{box-sizing:border-box}
-body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.85;font-size:16.5px;letter-spacing:.02em}
-a{color:var(--acc)}
-header.site{position:sticky;top:0;background:var(--dark);z-index:20}
-header.site .in{max-width:1080px;margin:0 auto;padding:10px 14px;display:flex;align-items:center;gap:12px}
-header.site .sicon{flex:0 0 auto;line-height:0}
-header.site .sicon svg{width:26px;height:26px}
-header.site .brand{flex:1;text-align:center;line-height:1.25}
-header.site .brand a{color:#fff;text-decoration:none;font-style:italic;font-weight:900;font-size:24px;letter-spacing:.04em}
-header.site .brand .catch{display:block;font-style:normal;font-weight:400;font-size:11.5px;color:#cfd4da;letter-spacing:.02em;margin-top:2px}
-header.site .menu-btn{flex:0 0 auto;text-align:center;color:#fff;text-decoration:none;font-size:10.5px;letter-spacing:.14em;line-height:1.3}
-header.site .menu-btn .bars{display:block;width:30px;margin:0 auto 3px}
-header.site .menu-btn .bars i{display:block;height:2.4px;background:#fff;margin:5px 0}
-main{max-width:1080px;margin:0 auto;padding:18px 16px 60px}
-h1{font-size:clamp(23px,4.4vw,34px);line-height:1.45;margin:12px 0 10px;font-weight:900}
-h2{font-size:clamp(19px,3.2vw,24px);background:var(--dark);color:#fff;padding:.68em .95em;margin:42px 0 14px;line-height:1.5;border-radius:3px}
-h3{font-size:18.5px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--dark);line-height:1.5}
-.hero{width:100%;height:auto;display:block;border-radius:6px}
-.eye{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#f4f6f8}
-.fig{width:100%;height:auto;display:block;margin:12px 0}
-.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:var(--mut);margin:6px 0 4px}
-.meta .cat{background:#eef1f5;border-radius:6px;padding:2px 10px;color:var(--ink)}
-.lead{font-size:17px}
-.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
-.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
-.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#f4f4f4;font-size:15px;line-height:1.67}
+a{color:var(--link)}
+img{max-width:100%}
+#wrap{background:#fff;max-width:1160px;margin:0 auto}
+header.site{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff}
+header.site .navrow{display:flex;justify-content:space-between;align-items:center;height:48px;padding:0 4px}
+header.site .navbtn{display:flex;align-items:center;justify-content:center;width:52px;height:48px;color:#fff;text-decoration:none}
+header.site .navbtn svg{width:24px;height:24px}
+header.site .menuwrap{text-align:center;line-height:1.15}
+header.site .menuwrap .bars{display:block;width:24px;margin:0 auto}
+header.site .menuwrap .bars i{display:block;height:2px;background:#fff;margin:4.5px 0}
+header.site .menuwrap .mtxt{font-size:10px;letter-spacing:.12em;color:#fff}
+header.site .logobox{padding:2px 20px 0}
+header.site .logo{font-size:30px;font-weight:700;font-style:italic;color:#fff;text-decoration:none;letter-spacing:.02em;line-height:1.3}
+header.site .catch{display:block;font-size:13px;color:#fff;padding:2px 0 12px}
+.hero{display:block;width:100%;height:auto}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#454a51;border-top:1px solid #454a51;border-bottom:1px solid #454a51}
+.tiles a{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff;text-decoration:none;text-align:center;font-size:12.8px;padding:10px 2px;line-height:1.5}
+.layout{padding:0 15px}
+main{display:block}
+aside{display:block}
+@media (min-width:960px){
+ body{font-size:18px;line-height:1.78}
+ .layout{display:flex;gap:34px;padding:0 20px}
+ main{flex:1 1 auto;min-width:0}
+ aside{flex:0 0 300px;width:300px}
+}
+.crumb{font-size:13px;color:var(--mut);padding:12px 0 2px}
+.crumb a{color:var(--mut);text-decoration:none}
+.catgroup{padding:5px 0 6px}
+.catgroup .cat{display:inline-block;background:#a6a6a6;color:#fff;font-size:12px;line-height:18px;padding:2px 9px;border-radius:3px}
+h1.entry{font-size:24px;line-height:38px;font-weight:700;color:var(--ink);margin:0 0 10px;padding-top:10px;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
+.blogbox{font-size:13px;color:var(--mut);margin:0 0 10px}
+.sns{display:flex;gap:9px;margin:14px 0 20px;flex-wrap:wrap}
+.sns a{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:#fff;text-decoration:none;font-size:12px;font-weight:700}
+.sns .x{background:#424242}.sns .fb{background:#1877f2}.sns .pk{background:#ef4056}.sns .hb{background:#00a4de}.sns .ln{background:#06c755}.sns .cp{background:#888}
+.post p{margin:0 0 20px}
+.post ul,.post ol{margin:0 0 20px;padding-left:1.4em}
+.post li{margin:3px 0}
+h2{position:relative;font-size:22px;line-height:35px;font-weight:700;color:var(--head);background:linear-gradient(to bottom,#fff 0%,#fafafa 100%);border:1px solid var(--head);padding:10px 22px 10px 28.6px;margin:66px 0 20px;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
+h2::after{content:"";position:absolute;top:.5em;left:.5em;width:5px;height:calc(100% - 1em);background:var(--head)}
+h3{position:relative;font-size:19px;line-height:27px;font-weight:700;color:var(--head);padding:10px 20px 10px 10px;margin:20px 0;border-bottom:3px solid #fafafa;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
+h3::after{content:"";position:absolute;bottom:-3px;left:0;width:5em;height:3px;background:var(--head)}
+h4{font-size:18px;line-height:28px;font-weight:700;color:var(--head);border-left:5px solid var(--head);padding:7px 15px 7px 20px;margin:20px 0}
+@media (min-width:960px){
+ h1.entry{font-size:27px;line-height:40px}
+ h2{font-size:24px;line-height:35px}
+ h3{font-size:22px;line-height:32px}
+ .post p{line-height:32px}
+}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:700;padding:0 2px}
 strong.red{color:var(--red)}
-.toc{border:2px solid var(--dark);border-radius:8px;padding:14px 18px;margin:20px 0;background:#fbfbf7}
-.toc .ttl{font-weight:900;margin-bottom:6px}
-.toc ol{margin:6px 0 6px 20px;padding:0}
-.toc li{margin:4px 0}
-.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0}
-table.spec{border-collapse:collapse;width:100%;min-width:520px;font-size:15.5px}
-table.spec th,table.spec td{border:1px solid #b9c0c7;padding:8px 10px;text-align:left;vertical-align:top}
-table.spec thead th{background:var(--dark);color:#fff;font-weight:800}
-table.spec tbody th{background:#f0f2f5;font-weight:800;white-space:nowrap}
-table.spec td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-table.spec td.hl{background:#fff3f3;font-weight:900;color:var(--red)}
-table.spec td.good{background:var(--acc2);font-weight:900;color:var(--acc)}
-.calc{background:#f7f9fb;border:1.5px solid var(--acc);border-radius:12px;padding:14px 18px;margin:14px 0}
-.calc .ttl{font-weight:900;color:var(--acc);margin-bottom:4px}
-.calc .row{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px dashed #c9d4e2;font-variant-numeric:tabular-nums}
-.calc .row:last-child{border-bottom:none}
-.calc .row.total{font-weight:900;font-size:18px;color:var(--red)}
-.piewrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:14px 0}
-.piewrap svg{flex:0 0 auto}
-.piewrap .legend{flex:1 1 220px;font-size:15px}
-.piewrap .legend div{margin:5px 0}
-.sw{display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:8px;vertical-align:-1px}
-.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
-.talk img{flex:0 0 auto;width:76px;height:76px}
-.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
-.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
-.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
-.talk p{margin:2px 0}
-.talk.judge .bubble{border-color:var(--dark)}
-.talk.judge .bubble::before{border-color:var(--dark)}
-.talk.judge .who{color:var(--dark)}
-.talk.rev{flex-direction:row-reverse}
-.talk.rev .bubble::before{left:auto;right:-9px;border-left:none;border-bottom:none;border-right:1.5px solid var(--dark);border-top:1.5px solid var(--dark)}
-@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
-.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:13px 24px;margin:8px 0;box-shadow:0 3px 0 #0f2c5c}
-.cta-wrap{margin:14px 0}
-.src{font-size:14px;color:var(--mut)}
-.src li{margin:4px 0}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:14px 0}
-.acard{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
-.acard img{width:100%;height:auto;display:block}
-.acard .bd{padding:12px 14px}
-.acard .cat{font-size:12.5px;color:var(--acc);font-weight:800}
-.acard .ttl{font-weight:900;line-height:1.5;margin:4px 0}
-.acard .ttl a{color:var(--ink);text-decoration:none}
-.acard .more{font-size:13.5px;color:var(--acc);font-weight:700}
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#3a3f47;margin:0 0 8px}
-.tiles a{background:var(--dark);color:#fff;text-decoration:none;text-align:center;padding:20px 6px;font-weight:800;font-size:16.5px}
-@media (max-width:640px){.tiles a{font-size:14.5px;padding:16px 4px}}
-.tree{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:14px 0}
-.tree a{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);background:#fff}
+.fig{display:block;width:calc(100% + 30px);max-width:none;height:auto;margin:0 -15px 20px}
+@media (min-width:960px){.fig{width:100%;margin:0 0 20px}}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 20px}
+table.spec{border-collapse:collapse;width:100%;font-size:15px;line-height:1.6}
+table.spec th,table.spec td{border:1px solid #d9d9d9;padding:8px 10px;text-align:left;vertical-align:top;font-weight:400}
+table.spec thead th{font-weight:700}
+table.spec td.num,table.spec th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.spec td.hl{font-weight:700;color:var(--red)}
+table.spec td.good{font-weight:700}
+.kaiwa{display:flex;align-items:flex-start;margin:0 0 20px}
+.kaiwa .face{flex:0 0 auto;width:66px;height:66px;border-radius:50%;overflow:hidden}
+.kaiwa .face img{width:66px;height:66px;display:block}
+.kaiwa .huki{position:relative;flex:1;background:var(--kaiwa);border-radius:7px;padding:15px 20px;margin-left:20px}
+.kaiwa .huki::before{content:"";position:absolute;left:-14px;top:24px;border:7px solid transparent;border-right:12px solid var(--kaiwa)}
+.kaiwa .huki p{margin:0}
+.kaiwa .who{font-weight:700;font-size:13px;margin-bottom:2px}
+.kaiwa.rev{flex-direction:row-reverse}
+.kaiwa.rev .huki{margin-left:0;margin-right:20px}
+.kaiwa.rev .huki::before{left:auto;right:-14px;border-right:7px solid transparent;border-left:12px solid var(--kaiwa)}
+.mybtn{display:block;background:linear-gradient(to bottom,#f56d64 0%,#e53935 100%);border:1px solid #e57373;border-radius:5px;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 2px 4px rgba(0,0,0,.18);margin:0 0 20px}
+.mybtn a{display:block;color:#fff;text-decoration:none;text-align:center;font-weight:700;font-size:16px;line-height:25px;padding:10px 20px}
+.pcard{border:1px solid var(--line);border-radius:4px;padding:14px 16px;margin:0 0 20px;display:flex;gap:16px;background:#fff}
+.pcard .pimg{flex:0 0 auto}
+.pcard .pimg img{width:120px;height:120px}
+.pcard .pname{font-weight:700;margin:0 0 4px}
+.pcard .pnote{font-size:13px;color:var(--mut);margin:0 0 6px}
+.pcard .pprice{font-size:19px;font-weight:700;color:var(--red);margin:0 0 2px}
+.pcard .pdate{font-size:12px;color:var(--mut);margin:0 0 8px}
+.cardlink{border:1px solid #ccc;padding:14px;margin:0 0 20px;display:flex;gap:16px;align-items:flex-start;background:#fff}
+.cardlink img{flex:0 0 auto;width:110px;height:110px;object-fit:cover}
+.cardlink .ct{font-weight:700;font-size:16px;line-height:1.55;margin:0 0 10px}
+.cardlink .ct a{color:var(--ink);text-decoration:none}
+.cardlink .more{display:block;border:1px solid #ccc;color:#757575;text-align:center;text-decoration:none;padding:9px 10px;font-size:15px}
+.kanren{margin:0 0 20px}
+.kanren .krow{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+.kanren .krow img{flex:0 0 auto;width:100px;height:100px;object-fit:cover}
+.kanren .kt{font-weight:700;font-size:16px;line-height:24px;margin:0 0 5px;padding-right:6px}
+.kanren .kt a{color:var(--ink);text-decoration:none}
+.kanren .kd{font-size:12px;color:var(--mut)}
+h4.point{position:relative;border-bottom:1px solid var(--head);border-left:none;padding:0 0 8px;margin:61px 0 20px;line-height:2em;font-size:19px}
+.tocbox{background:#f9f9f9;border:1px solid #aaa;border-radius:4px;box-shadow:0 1px 1px rgba(0,0,0,.05);padding:10px 20px 10px 14px;margin:0 0 20px}
+.tocbox .ttl{font-weight:700;margin:0 0 6px}
+.tocbox ol{margin:0;padding-left:1.5em}
+.tocbox li{margin:3px 0}
+.tocbox a{color:var(--ink);text-decoration:none}
+.tree{border:1px solid var(--line);margin:0 0 20px}
+.tree a{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);background:#fff;font-size:15px}
 .tree a:last-child{border-bottom:none}
-.tree a.l1{font-weight:800}
-.tree a.l2{padding-left:38px}
-.tree a.l3{padding-left:66px;color:#444}
-.tree a .chev{color:#9aa7b1;font-weight:900}
-.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
-footer.site{background:var(--dark);color:#cfd4da;margin-top:40px}
-footer.site .in{max-width:1080px;margin:0 auto;padding:22px 16px;font-size:13.5px;line-height:1.9}
+.tree a.l1{font-weight:700}
+.tree a.l2{padding-left:34px}
+.tree a.l3{padding-left:58px;color:#444}
+.tree a .chev{color:#9aa7b1;font-weight:700}
+.profcard{background:#fff;border:1px solid var(--line);padding:26px 22px;text-align:center;margin:0 0 20px}
+.profcard img{width:150px;height:150px;border-radius:50%}
+.profcard .pname2{font-size:22px;font-weight:700;margin:10px 0 6px}
+.profcard p{font-size:14.5px;line-height:1.8;text-align:left;margin:0}
+.cardgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 10px 5px;margin:0}
+.cardgrid a{display:block;box-shadow:0 2px 3px rgba(0,0,0,.2)}
+.cardgrid img{display:block;width:100%;height:auto;aspect-ratio:900/338;object-fit:cover}
+.topboxes{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:5px 10px 10px}
+.topboxes a,.topboxes .sb{display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid #ccc;color:var(--ink);text-decoration:none;padding:13px 8px;font-size:15px;background:#fff}
+.newslist{margin:0 0 20px}
+.newslist dl{display:flex;gap:14px;margin:0;padding:9px 0;border-bottom:1px solid var(--line)}
+.newslist dt{flex:0 0 auto;color:var(--mut);font-size:13.5px;padding-top:2px}
+.newslist dd{margin:0}
+.newslist dd a{color:var(--ink);text-decoration:none}
+footer.site{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff;margin-top:40px;padding:28px 20px 30px;text-align:center}
+footer.site .flogo{font-size:30px;font-weight:700;font-style:italic}
+footer.site .fcatch{font-size:13px;margin:4px 0 8px}
+footer.site .fnav{font-size:14px;line-height:2.1;margin:14px 0}
 footer.site a{color:#fff}
-#tocbtn{position:fixed;right:12px;bottom:14px;z-index:30;background:rgba(26,29,35,.92);color:#fff;text-decoration:none;border-radius:12px;padding:9px 13px;font-size:13px;font-weight:800;text-align:center;line-height:1.35;box-shadow:0 4px 14px rgba(0,0,0,.3)}
-#tocbtn .ic{display:block;font-size:17px;line-height:1.1}
-.brandline{display:flex;align-items:center;gap:10px;margin:10px 0}
+footer.site .copy{font-size:13px;color:#cfd4da}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px;text-align:left}
+footer.site .profcard{color:var(--ink);max-width:560px;margin:0 auto 22px}
+#tocbtn{position:fixed;right:0;top:55%;z-index:30;background:rgba(4,4,4,.65);color:#fff;text-decoration:none;border-radius:10px 0 0 10px;padding:10px;width:50px;font-size:14px;font-weight:700;text-align:center;line-height:1.5;writing-mode:vertical-rl}
+.src{font-size:13.5px;color:var(--mut);padding-left:1.3em}
+.src li{margin:4px 0}
+.brandline{display:flex;align-items:center;gap:10px;margin:0 0 14px}
 .brandline img{height:26px;width:auto}
 </style>
 <!-- Google tag (gtag.js) -->
@@ -109,37 +150,29 @@ gtag('config', 'G-FXZPJWXX71');
 </script>
 </head>
 <body>
-<header class="site"><div class="in">
-<a class="sicon" href="./#menu" aria-label="メニューから探す"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16 L22 22"/></svg></a>
-<div class="brand"><a href="./">ガジェット判定</a><span class="catch">ガジェットと通信費を数字で判定するマガジン【随時更新】</span></div>
-<a class="menu-btn" href="./#menu"><span class="bars"><i></i><i></i><i></i></span>MENU</a>
-</div></header>
-<main>
-
+<div id="wrap">
+<header class="site">
+<div class="navrow"><a class="navbtn" href="./#menu" aria-label="検索"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16 L22 22"/></svg></a><a class="navbtn menuwrap" href="./#menu" aria-label="メニュー"><span><span class="bars"><i></i><i></i><i></i></span><span class="mtxt">MENU</span></span></a></div>
+<div class="logobox"><a class="logo" href="./">ガジェット判定</a><span class="catch">ガジェットと通信費を数字で判定するマガジン【随時更新】</span></div>
+</header>
 <img class="hero" src="img/hero_top.svg" alt="ガジェット判定マガジン メインビジュアル">
-<div class="tiles">
-<a href="#latest">通信回線</a><a href="#latest">スマホ</a><a href="#latest">ガジェット</a><a href="#latest">お得情報</a><a href="#cast">判定キャスト</a><a href="about.html">運営者情報</a>
+<nav class="tiles">
+<a href="./#latest">通信回線</a><a href="./#latest">スマホ</a><a href="./#latest">ガジェット</a><a href="./#latest">お得情報</a><a href="about.html">判定キャスト</a><a href="about.html">運営者情報</a>
+</nav>
+<div class="layout">
+<main>
+<div class="cardgrid"><a href="a1-eximo-rakuten.html"><img src="img/eye_a1.svg" alt="ドコモeximoの「段階制」はなぜ高い？ 楽天モバイルと年額で比べたら41,844円の差だった"></a><a href="a2-tokuten-online.html"><img src="img/eye_a2.svg" alt="携帯ショップの「頭金」は端末代ではない 店頭と公式オンラインの差を計算した"></a><a href="a3-bbexcite-fit.html"><img src="img/eye_a3.svg" alt="BB.exciteモバイルFitは3GBで月690円 段階制の「最安の階段」を他社と並べた"></a><a href="a4-daredemo.html"><img src="img/eye_a4.svg" alt="「だれでもモバイル」は審査なしで本当に契約できる？ 2年総額48,310円まで計算した"></a></div>
+<div class="topboxes"><span class="sb">ブログ内検索（準備中）</span><a href="#menu">カテゴリ一覧</a></div>
+<h3 id="latest">最新の判定記事</h3>
+<div class="kanren"><div class="krow"><img src="img/eye_a1.svg" alt=""><div><p class="kt"><a href="a1-eximo-rakuten.html">ドコモeximoの「段階制」はなぜ高い？ 楽天モバイルと年額で比べたら41,844円の差だった</a></p><div class="kd">2026年11月26日</div></div></div><div class="krow"><img src="img/eye_a2.svg" alt=""><div><p class="kt"><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない 店頭と公式オンラインの差を計算した</a></p><div class="kd">2026年11月26日</div></div></div><div class="krow"><img src="img/eye_a3.svg" alt=""><div><p class="kt"><a href="a3-bbexcite-fit.html">BB.exciteモバイルFitは3GBで月690円 段階制の「最安の階段」を他社と並べた</a></p><div class="kd">2026年11月26日</div></div></div><div class="krow"><img src="img/eye_a4.svg" alt=""><div><p class="kt"><a href="a4-daredemo.html">「だれでもモバイル」は審査なしで本当に契約できる？ 2年総額48,310円まで計算した</a></p><div class="kd">2026年11月26日</div></div></div><div class="krow"><img src="img/eye_a5.svg" alt=""><div><p class="kt"><a href="a5-au-price-hike.html">auの値上げは月330円 「小さな値上げ」が年3,960円になる計算</a></p><div class="kd">2026年11月26日</div></div></div></div>
+<h3>お得情報・値上げニュース</h3>
+<div class="newslist">
+<dl><dt>2026年11月26日</dt><dd><a href="a5-au-price-hike.html">auの値上げは月330円——年額に直すと3,960円の負担増</a></dd></dl>
+<dl><dt>2026年11月26日</dt><dd><a href="a1-eximo-rakuten.html">ドコモeximoの段階制と楽天モバイル、年額差は41,844円</a></dd></dl>
+<dl><dt>2026年11月26日</dt><dd><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない——公式発表で確認</a></dd></dl>
 </div>
-<div class="talk"><img src="img/chara_denta.svg" alt="キャラクター「デン太（案内係）」"><div class="bubble"><div class="who">デン太（案内係）</div><p>ようこそ、ガジェット判定マガジンへ。ここではスマホの料金や価格のニュースを、メーカーとキャリアの公式数字だけで読み解きます。実体験の話はしません。出てくるのは料金表と計算だけです。</p></div></div>
-<div class="talk judge rev"><img src="img/chara_hantei.svg" alt="キャラクター「ハンテイ（判定役）」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>判定役のハンテイだ。私の仕事は「結論を先に言う」こと。このサイトの記事は全部、タイトルと結論に判定が書いてある。納得できなければ、本文の数字で反論してくれ。</p></div></div>
-<h2 id="latest">最新の判定</h2>
-<div class="cards"><div class="acard"><img src="img/eye_a1.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 大手キャリア</div><div class="ttl"><a href="a1-eximo-rakuten.html">1GBしか使わないのに月4,565円。eximoの段階制は楽天モバイルと年41,844円差</a></div><a class="more" href="a1-eximo-rakuten.html">続きを見る ›</a></div></div><div class="acard"><img src="img/eye_a2.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 大手キャリア</div><div class="ttl"><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない。公式オンラインは手数料も0円</a></div><a class="more" href="a2-tokuten-online.html">続きを見る ›</a></div></div><div class="acard"><img src="img/eye_a3.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 格安SIM</div><div class="ttl"><a href="a3-bbexcite-fit.html">「使った分だけ払う」はBB.excite Fitが本家。3GB 690円の段階制を読む</a></div><a class="more" href="a3-bbexcite-fit.html">続きを見る ›</a></div></div><div class="acard"><img src="img/eye_a4.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 格安SIM</div><div class="ttl"><a href="a4-daredemo.html">「審査なし」には値段がある。だれでもモバイル月1,990円と2年縛りの読み方</a></div><a class="more" href="a4-daredemo.html">続きを見る ›</a></div></div><div class="acard"><img src="img/eye_a5.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 大手キャリア</div><div class="ttl"><a href="a5-au-price-hike.html">auの値上げは契約中の人にも自動で来た。使い放題MAX+ +330円の前例</a></div><a class="more" href="a5-au-price-hike.html">続きを見る ›</a></div></div></div>
-<h2>今月の判定：eximo vs 楽天モバイル</h2>
-<p>ドコモのeximoは「段階制」を名乗りながら、1GBまででも月4,565円。楽天モバイルは3GBまで1,078円。年額に直すと差は41,844円になる。計算過程は記事の中で全部見せている。</p>
-<div class="calc"><div class="ttl">年額差の計算（要点）</div>
-<div class="row"><span>eximo：4,565円 × 12か月</span><span>54,780円</span></div>
-<div class="row"><span>楽天モバイル：1,078円 × 12か月</span><span>12,936円</span></div>
-<div class="row total"><span>年額差</span><span>41,844円</span></div></div>
-<p>月に1〜3GBしか使わないなら、乗り換え先の第一候補は楽天モバイルだ。料金と条件は公式ページで最新を確認してほしい。</p>
-<div class="cta-wrap"><a class="cta" href="https://hb.afl.rakuten.co.jp/hsc/59e80148.07d82eda.59e80149.1cd7e4d8/?link_type=hybrid_url&rafst=rmn&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJoeWJyaWRfdXJsIiwiY29sIjoxLCJjYXQiOjEsImJhbiI6MjM3Nzg5NSwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener">楽天モバイル公式で料金を確認する</a></div>
-<p><a href="a1-eximo-rakuten.html">▶ 判定の全文を読む（eximoの段階制は楽天モバイルと年41,844円差）</a></p>
-<h2 id="cast">判定キャスト</h2>
-<img class="fig" src="img/eye_cast.svg" alt="デン太とハンテイ">
-<p><strong>デン太（案内係）</strong>：公式ページの数字を拾ってきて、順番に説明する係。やさしく案内するが、数字はごまかさない。</p>
-<p><strong>ハンテイ（判定役）</strong>：拾われた数字に対して結論を出す係。木槌の一撃で「買うな」「代わりにこれを選べ」まで言い切る。判定の根拠は必ず本文の表と計算に置く。</p>
-<p>このサイトの記事は、姉妹チャンネル「ガジェット判定」（YouTube Shorts）の動画と対になっている。動画で結論を、記事で数字の根拠を、という役割分担だ。</p>
-<h2>カテゴリーから探す</h2>
-<div class="tree" id="menu">
+<h3>カテゴリ一覧</h3>
+<div class="tree">
 <a class="l1" href="./#latest">お得情報<span class="chev">›</span></a>
 <a class="l1" href="./#latest">通信回線<span class="chev">›</span></a>
 <a class="l2" href="a1-eximo-rakuten.html">大手キャリア<span class="chev">›</span></a>
@@ -150,11 +183,60 @@ gtag('config', 'G-FXZPJWXX71');
 <a class="l2" href="https://jiangtaiyede-lab.github.io/battery/">モバイルバッテリー・安全<span class="chev">›</span></a>
 <a class="l1" href="about.html">運営者情報<span class="chev">›</span></a>
 </div>
-<p class="src">関連サイト：<a href="https://jiangtaiyede-lab.github.io/sim/">格安SIM判定マガジン</a>｜<a href="https://jiangtaiyede-lab.github.io/battery/">モバイルバッテリー安全くらべマガジン</a>｜<a href="about.html">運営者情報・このサイトの方針</a></p>
-<p class="disc">※このページにはアフィリエイト広告が含まれます（楽天アフィリエイト／A8.net）。申し込みボタン（CTA）があるのは提携済みのリンクのみで、他の会社へのリンクは公式サイトへの通常リンクです。</p>
-
+<h3>判定で使う商品リンク</h3>
+<p>通信費の見直しと一緒に買われやすい周辺機器は、価格を比べて買うのが基本です。以下は楽天市場の公式商品リンクです（価格は2026年11月26日時点）。モバイルバッテリーの安全確認（リコール対象の見分け方）は姉妹サイトでまとめています。</p>
+<div class="pcard"><div class="pimg"><a href="https://hb.afl.rakuten.co.jp/ichiba/59f46c04.ec627446.59f46c05.9fb1fd5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmachinoomise%2Fcio-mb35w2c1a-10000-s%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hgb/59f46c04.ec627446.59f46c05.9fb1fd5e/?me_id=1348298&item_id=10000721&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fmachinoomise%2Fcabinet%2Fthumb%2F261119%2Fimgrc0110548066.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a></div><div>
+<p class="pname">CIO SMARTCOBY Pro SLIM</p>
+<p class="pnote">モバイルバッテリー 10,000mAh（楽天市場）</p>
+<p class="pprice">¥3,613</p>
+<p class="pdate">2026年11月26日時点の楽天市場の表示価格</p>
+</div></div>
+<div class="pcard"><div class="pimg"><a href="https://hb.afl.rakuten.co.jp/ichiba/59f46c04.ec627446.59f46c05.9fb1fd5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmachinoomise%2Fcio-mb35w2c1a-20000%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hgb/59f46c04.ec627446.59f46c05.9fb1fd5e/?me_id=1348298&item_id=10000733&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fmachinoomise%2Fcabinet%2F10812911%2Fimgrc0084652917.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a></div><div>
+<p class="pname">CIO SMARTCOBY TRIO 35W 2C1A</p>
+<p class="pnote">モバイルバッテリー 20,000mAh（楽天市場）</p>
+<p class="pprice">¥4,480</p>
+<p class="pdate">2026年11月26日時点の楽天市場の表示価格</p>
+</div></div>
+<div class="pcard"><div class="pimg"><a href="https://hb.afl.rakuten.co.jp/ichiba/59f46dea.7e90ffa7.59f46deb.47ceea79/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Felecom%2F4549550213400%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hgb/59f46dea.7e90ffa7.59f46deb.47ceea79/?me_id=1193217&item_id=10055859&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Felecom%2Fcabinet%2Fs500_24%2Fec-c03bk_03r.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a></div><div>
+<p class="pname">エレコム EC-C03BK</p>
+<p class="pnote">モバイルバッテリー 10,000mAh（楽天市場）</p>
+<p class="pprice">¥3,400</p>
+<p class="pdate">2026年11月26日時点の楽天市場の表示価格</p>
+</div></div>
+<p>スマートホームの入口になるSwitchBotも、公式ストアではセール時期に価格や条件が動く。最新の条件は公式ストアで確認してほしい。</p>
+<div class="mybtn"><a href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOMATU+4W9U+5YJRM" target="_blank" rel="nofollow sponsored noopener">SwitchBot公式ストアを見る</a></div>
+<h3>姉妹サイト</h3>
+<div class="cardlink"><img src="img/chara_denta.svg" alt=""><div><p class="ct"><a href="https://jiangtaiyede-lab.github.io/battery/">モバイルバッテリー安全くらべマガジン</a></p><a class="more" href="https://jiangtaiyede-lab.github.io/battery/">続きを見る</a></div></div>
+<h3>このサイトについて</h3>
+<p>ガジェット判定マガジンは、ガジェットと通信費を「数字」で判定する専門サイトです。公式料金表と公式発表の一次情報だけを使い、年額差まで計算過程を公開します。運営者と判定キャスト（デン太・ハンテイ）の紹介は<a href="about.html">運営者情報</a>にまとめています。</p>
+<p class="disc">※このページにはアフィリエイト広告が含まれます（楽天アフィリエイト・A8.net）。申し込みボタンがあるのは提携済みのリンクのみで、他の会社へのリンクは公式サイトへの通常リンクです。</p>
 </main>
-<footer class="site"><div class="in">ガジェット判定マガジン｜数字はメーカー・キャリア各社の公式情報に基づきます。契約や購入の前には、最新の公式案内を確認してください。<br><a href="./">トップ</a>｜<a href="a1-eximo-rakuten.html">eximoの段階制</a>｜<a href="a2-tokuten-online.html">頭金の正体</a>｜<a href="a3-bbexcite-fit.html">BB.excite Fit</a>｜<a href="a4-daredemo.html">だれでもモバイル</a>｜<a href="a5-au-price-hike.html">au値上げ</a>｜<a href="about.html">運営者情報</a></div></footer>
-<a id="tocbtn" href="#menu"><span class="ic">☰</span>目次</a>
+<aside><div class="profcard"><img src="img/chara_denta.svg" alt="案内係デン太">
+<p class="pname2">ガジェット判定 編集部</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+</div><div class="tree" id="menu">
+<a class="l1" href="./#latest">お得情報<span class="chev">›</span></a>
+<a class="l1" href="./#latest">通信回線<span class="chev">›</span></a>
+<a class="l2" href="a1-eximo-rakuten.html">大手キャリア<span class="chev">›</span></a>
+<a class="l2" href="a3-bbexcite-fit.html">格安SIM<span class="chev">›</span></a>
+<a class="l1" href="./#latest">スマホ<span class="chev">›</span></a>
+<a class="l2" href="./#latest">iPhone・価格判定<span class="chev">›</span></a>
+<a class="l1" href="./#latest">ガジェット<span class="chev">›</span></a>
+<a class="l2" href="https://jiangtaiyede-lab.github.io/battery/">モバイルバッテリー・安全<span class="chev">›</span></a>
+<a class="l1" href="about.html">運営者情報<span class="chev">›</span></a>
+</div></aside>
+</div>
+<footer class="site">
+<div class="profcard"><img src="img/chara_denta.svg" alt="案内係デン太">
+<p class="pname2">ガジェット判定 編集部</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+</div>
+<div class="flogo">ガジェット判定</div>
+<div class="fcatch">ガジェットと通信費を数字で判定するマガジン【随時更新】</div>
+<div class="fnav"><a href="./">トップ</a>｜<a href="a1-eximo-rakuten.html">eximoの段階制</a>｜<a href="a2-tokuten-online.html">頭金の正体</a>｜<a href="a3-bbexcite-fit.html">BB.excite Fit</a>｜<a href="a4-daredemo.html">だれでもモバイル</a>｜<a href="a5-au-price-hike.html">au値上げ</a>｜<a href="about.html">運営者情報</a></div>
+<div class="copy">© 2026 ガジェット判定マガジン</div>
+</footer>
+</div>
+<a id="tocbtn" href="#toc">目次へ戻る</a>
 </body>
 </html>

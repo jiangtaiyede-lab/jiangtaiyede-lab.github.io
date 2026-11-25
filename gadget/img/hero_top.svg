@@ -1,49 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="ガジェット判定マガジンのメインビジュアル（デン太とハンテイ）">
-<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0" stop-color="#2b3038"/>
-<stop offset="0.62" stop-color="#454c42"/>
-<stop offset="1" stop-color="#7a8455"/>
-</linearGradient>
-</defs>
-<rect width="1200" height="520" fill="url(#bg)"/>
-<circle cx="985" cy="96" r="120" fill="#f5eeda" opacity="0.28"/>
-<path d="M0 470 L240 420 L430 448 L660 392 L900 430 L1200 386 L1200 520 L0 520 Z" fill="#20241c" opacity="0.55"/>
-<path d="M60 356 L300 300 L470 322 L700 240" fill="none" stroke="#ffd900" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.85"/>
-<polygon points="700,240 664,238 686,266" fill="#ffd900" opacity="0.9"/>
-<g transform="translate(706,158) scale(1.32)">
-<rect x="78" y="16" width="44" height="24" rx="8" fill="#19448e"/>
-<path d="M42 104 Q18 96 16 74" fill="none" stroke="#19448e" stroke-width="8" stroke-linecap="round"/>
-<path d="M158 116 Q178 126 180 142" fill="none" stroke="#19448e" stroke-width="8" stroke-linecap="round"/>
-<rect x="38" y="38" width="124" height="140" rx="36" fill="#ffffff" stroke="#19448e" stroke-width="6"/>
-<ellipse cx="72" cy="180" rx="15" ry="6" fill="#19448e"/>
-<ellipse cx="128" cy="180" rx="15" ry="6" fill="#19448e"/>
-<circle cx="79" cy="96" r="7" fill="#20262b"/>
-<circle cx="121" cy="96" r="7" fill="#20262b"/>
-<path d="M85 116 Q100 128 115 116" fill="none" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
-<ellipse cx="60" cy="112" rx="10" ry="6" fill="#f7b1c1"/>
-<ellipse cx="140" cy="112" rx="10" ry="6" fill="#f7b1c1"/>
-<polygon points="102,128 88,150 98,150 90,168 114,144 103,144 110,128" fill="#ffd900" stroke="#19448e" stroke-width="3" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="364" viewBox="0 0 1200 364">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34373d"/><stop offset="1" stop-color="#222428"/></linearGradient></defs>
+<rect width="1200" height="364" fill="url(#bg)"/>
+<g opacity="0.16" fill="#ffffff">
+<rect x="880" y="52" width="86" height="150" rx="12"/><rect x="992" y="52" width="86" height="150" rx="12"/>
+<rect x="880" y="222" width="86" height="86" rx="12"/><rect x="992" y="222" width="86" height="86" rx="12"/>
 </g>
-<g transform="translate(952,128) scale(1.48)">
-<rect x="34" y="42" width="132" height="136" rx="30" fill="#23272e" stroke="#101216" stroke-width="6"/>
-<rect x="52" y="60" width="96" height="76" rx="20" fill="#ffffff"/>
-<path d="M66 84 L92 90" stroke="#20262b" stroke-width="6" stroke-linecap="round"/>
-<path d="M134 84 L108 90" stroke="#20262b" stroke-width="6" stroke-linecap="round"/>
-<circle cx="80" cy="102" r="6.5" fill="#20262b"/>
-<circle cx="120" cy="102" r="6.5" fill="#20262b"/>
-<path d="M84 122 L116 122" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
-<rect x="88" y="140" width="24" height="10" rx="5" fill="#ce0000"/>
-<path d="M150 128 L172 96" stroke="#101216" stroke-width="9" stroke-linecap="round"/>
-<rect x="158" y="66" width="34" height="20" rx="6" transform="rotate(38 175 76)" fill="#8a5a2b" stroke="#101216" stroke-width="4"/>
-<rect x="140" y="88" width="30" height="13" rx="6" transform="rotate(38 155 94)" fill="#8a5a2b" stroke="#101216" stroke-width="4"/>
-<path d="M46 128 Q26 122 24 104" fill="none" stroke="#101216" stroke-width="8" stroke-linecap="round"/>
-<ellipse cx="72" cy="180" rx="15" ry="6" fill="#101216"/>
-<ellipse cx="128" cy="180" rx="15" ry="6" fill="#101216"/>
+<g>
+<rect x="716" y="86" width="150" height="196" rx="26" fill="#ffd900" stroke="#222428" stroke-width="5"/>
+<rect x="766" y="62" width="50" height="26" rx="7" fill="#ffd900" stroke="#222428" stroke-width="5"/>
+<circle cx="762" cy="168" r="11" fill="#222428"/><circle cx="822" cy="168" r="11" fill="#222428"/>
+<path d="M762 214 Q792 236 822 214" stroke="#222428" stroke-width="7" fill="none" stroke-linecap="round"/>
+<rect x="742" y="248" width="100" height="16" rx="8" fill="#222428" opacity="0.25"/>
 </g>
-<g font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-style="italic" fill="#ffffff">
-<text x="52" y="232" font-size="98" font-weight="900" letter-spacing="2" style="text-shadow:0 3px 10px rgba(0,0,0,.45)">ガジェット判定</text>
-<text x="62" y="292" font-size="33" font-weight="700" letter-spacing="3">jiangtaiyede-lab.github.io/gadget</text>
-<text x="62" y="352" font-size="27" font-weight="700" letter-spacing="1">料金と価格を、数字で判定する。</text>
+<g>
+<rect x="916" y="96" width="128" height="186" rx="24" fill="#2f3a4a" stroke="#141a22" stroke-width="5"/>
+<rect x="944" y="118" width="72" height="58" rx="12" fill="#ffffff"/>
+<circle cx="966" cy="143" r="7" fill="#222428"/><circle cx="994" cy="143" r="7" fill="#222428"/>
+<path d="M966 162 Q980 170 994 162" stroke="#222428" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M980 176 L972 226 L988 226 Z" fill="#ce0000"/>
+<g transform="rotate(28 1058 128)"><rect x="1050" y="86" width="17" height="62" rx="6" fill="#8a5a2b"/><rect x="1032" y="70" width="54" height="26" rx="8" fill="#a9713a"/></g>
 </g>
+<text x="70" y="168" font-size="86" font-weight="700" font-style="italic" fill="#ffffff" font-family="'Yu Gothic',YuGothic,sans-serif">ガジェット判定</text>
+<text x="74" y="222" font-size="27" fill="#ffffff">ガジェットと通信費を、数字で判定する</text>
+<text x="74" y="272" font-size="21" fill="#b9c2cc">jiangtaiyede-lab.github.io/gadget/</text>
+<rect x="70" y="292" width="330" height="4" fill="#ce0000"/>
 </svg>

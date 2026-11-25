@@ -3,100 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>「審査なし」には値段がある。だれでもモバイル月1,990円と2年縛りの読み方｜ガジェット判定</title>
-<meta name="description" content="だれでもモバイルの公式条件（月1,990円・最低利用期間2年・前払い）を読み、2年総額48,310円を計算過程つきで判定する分析記事。">
+<title>「だれでもモバイル」は審査なしで本当に契約できる？ 2年総額48,310円まで計算した｜ガジェット判定</title>
+<meta name="description" content="審査なしのだれでもモバイルの公式条件と2年総額48,310円を計算過程つきで判定し、審査なし系サービスと横並び比較する分析記事。">
 <style>
-:root{--ink:#313131;--mut:#5b6b7a;--line:#dcdcdc;--bg:#ffffff;--dark:#1a1d23;--acc:#19448e;--acc2:#eef3fa;--yel:#ffd900;--red:#ce0000;--grn:#4c8462}
+:root{--ink:#333;--head:#222428;--mut:#777;--line:#e3e3e3;--link:#4682b4;--red:#ce0000;--yel:#ffd900;--kaiwa:#edfbff}
 *{box-sizing:border-box}
-body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.85;font-size:16.5px;letter-spacing:.02em}
-a{color:var(--acc)}
-header.site{position:sticky;top:0;background:var(--dark);z-index:20}
-header.site .in{max-width:1080px;margin:0 auto;padding:10px 14px;display:flex;align-items:center;gap:12px}
-header.site .sicon{flex:0 0 auto;line-height:0}
-header.site .sicon svg{width:26px;height:26px}
-header.site .brand{flex:1;text-align:center;line-height:1.25}
-header.site .brand a{color:#fff;text-decoration:none;font-style:italic;font-weight:900;font-size:24px;letter-spacing:.04em}
-header.site .brand .catch{display:block;font-style:normal;font-weight:400;font-size:11.5px;color:#cfd4da;letter-spacing:.02em;margin-top:2px}
-header.site .menu-btn{flex:0 0 auto;text-align:center;color:#fff;text-decoration:none;font-size:10.5px;letter-spacing:.14em;line-height:1.3}
-header.site .menu-btn .bars{display:block;width:30px;margin:0 auto 3px}
-header.site .menu-btn .bars i{display:block;height:2.4px;background:#fff;margin:5px 0}
-main{max-width:1080px;margin:0 auto;padding:18px 16px 60px}
-h1{font-size:clamp(23px,4.4vw,34px);line-height:1.45;margin:12px 0 10px;font-weight:900}
-h2{font-size:clamp(19px,3.2vw,24px);background:var(--dark);color:#fff;padding:.68em .95em;margin:42px 0 14px;line-height:1.5;border-radius:3px}
-h3{font-size:18.5px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--dark);line-height:1.5}
-.hero{width:100%;height:auto;display:block;border-radius:6px}
-.eye{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#f4f6f8}
-.fig{width:100%;height:auto;display:block;margin:12px 0}
-.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:var(--mut);margin:6px 0 4px}
-.meta .cat{background:#eef1f5;border-radius:6px;padding:2px 10px;color:var(--ink)}
-.lead{font-size:17px}
-.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
-.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
-.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#f4f4f4;font-size:15px;line-height:1.67}
+a{color:var(--link)}
+img{max-width:100%}
+#wrap{background:#fff;max-width:1160px;margin:0 auto}
+header.site{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff}
+header.site .navrow{display:flex;justify-content:space-between;align-items:center;height:48px;padding:0 4px}
+header.site .navbtn{display:flex;align-items:center;justify-content:center;width:52px;height:48px;color:#fff;text-decoration:none}
+header.site .navbtn svg{width:24px;height:24px}
+header.site .menuwrap{text-align:center;line-height:1.15}
+header.site .menuwrap .bars{display:block;width:24px;margin:0 auto}
+header.site .menuwrap .bars i{display:block;height:2px;background:#fff;margin:4.5px 0}
+header.site .menuwrap .mtxt{font-size:10px;letter-spacing:.12em;color:#fff}
+header.site .logobox{padding:2px 20px 0}
+header.site .logo{font-size:30px;font-weight:700;font-style:italic;color:#fff;text-decoration:none;letter-spacing:.02em;line-height:1.3}
+header.site .catch{display:block;font-size:13px;color:#fff;padding:2px 0 12px}
+.hero{display:block;width:100%;height:auto}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#454a51;border-top:1px solid #454a51;border-bottom:1px solid #454a51}
+.tiles a{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff;text-decoration:none;text-align:center;font-size:12.8px;padding:10px 2px;line-height:1.5}
+.layout{padding:0 15px}
+main{display:block}
+aside{display:block}
+@media (min-width:960px){
+ body{font-size:18px;line-height:1.78}
+ .layout{display:flex;gap:34px;padding:0 20px}
+ main{flex:1 1 auto;min-width:0}
+ aside{flex:0 0 300px;width:300px}
+}
+.crumb{font-size:13px;color:var(--mut);padding:12px 0 2px}
+.crumb a{color:var(--mut);text-decoration:none}
+.catgroup{padding:5px 0 6px}
+.catgroup .cat{display:inline-block;background:#a6a6a6;color:#fff;font-size:12px;line-height:18px;padding:2px 9px;border-radius:3px}
+h1.entry{font-size:24px;line-height:38px;font-weight:700;color:var(--ink);margin:0 0 10px;padding-top:10px;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
+.blogbox{font-size:13px;color:var(--mut);margin:0 0 10px}
+.sns{display:flex;gap:9px;margin:14px 0 20px;flex-wrap:wrap}
+.sns a{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:#fff;text-decoration:none;font-size:12px;font-weight:700}
+.sns .x{background:#424242}.sns .fb{background:#1877f2}.sns .pk{background:#ef4056}.sns .hb{background:#00a4de}.sns .ln{background:#06c755}.sns .cp{background:#888}
+.post p{margin:0 0 20px}
+.post ul,.post ol{margin:0 0 20px;padding-left:1.4em}
+.post li{margin:3px 0}
+h2{position:relative;font-size:22px;line-height:35px;font-weight:700;color:var(--head);background:linear-gradient(to bottom,#fff 0%,#fafafa 100%);border:1px solid var(--head);padding:10px 22px 10px 28.6px;margin:66px 0 20px;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
+h2::after{content:"";position:absolute;top:.5em;left:.5em;width:5px;height:calc(100% - 1em);background:var(--head)}
+h3{position:relative;font-size:19px;line-height:27px;font-weight:700;color:var(--head);padding:10px 20px 10px 10px;margin:20px 0;border-bottom:3px solid #fafafa;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
+h3::after{content:"";position:absolute;bottom:-3px;left:0;width:5em;height:3px;background:var(--head)}
+h4{font-size:18px;line-height:28px;font-weight:700;color:var(--head);border-left:5px solid var(--head);padding:7px 15px 7px 20px;margin:20px 0}
+@media (min-width:960px){
+ h1.entry{font-size:27px;line-height:40px}
+ h2{font-size:24px;line-height:35px}
+ h3{font-size:22px;line-height:32px}
+ .post p{line-height:32px}
+}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:700;padding:0 2px}
 strong.red{color:var(--red)}
-.toc{border:2px solid var(--dark);border-radius:8px;padding:14px 18px;margin:20px 0;background:#fbfbf7}
-.toc .ttl{font-weight:900;margin-bottom:6px}
-.toc ol{margin:6px 0 6px 20px;padding:0}
-.toc li{margin:4px 0}
-.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0}
-table.spec{border-collapse:collapse;width:100%;min-width:520px;font-size:15.5px}
-table.spec th,table.spec td{border:1px solid #b9c0c7;padding:8px 10px;text-align:left;vertical-align:top}
-table.spec thead th{background:var(--dark);color:#fff;font-weight:800}
-table.spec tbody th{background:#f0f2f5;font-weight:800;white-space:nowrap}
-table.spec td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-table.spec td.hl{background:#fff3f3;font-weight:900;color:var(--red)}
-table.spec td.good{background:var(--acc2);font-weight:900;color:var(--acc)}
-.calc{background:#f7f9fb;border:1.5px solid var(--acc);border-radius:12px;padding:14px 18px;margin:14px 0}
-.calc .ttl{font-weight:900;color:var(--acc);margin-bottom:4px}
-.calc .row{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px dashed #c9d4e2;font-variant-numeric:tabular-nums}
-.calc .row:last-child{border-bottom:none}
-.calc .row.total{font-weight:900;font-size:18px;color:var(--red)}
-.piewrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:14px 0}
-.piewrap svg{flex:0 0 auto}
-.piewrap .legend{flex:1 1 220px;font-size:15px}
-.piewrap .legend div{margin:5px 0}
-.sw{display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:8px;vertical-align:-1px}
-.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
-.talk img{flex:0 0 auto;width:76px;height:76px}
-.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
-.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
-.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
-.talk p{margin:2px 0}
-.talk.judge .bubble{border-color:var(--dark)}
-.talk.judge .bubble::before{border-color:var(--dark)}
-.talk.judge .who{color:var(--dark)}
-.talk.rev{flex-direction:row-reverse}
-.talk.rev .bubble::before{left:auto;right:-9px;border-left:none;border-bottom:none;border-right:1.5px solid var(--dark);border-top:1.5px solid var(--dark)}
-@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
-.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:13px 24px;margin:8px 0;box-shadow:0 3px 0 #0f2c5c}
-.cta-wrap{margin:14px 0}
-.src{font-size:14px;color:var(--mut)}
-.src li{margin:4px 0}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:14px 0}
-.acard{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
-.acard img{width:100%;height:auto;display:block}
-.acard .bd{padding:12px 14px}
-.acard .cat{font-size:12.5px;color:var(--acc);font-weight:800}
-.acard .ttl{font-weight:900;line-height:1.5;margin:4px 0}
-.acard .ttl a{color:var(--ink);text-decoration:none}
-.acard .more{font-size:13.5px;color:var(--acc);font-weight:700}
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#3a3f47;margin:0 0 8px}
-.tiles a{background:var(--dark);color:#fff;text-decoration:none;text-align:center;padding:20px 6px;font-weight:800;font-size:16.5px}
-@media (max-width:640px){.tiles a{font-size:14.5px;padding:16px 4px}}
-.tree{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:14px 0}
-.tree a{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);background:#fff}
+.fig{display:block;width:calc(100% + 30px);max-width:none;height:auto;margin:0 -15px 20px}
+@media (min-width:960px){.fig{width:100%;margin:0 0 20px}}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 20px}
+table.spec{border-collapse:collapse;width:100%;font-size:15px;line-height:1.6}
+table.spec th,table.spec td{border:1px solid #d9d9d9;padding:8px 10px;text-align:left;vertical-align:top;font-weight:400}
+table.spec thead th{font-weight:700}
+table.spec td.num,table.spec th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.spec td.hl{font-weight:700;color:var(--red)}
+table.spec td.good{font-weight:700}
+.kaiwa{display:flex;align-items:flex-start;margin:0 0 20px}
+.kaiwa .face{flex:0 0 auto;width:66px;height:66px;border-radius:50%;overflow:hidden}
+.kaiwa .face img{width:66px;height:66px;display:block}
+.kaiwa .huki{position:relative;flex:1;background:var(--kaiwa);border-radius:7px;padding:15px 20px;margin-left:20px}
+.kaiwa .huki::before{content:"";position:absolute;left:-14px;top:24px;border:7px solid transparent;border-right:12px solid var(--kaiwa)}
+.kaiwa .huki p{margin:0}
+.kaiwa .who{font-weight:700;font-size:13px;margin-bottom:2px}
+.kaiwa.rev{flex-direction:row-reverse}
+.kaiwa.rev .huki{margin-left:0;margin-right:20px}
+.kaiwa.rev .huki::before{left:auto;right:-14px;border-right:7px solid transparent;border-left:12px solid var(--kaiwa)}
+.mybtn{display:block;background:linear-gradient(to bottom,#f56d64 0%,#e53935 100%);border:1px solid #e57373;border-radius:5px;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 2px 4px rgba(0,0,0,.18);margin:0 0 20px}
+.mybtn a{display:block;color:#fff;text-decoration:none;text-align:center;font-weight:700;font-size:16px;line-height:25px;padding:10px 20px}
+.pcard{border:1px solid var(--line);border-radius:4px;padding:14px 16px;margin:0 0 20px;display:flex;gap:16px;background:#fff}
+.pcard .pimg{flex:0 0 auto}
+.pcard .pimg img{width:120px;height:120px}
+.pcard .pname{font-weight:700;margin:0 0 4px}
+.pcard .pnote{font-size:13px;color:var(--mut);margin:0 0 6px}
+.pcard .pprice{font-size:19px;font-weight:700;color:var(--red);margin:0 0 2px}
+.pcard .pdate{font-size:12px;color:var(--mut);margin:0 0 8px}
+.cardlink{border:1px solid #ccc;padding:14px;margin:0 0 20px;display:flex;gap:16px;align-items:flex-start;background:#fff}
+.cardlink img{flex:0 0 auto;width:110px;height:110px;object-fit:cover}
+.cardlink .ct{font-weight:700;font-size:16px;line-height:1.55;margin:0 0 10px}
+.cardlink .ct a{color:var(--ink);text-decoration:none}
+.cardlink .more{display:block;border:1px solid #ccc;color:#757575;text-align:center;text-decoration:none;padding:9px 10px;font-size:15px}
+.kanren{margin:0 0 20px}
+.kanren .krow{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+.kanren .krow img{flex:0 0 auto;width:100px;height:100px;object-fit:cover}
+.kanren .kt{font-weight:700;font-size:16px;line-height:24px;margin:0 0 5px;padding-right:6px}
+.kanren .kt a{color:var(--ink);text-decoration:none}
+.kanren .kd{font-size:12px;color:var(--mut)}
+h4.point{position:relative;border-bottom:1px solid var(--head);border-left:none;padding:0 0 8px;margin:61px 0 20px;line-height:2em;font-size:19px}
+.tocbox{background:#f9f9f9;border:1px solid #aaa;border-radius:4px;box-shadow:0 1px 1px rgba(0,0,0,.05);padding:10px 20px 10px 14px;margin:0 0 20px}
+.tocbox .ttl{font-weight:700;margin:0 0 6px}
+.tocbox ol{margin:0;padding-left:1.5em}
+.tocbox li{margin:3px 0}
+.tocbox a{color:var(--ink);text-decoration:none}
+.tree{border:1px solid var(--line);margin:0 0 20px}
+.tree a{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);background:#fff;font-size:15px}
 .tree a:last-child{border-bottom:none}
-.tree a.l1{font-weight:800}
-.tree a.l2{padding-left:38px}
-.tree a.l3{padding-left:66px;color:#444}
-.tree a .chev{color:#9aa7b1;font-weight:900}
-.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
-footer.site{background:var(--dark);color:#cfd4da;margin-top:40px}
-footer.site .in{max-width:1080px;margin:0 auto;padding:22px 16px;font-size:13.5px;line-height:1.9}
+.tree a.l1{font-weight:700}
+.tree a.l2{padding-left:34px}
+.tree a.l3{padding-left:58px;color:#444}
+.tree a .chev{color:#9aa7b1;font-weight:700}
+.profcard{background:#fff;border:1px solid var(--line);padding:26px 22px;text-align:center;margin:0 0 20px}
+.profcard img{width:150px;height:150px;border-radius:50%}
+.profcard .pname2{font-size:22px;font-weight:700;margin:10px 0 6px}
+.profcard p{font-size:14.5px;line-height:1.8;text-align:left;margin:0}
+.cardgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 10px 5px;margin:0}
+.cardgrid a{display:block;box-shadow:0 2px 3px rgba(0,0,0,.2)}
+.cardgrid img{display:block;width:100%;height:auto;aspect-ratio:900/338;object-fit:cover}
+.topboxes{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:5px 10px 10px}
+.topboxes a,.topboxes .sb{display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid #ccc;color:var(--ink);text-decoration:none;padding:13px 8px;font-size:15px;background:#fff}
+.newslist{margin:0 0 20px}
+.newslist dl{display:flex;gap:14px;margin:0;padding:9px 0;border-bottom:1px solid var(--line)}
+.newslist dt{flex:0 0 auto;color:var(--mut);font-size:13.5px;padding-top:2px}
+.newslist dd{margin:0}
+.newslist dd a{color:var(--ink);text-decoration:none}
+footer.site{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff;margin-top:40px;padding:28px 20px 30px;text-align:center}
+footer.site .flogo{font-size:30px;font-weight:700;font-style:italic}
+footer.site .fcatch{font-size:13px;margin:4px 0 8px}
+footer.site .fnav{font-size:14px;line-height:2.1;margin:14px 0}
 footer.site a{color:#fff}
-#tocbtn{position:fixed;right:12px;bottom:14px;z-index:30;background:rgba(26,29,35,.92);color:#fff;text-decoration:none;border-radius:12px;padding:9px 13px;font-size:13px;font-weight:800;text-align:center;line-height:1.35;box-shadow:0 4px 14px rgba(0,0,0,.3)}
-#tocbtn .ic{display:block;font-size:17px;line-height:1.1}
-.brandline{display:flex;align-items:center;gap:10px;margin:10px 0}
+footer.site .copy{font-size:13px;color:#cfd4da}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px;text-align:left}
+footer.site .profcard{color:var(--ink);max-width:560px;margin:0 auto 22px}
+#tocbtn{position:fixed;right:0;top:55%;z-index:30;background:rgba(4,4,4,.65);color:#fff;text-decoration:none;border-radius:10px 0 0 10px;padding:10px;width:50px;font-size:14px;font-weight:700;text-align:center;line-height:1.5;writing-mode:vertical-rl}
+.src{font-size:13.5px;color:var(--mut);padding-left:1.3em}
+.src li{margin:4px 0}
+.brandline{display:flex;align-items:center;gap:10px;margin:0 0 14px}
 .brandline img{height:26px;width:auto}
 </style>
 <!-- Google tag (gtag.js) -->
@@ -109,66 +150,99 @@ gtag('config', 'G-FXZPJWXX71');
 </script>
 </head>
 <body>
-<header class="site"><div class="in">
-<a class="sicon" href="./#menu" aria-label="メニューから探す"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16 L22 22"/></svg></a>
-<div class="brand"><a href="./">ガジェット判定</a><span class="catch">ガジェットと通信費を数字で判定するマガジン【随時更新】</span></div>
-<a class="menu-btn" href="./#menu"><span class="bars"><i></i><i></i><i></i></span>MENU</a>
-</div></header>
-<main>
+<div id="wrap">
+<header class="site">
+<div class="navrow"><a class="navbtn" href="./#menu" aria-label="検索"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16 L22 22"/></svg></a><a class="navbtn menuwrap" href="./#menu" aria-label="メニュー"><span><span class="bars"><i></i><i></i><i></i></span><span class="mtxt">MENU</span></span></a></div>
+<div class="logobox"><a class="logo" href="./">ガジェット判定</a><span class="catch">ガジェットと通信費を数字で判定するマガジン【随時更新】</span></div>
+</header>
+<img class="hero" src="img/hero_top.svg" alt="ガジェット判定マガジン メインビジュアル">
+<nav class="tiles">
+<a href="./#latest">通信回線</a><a href="./#latest">スマホ</a><a href="./#latest">ガジェット</a><a href="./#latest">お得情報</a><a href="about.html">判定キャスト</a><a href="about.html">運営者情報</a>
+</nav>
+<div class="layout">
+<main><div class="crumb"><a href="./">HOME</a> ＞ <a href="./#latest">通信回線</a> ＞ <a href="./#latest">格安SIM</a> ＞</div>
+<div class="catgroup"><span class="cat">通信回線</span> <span class="cat">格安SIM</span> </div>
+<h1 class="entry">「だれでもモバイル」は審査なしで本当に契約できる？ 2年総額48,310円まで計算した</h1>
+<p class="blogbox">2026年11月26日</p>
+<div class="sns">
+<a class="x" href="#share" aria-label="Xで共有">X</a>
+<a class="fb" href="#share" aria-label="Facebookで共有">f</a>
+<a class="pk" href="#share" aria-label="Pocketに保存">P</a>
+<a class="hb" href="#share" aria-label="はてなブックマーク">B!</a>
+<a class="ln" href="#share" aria-label="LINEで送る">LINE</a>
+<a class="cp" href="#share" aria-label="URLをコピー">URL</a>
+</div>
+<div class="post">
 
-<h1>「審査なし」には値段がある。だれでもモバイル月1,990円と2年縛りの読み方</h1>
-<div class="meta"><span class="cat">通信回線 ＞ 格安SIM</span><span>2026年11月25日 公開</span></div>
-<img class="eye" src="img/eye_a4.svg" alt="審査なしプランの価格">
-<p class="lead">「審査なしで契約できる」は強い言葉だ。だれでもモバイルは、審査不要を公式に明記する数少ないサービスである。ただし料金表を読むと、その代わりが数字で書かれている。<span class="marker">1GB＋10分かけ放題で月1,990円、最低利用期間は2年、支払いは前払い</span>。「誰でも契約できる」ことの対価を、公式条件だけで計算する。</p>
-<div class="talk"><img src="img/chara_denta.svg" alt="キャラクター「デン太（案内係）」"><div class="bubble"><div class="who">デン太（案内係）</div><p>デン太です。この記事は、だれでもモバイルを否定するためのものではありません。「何にいくら払うのか」を先に数字で出すためのものです。</p></div></div>
-<div class="toc" id="toc"><div class="ttl">この記事の目次（クリックでジャンプ）</div><ol><li><a href="#cond">だれでもモバイルの公式条件</a></li><li><a href="#yokonarabi">審査なし系の横並び</a></li><li><a href="#total">2年総額を計算する</a></li><li><a href="#conclusion">払うべき人、払わなくていい人</a></li></ol></div>
-<h2 id="cond">だれでもモバイルの公式条件</h2>
-<div class="brandline"><img src="img/daredemo.svg" alt="だれでもモバイル公式ロゴ"><span>だれでもモバイル</span></div>
-<div class="tscroll"><table class="spec">
-<thead><tr><th>項目</th><th>公式条件</th></tr></thead>
-<tbody>
-<tr><th>入口の料金</th><td>10分かけ放題＋データ1GBで月1,990円</td></tr>
-<tr><th>審査</th><td>審査不要を公式に明記</td></tr>
-<tr><th>最低利用期間</th><td class="hl">2年（開通月から2年後の末日まで、24か月自動更新）</td></tr>
-<tr><th>解約金</th><td>更新月以外の解約は月額基本料1か月分相当</td></tr>
-<tr><th>支払い</th><td>月額は前払い（毎月27日に翌月分を口座振替）</td></tr>
-<tr><th>口座振替登録料</th><td class="num">550円</td></tr>
-</tbody></table></div>
-<p>一般的な格安SIMなら、1GB前後のプランは数百円台からある。1,990円という月額は、データ量への対価ではなく、<strong>「審査を通さずに契約できること」への対価</strong>として読むのが正確だ。</p>
-<h2 id="yokonarabi">審査なし系の横並び</h2>
-<p>審査なしをうたうサービスは他にもある。公式条件の照合（2026年11月24日、当編集部調べ）で横並びにするとこうなる。</p>
-<div class="tscroll"><table class="spec">
-<thead><tr><th>サービス</th><th>入口の料金</th><th>備考</th></tr></thead>
-<tbody>
-<tr><th>だれでもモバイル</th><td class="num">1,990円（1GB＋10分かけ放題）</td><td>最低利用期間2年・前払い</td></tr>
-<tr><th>誰でもスマホ</th><td class="num">3,250円（3GB）</td><td>24時間かけ放題込み</td></tr>
-<tr><th>即モバ</th><td class="num">1,980円（1GB＋10分かけ放題）</td><td>事務手数料4,950円</td></tr>
-<tr><th>ごえんモバイル</th><td class="num">1,628円（3GB）</td><td>かけ放題は別料金</td></tr>
-</tbody></table></div>
-<div class="talk judge rev"><img src="img/chara_hantei_point.svg" alt="キャラクター「ハンテイ（判定役）」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>判定。審査なし系は「月額の安さ」で競っていない。競っているのは契約のしやすさだ。だから通常の格安SIMと月額だけで比べると、必ず高く見える。</p></div></div>
-<h2 id="total">2年総額を計算する</h2>
-<p>最低利用期間が2年ある以上、判断は2年総額でするべきだ。だれでもモバイルの入口プランで計算する。</p>
-<div class="calc"><div class="ttl">2年総額の比較計算（だれでもモバイル入口プラン）</div>
-<div class="row"><span>月額：1,990円 × 24か月</span><span>47,760円</span></div>
-<div class="row"><span>口座振替登録料</span><span>550円</span></div>
-<div class="row total"><span>2年総額</span><span>48,310円</span></div></div>
-<div class="piewrap"><svg width="190" height="190" viewBox="0 0 190 190" role="img" aria-label="円グラフ"><path d="M95.0,95.0 L95.0,4.0 A91.0,91.0 0 1 1 88.5,4.2 Z" fill="#19448e" stroke="#fff" stroke-width="2"/><path d="M95.0,95.0 L88.5,4.2 A91.0,91.0 0 0 1 95.0,4.0 Z" fill="#ce0000" stroke="#fff" stroke-width="2"/></svg><div class="legend"><div><span class="sw" style="background:#19448e"></span>月額の合計（24か月）：47,760円（98.9%）</div><div><span class="sw" style="background:#ce0000"></span>口座振替登録料：550円（1.1%）</div></div></div>
-<p>2年総額の98.9%は月額そのものだ。初期費用が安い代わりに、月額で回収する設計であることが分かる。途中で解約すれば解約金（月額1か月分相当）がかかるため、「とりあえず契約して合わなければ辞める」という使い方はしにくい。</p>
-<h2 id="conclusion">払うべき人、払わなくていい人</h2>
-<div class="concl"><div class="ttl">判定の結論</div><p>払うべき人は、<span class="marker">通常の審査に通らない事情があり、それでも自分の名義の回線が必要な人</span>だ。その場合、月1,990円は「回線を持つための価格」として成立する。逆に、通常の格安SIMの審査に通る人には、この価格を払う理由が料金表の中にない。同じ1〜3GB帯なら数百円台〜1,078円の選択肢がある。</p></div>
-<p>だれでもモバイルの料金と条件は、公式ページで最新を確認してほしい。申し込みも公式ページから行える。</p>
-<div class="cta-wrap"><a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGS15+D8B1ZM+4G6O+1THW9E" target="_blank" rel="nofollow sponsored noopener">だれでもモバイル公式で条件を確認する</a></div>
-<p>大事なのは順番だ。先に通常の格安SIMの審査に通るかを確認し、通らない場合の選択肢として審査なし系を検討する。この順番を逆にすると、払わなくていい対価を2年間払い続けることになる。</p>
-<div class="talk"><img src="img/chara_denta_warn.svg" alt="キャラクター「デン太（案内係）」"><div class="bubble"><div class="who">デン太（案内係）</div><p>条件は変わることがあります。契約の前には、必ず公式ページで最新の料金と最低利用期間を確認してください。</p></div></div>
+<p>「審査なしで契約できる格安SIM」は本当にあるのか。結論から言うと、<a href="https://px.a8.net/svt/ejp?a8mat=4BGS15+D8B1ZM+4G6O+1THW9E" target="_blank" rel="nofollow sponsored noopener">だれでもモバイル</a>は公式に「審査不要」を掲げ、クレジットカードなし・口座振替で契約できるサービスとして実在する。ただし<span class="marker">安いから契約するサービスではない</span>。月額は1GBで1,990円と、通常の格安SIMより明確に高い。</p>
+<p>この記事では、だれでもモバイル公式ページの条件だけを使い、「いくら払うのか」「通常のSIMと何が違うのか」「注意点はどこか」を数字で判定する。実体験の口コミは書かない。</p>
+<div class="kaiwa"><div class="face"><img src="img/chara_denta.svg" alt="キャラクター「デン太（案内係）」"></div><div class="huki"><div class="who">デン太（案内係）</div><p>デン太です。この記事の条件は、だれでもモバイル公式ページで2026年11月24日に照合した内容です。料金は税込表示です。</p></div></div>
+<h2 id="cond">公式条件を確認する</h2>
+<img class="fig" src="img/fig_a4_01.svg" alt="だれでもモバイルの月額">
+<p>公式ページに明記された条件は次のとおりだ。</p>
+<div class="tscroll"><table class="spec"><thead><tr><th>項目</th><th>だれでもモバイルの公式条件</th></tr></thead><tbody><tr><td>審査</td><td>審査不要</td></tr><tr><td>申込条件</td><td>18歳以上・本人確認書類・銀行口座</td></tr><tr><td>回線</td><td>ドコモ回線</td></tr><tr><td>支払い</td><td>前払い（毎月27日に翌月分を口座振替）</td></tr><tr><td>料金（1GB）</td><td>月額1,990円・10分かけ放題付き</td></tr><tr><td>料金（他の容量）</td><td>3GB 3,700円／5GB 4,500円／10GB 6,100円／20GB 8,700円</td></tr><tr><td>事務手数料</td><td>3,300円（キャンペーンで実質無料）</td></tr><tr><td>口座振替登録料</td><td>550円</td></tr></tbody></table></div>
+<img class="fig" src="img/fig_a4_08.svg" alt="通常の格安SIMとの違い">
+<p>構造は単純だ。通常の格安SIMが「審査で落とす代わりに安くする」のに対し、<a href="https://px.a8.net/svt/ejp?a8mat=4BGS15+D8B1ZM+4G6O+1THW9E" target="_blank" rel="nofollow sponsored noopener">だれでもモバイル</a>は「前払いと口座振替で回収リスクを消す代わりに、審査をなくす」。審査なしは慈善ではなく、仕組みの話である。</p>
+<img class="fig" src="img/fig_a4_11.svg" alt="だれでもモバイルの容量別月額">
+<p>容量別の月額を見ると、1GBから3GBへ上がるだけで月1,710円増える。だれでもモバイルは「少ない容量で、通話込みで使う」ことに最適化された料金であり、データ使用量が多い使い方では急速に割高になる点も、表の形そのものが示している。</p>
+<img class="fig" src="img/fig_a4_03.svg" alt="契約までの流れ">
+<h2 id="total">2年総額は48,310円</h2>
+<img class="fig" src="img/fig_a4_02.svg" alt="2年総額48,310円">
+<p>最低利用期間は2年とされているため、判断は2年総額でする。計算過程を置く。</p>
+<div class="tscroll"><table class="spec"><thead><tr><th colspan="2">2年総額の計算（1GBプラン・当編集部の計算）</th></tr></thead><tbody><tr><td>月額：1,990円 × 24か月</td><td class="num">47,760円</td></tr><tr><td>口座振替登録料</td><td class="num">550円</td></tr><tr><td>事務手数料：3,300円（キャンペーンで実質無料）</td><td class="num">0円</td></tr><tr><td>2年総額</td><td class="hl">48,310円</td></tr></tbody></table></div>
+<img class="fig" src="img/fig_a4_05.svg" alt="2年総額の内訳（円グラフ）">
+<p>内訳の98.9%は月額そのものだ。初期費用で膨らむタイプではない代わりに、月額の高さが総額を決めている。同じ1GB帯の通常プラン（例：段階制で690円のFit）と比べれば差は明白で、<a href="https://px.a8.net/svt/ejp?a8mat=4BGS15+D8B1ZM+4G6O+1THW9E" target="_blank" rel="nofollow sponsored noopener">だれでもモバイル</a>は「安さ」ではなく「契約できること」にお金を払うサービスだ。</p>
+<img class="fig" src="img/fig_a4_09.svg" alt="事務手数料はキャンペーンで実質無料">
+<div class="mybtn"><a href="https://px.a8.net/svt/ejp?a8mat=4BGS15+D8B1ZM+4G6O+1THW9E" target="_blank" rel="nofollow sponsored noopener">だれでもモバイル公式で条件を確認する</a></div>
+<h2 id="compare">審査なし系の横並び</h2>
+<img class="fig" src="img/fig_a4_06.svg" alt="審査なし系サービスの横並び">
+<p>「審査なし」を掲げるサービスは他にもある。公式の公表料金で横並びにすると、条件の違いが見える。</p>
+<div class="tscroll"><table class="spec"><thead><tr><th>サービス</th><th>月額（公表値）</th><th>条件の違い</th></tr></thead><tbody><tr><td>だれでもモバイル</td><td>1,990円（1GB）</td><td>10分かけ放題込み・事務手数料4,950円なし</td></tr><tr><td>誰でもスマホ</td><td>3,250円（3GB）</td><td>24時間かけ放題込み</td></tr><tr><td>即モバ</td><td>1,980円（1GB）</td><td>事務手数料4,950円</td></tr><tr><td>ごえんモバイル</td><td>1,628円（3GB）</td><td>かけ放題は別料金</td></tr></tbody></table></div>
+<p>単純な月額の安さでは、ごえんモバイルの3GB 1,628円が目立つ。ただし、かけ放題が別料金である点と、条件の細部は各社で異なる。<a href="https://px.a8.net/svt/ejp?a8mat=4BGS15+D8B1ZM+4G6O+1THW9E" target="_blank" rel="nofollow sponsored noopener">だれでもモバイル</a>の位置づけは「1GB＋10分かけ放題込みで1,990円」という、通話込みの分かりやすさにある。</p>
+<div class="kaiwa rev"><div class="face"><img src="img/chara_hantei.svg" alt="キャラクター「ハンテイ（判定役）」"></div><div class="huki"><div class="who">ハンテイ（判定役）</div><p>判定。審査なし系の中で「最安」を名乗れる数字は、だれでもモバイルにはない。強みは条件の明快さと、事務手数料の実質無料化だ。そこに価値を感じる人向けのサービスである。</p></div></div>
+<h2 id="note">注意点：前払いと解約金</h2>
+<img class="fig" src="img/fig_a4_07.svg" alt="解約時の扱い">
+<p>注意点は3つある。第一に支払いは前払いで、毎月27日に翌月分が口座から引き落とされる。残高不足は即、利用に影響する。第二に最低利用期間は2年で、解約金は月額1か月分相当とされている。第三に、容量を上げると料金は急に上がる（20GBで8,700円）。データ使用量が多い人にはまったく向かない。</p>
+<p>また「審査なし」は「誰でも無条件」ではない。18歳以上・本人確認書類・銀行口座という申込条件は公式に存在する。この条件を満たせない場合は契約できない。</p>
+<div class="kaiwa rev"><div class="face"><img src="img/chara_hantei_warn.svg" alt="キャラクター「ハンテイ（判定役）」"></div><div class="huki"><div class="who">ハンテイ（判定役）</div><p>「審査がない＝条件がない」ではない。身分証と口座は必要だ。ここを取り違えると申し込みの場で止まる。</p></div></div>
+<h2 id="conclusion">代わりにこれを選べ</h2>
+<p>クレジットカードが作れない、過去の滞納で通常の審査に通らない、といった事情があり、<span class="marker">「まず契約できること」が最優先</span>なら、だれでもモバイルは公式条件が明快な選択肢になる。逆に、通常の審査に通る人にとっては割高であり、その場合は段階制の安いプラン（このサイトのA3の記事で比較したFitなど）を選ぶべきだ。</p>
+<p>だれでもモバイルの最新の条件は<a href="https://px.a8.net/svt/ejp?a8mat=4BGS15+D8B1ZM+4G6O+1THW9E" target="_blank" rel="nofollow sponsored noopener">だれでもモバイル公式ページ</a>で確認できる。</p>
+<div class="mybtn"><a href="https://px.a8.net/svt/ejp?a8mat=4BGS15+D8B1ZM+4G6O+1THW9E" target="_blank" rel="nofollow sponsored noopener">だれでもモバイル公式で条件を確認する</a></div>
+<img class="fig" src="img/fig_a4_10.svg" alt="申し込み前に確認する3点">
+<div class="kaiwa"><div class="face"><img src="img/chara_denta_point.svg" alt="キャラクター「デン太（案内係）」"></div><div class="huki"><div class="who">デン太（案内係）</div><p>申し込み前に、身分証と銀行口座、それに毎月27日の引き落としに耐える残高管理、この3点を確認してください。</p></div></div>
+<p>契約と同時に端末まわりを新しくするなら、ケースのような周辺機器はオンラインで価格を比べて買うと無駄がない。下は楽天市場の公式商品リンク（価格は2026年11月26日時点）。</p>
+<div class="pcard"><div class="pimg"><a href="https://hb.afl.rakuten.co.jp/ichiba/59fc21e5.8df1b764.59fc21e6.c69c0f4c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkitcut-ps%2F53974018591%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hgb/59fc21e5.8df1b764.59fc21e6.c69c0f4c/?me_id=1301804&item_id=10142688&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fkitcut-ps%2Fcabinet%2Fitem%2F171%2Fp-329567.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a></div><div>
+<p class="pname">エレコム iPhone 17 ハイブリッドケース</p>
+<p class="pnote">スマホケース（Premium Selection）（楽天市場）</p>
+<p class="pprice">¥1,750</p>
+<p class="pdate">2026年11月26日時点の楽天市場の表示価格</p>
+</div></div>
+<div class="cardlink"><img src="img/eye_a1.svg" alt=""><div><p class="ct"><a href="a1-eximo-rakuten.html">ドコモeximoの「段階制」はなぜ高い？ 楽天モバイルと年額で比べたら41,844円の差だった</a></p><a class="more" href="a1-eximo-rakuten.html">続きを見る</a></div></div><div class="cardlink"><img src="img/eye_a2.svg" alt=""><div><p class="ct"><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない 店頭と公式オンラインの差を計算した</a></p><a class="more" href="a2-tokuten-online.html">続きを見る</a></div></div>
 <h2>出典</h2>
 <ul class="src">
-<li>だれでもモバイル公式サイト・料金ページ（2026年11月24日に公式サイト・公式FAQ・重要事項説明で照合） https://daredemomobile.com/</li>
-<li>横並び各社の条件も同じ照合に基づく（誰でもスマホ／即モバ／ごえんモバイル公式）</li>
-<li>2年総額は上記の公式条件からの当編集部の計算</li>
+<li>だれでもモバイル公式ページ（料金・審査不要・前払い・解約金等の条件、2026年11月24日照合）</li>
+<li>横並びの各社月額は各社公式ページの公表値（2026年11月24日照合時点）</li>
+<li>2年総額は公式月額からの当編集部の計算</li>
 </ul>
-<h2>関連する判定</h2><div class="cards"><div class="acard"><img src="img/eye_a1.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 大手キャリア</div><div class="ttl"><a href="a1-eximo-rakuten.html">1GBしか使わないのに月4,565円。eximoの段階制は楽天モバイルと年41,844円差</a></div><a class="more" href="a1-eximo-rakuten.html">続きを見る ›</a></div></div><div class="acard"><img src="img/eye_a2.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 大手キャリア</div><div class="ttl"><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない。公式オンラインは手数料も0円</a></div><a class="more" href="a2-tokuten-online.html">続きを見る ›</a></div></div><div class="acard"><img src="img/eye_a3.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 格安SIM</div><div class="ttl"><a href="a3-bbexcite-fit.html">「使った分だけ払う」はBB.excite Fitが本家。3GB 690円の段階制を読む</a></div><a class="more" href="a3-bbexcite-fit.html">続きを見る ›</a></div></div></div>
-<h2 id="menu-h">カテゴリーから探す</h2>
-<div class="tree" id="menu">
+
+</div>
+<div class="sns">
+<a class="x" href="#share" aria-label="Xで共有">X</a>
+<a class="fb" href="#share" aria-label="Facebookで共有">f</a>
+<a class="pk" href="#share" aria-label="Pocketに保存">P</a>
+<a class="hb" href="#share" aria-label="はてなブックマーク">B!</a>
+<a class="ln" href="#share" aria-label="LINEで送る">LINE</a>
+<a class="cp" href="#share" aria-label="URLをコピー">URL</a>
+</div>
+<h4 class="point">関連記事</h4>
+<div class="kanren"><div class="krow"><img src="img/eye_a1.svg" alt=""><div><p class="kt"><a href="a1-eximo-rakuten.html">ドコモeximoの「段階制」はなぜ高い？ 楽天モバイルと年額で比べたら41,844円の差だった</a></p><div class="kd">2026年11月26日</div></div></div><div class="krow"><img src="img/eye_a2.svg" alt=""><div><p class="kt"><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない 店頭と公式オンラインの差を計算した</a></p><div class="kd">2026年11月26日</div></div></div><div class="krow"><img src="img/eye_a3.svg" alt=""><div><p class="kt"><a href="a3-bbexcite-fit.html">BB.exciteモバイルFitは3GBで月690円 段階制の「最安の階段」を他社と並べた</a></p><div class="kd">2026年11月26日</div></div></div></div>
+<p class="disc">※このページにはアフィリエイト広告が含まれます（A8.net（だれでもモバイル））。申し込みボタンがあるのは提携済みのリンクのみで、他の会社へのリンクは公式サイトへの通常リンクです。</p>
+</main>
+<aside><div class="profcard"><img src="img/chara_denta.svg" alt="案内係デン太">
+<p class="pname2">ガジェット判定 編集部</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+</div><div class="tree" id="menu">
 <a class="l1" href="./#latest">お得情報<span class="chev">›</span></a>
 <a class="l1" href="./#latest">通信回線<span class="chev">›</span></a>
 <a class="l2" href="a1-eximo-rakuten.html">大手キャリア<span class="chev">›</span></a>
@@ -178,11 +252,19 @@ gtag('config', 'G-FXZPJWXX71');
 <a class="l1" href="./#latest">ガジェット<span class="chev">›</span></a>
 <a class="l2" href="https://jiangtaiyede-lab.github.io/battery/">モバイルバッテリー・安全<span class="chev">›</span></a>
 <a class="l1" href="about.html">運営者情報<span class="chev">›</span></a>
+</div><h4 class="point">この記事の目次</h4><div class="tocbox" id="toc"><p class="ttl">この記事の目次（クリックでジャンプ）</p><ol><li><a href="#cond">公式条件を確認する</a></li><li><a href="#total">2年総額は48,310円</a></li><li><a href="#compare">審査なし系の横並び</a></li><li><a href="#note">注意点：前払いと解約金</a></li><li><a href="#conclusion">代わりにこれを選べ</a></li></ol></div><h4 class="point">同じカテゴリーの記事</h4><div class="kanren"><div class="krow"><img src="img/eye_a1.svg" alt=""><div><p class="kt"><a href="a1-eximo-rakuten.html">ドコモeximoの「段階制」はなぜ高い？ 楽天モバイルと年額で比べたら41,844円の差だった</a></p><div class="kd">2026年11月26日</div></div></div><div class="krow"><img src="img/eye_a2.svg" alt=""><div><p class="kt"><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない 店頭と公式オンラインの差を計算した</a></p><div class="kd">2026年11月26日</div></div></div><div class="krow"><img src="img/eye_a3.svg" alt=""><div><p class="kt"><a href="a3-bbexcite-fit.html">BB.exciteモバイルFitは3GBで月690円 段階制の「最安の階段」を他社と並べた</a></p><div class="kd">2026年11月26日</div></div></div></div></aside>
 </div>
-<p class="disc">※このページにはアフィリエイト広告が含まれます（A8.net）。申し込みボタン（CTA）があるのは提携済みのリンクのみで、他の会社へのリンクは公式サイトへの通常リンクです。</p>
-
-</main>
-<footer class="site"><div class="in">ガジェット判定マガジン｜数字はメーカー・キャリア各社の公式情報に基づきます。契約や購入の前には、最新の公式案内を確認してください。<br><a href="./">トップ</a>｜<a href="a1-eximo-rakuten.html">eximoの段階制</a>｜<a href="a2-tokuten-online.html">頭金の正体</a>｜<a href="a3-bbexcite-fit.html">BB.excite Fit</a>｜<a href="a4-daredemo.html">だれでもモバイル</a>｜<a href="a5-au-price-hike.html">au値上げ</a>｜<a href="about.html">運営者情報</a></div></footer>
-<a id="tocbtn" href="#toc"><span class="ic">☰</span>目次</a>
+<footer class="site">
+<div class="profcard"><img src="img/chara_denta.svg" alt="案内係デン太">
+<p class="pname2">ガジェット判定 編集部</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+</div>
+<div class="flogo">ガジェット判定</div>
+<div class="fcatch">ガジェットと通信費を数字で判定するマガジン【随時更新】</div>
+<div class="fnav"><a href="./">トップ</a>｜<a href="a1-eximo-rakuten.html">eximoの段階制</a>｜<a href="a2-tokuten-online.html">頭金の正体</a>｜<a href="a3-bbexcite-fit.html">BB.excite Fit</a>｜<a href="a4-daredemo.html">だれでもモバイル</a>｜<a href="a5-au-price-hike.html">au値上げ</a>｜<a href="about.html">運営者情報</a></div>
+<div class="copy">© 2026 ガジェット判定マガジン</div>
+</footer>
+</div>
+<a id="tocbtn" href="#toc">目次へ戻る</a>
 </body>
 </html>
