@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="eximoと楽天モバイルの月額比較イメージ">
+<rect width="800" height="450" fill="#f4f6f8"/>
+<rect x="60" y="70" width="300" height="300" rx="18" fill="#ffffff" stroke="#23272e" stroke-width="5"/>
+<text x="210" y="140" font-size="34" font-weight="900" text-anchor="middle" fill="#23272e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">ドコモ eximo</text>
+<text x="210" y="240" font-size="64" font-weight="900" text-anchor="middle" fill="#ce0000" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">4,565円</text>
+<text x="210" y="292" font-size="25" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">〜1GBでもこの月額</text>
+<text x="210" y="338" font-size="22" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">段階制・割引適用前</text>
+<rect x="440" y="70" width="300" height="300" rx="18" fill="#ffffff" stroke="#19448e" stroke-width="5"/>
+<text x="590" y="140" font-size="34" font-weight="900" text-anchor="middle" fill="#19448e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">楽天モバイル</text>
+<text x="590" y="240" font-size="64" font-weight="900" text-anchor="middle" fill="#19448e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">1,078円</text>
+<text x="590" y="292" font-size="25" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">3GBまで使える</text>
+<text x="590" y="338" font-size="22" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">Rakuten最強プラン</text>
+<text x="400" y="415" font-size="30" font-weight="900" text-anchor="middle" fill="#23272e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">年額差 41,844円</text>
+</svg>

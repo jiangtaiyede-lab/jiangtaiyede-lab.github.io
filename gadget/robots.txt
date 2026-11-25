@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jiangtaiyede-lab.github.io/gadget/sitemap.xml

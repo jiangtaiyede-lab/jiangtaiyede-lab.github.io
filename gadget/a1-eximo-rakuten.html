@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1GBしか使わないのに月4,565円。eximoの段階制は楽天モバイルと年41,844円差｜ガジェット判定</title>
+<meta name="description" content="ドコモeximoの段階制と楽天モバイルの料金を公式料金表で比較し、年額差41,844円を計算過程つきで判定する分析記事。">
+<style>
+:root{--ink:#313131;--mut:#5b6b7a;--line:#dcdcdc;--bg:#ffffff;--dark:#1a1d23;--acc:#19448e;--acc2:#eef3fa;--yel:#ffd900;--red:#ce0000;--grn:#4c8462}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.85;font-size:16.5px;letter-spacing:.02em}
+a{color:var(--acc)}
+header.site{position:sticky;top:0;background:var(--dark);z-index:20}
+header.site .in{max-width:1080px;margin:0 auto;padding:10px 14px;display:flex;align-items:center;gap:12px}
+header.site .sicon{flex:0 0 auto;line-height:0}
+header.site .sicon svg{width:26px;height:26px}
+header.site .brand{flex:1;text-align:center;line-height:1.25}
+header.site .brand a{color:#fff;text-decoration:none;font-style:italic;font-weight:900;font-size:24px;letter-spacing:.04em}
+header.site .brand .catch{display:block;font-style:normal;font-weight:400;font-size:11.5px;color:#cfd4da;letter-spacing:.02em;margin-top:2px}
+header.site .menu-btn{flex:0 0 auto;text-align:center;color:#fff;text-decoration:none;font-size:10.5px;letter-spacing:.14em;line-height:1.3}
+header.site .menu-btn .bars{display:block;width:30px;margin:0 auto 3px}
+header.site .menu-btn .bars i{display:block;height:2.4px;background:#fff;margin:5px 0}
+main{max-width:1080px;margin:0 auto;padding:18px 16px 60px}
+h1{font-size:clamp(23px,4.4vw,34px);line-height:1.45;margin:12px 0 10px;font-weight:900}
+h2{font-size:clamp(19px,3.2vw,24px);background:var(--dark);color:#fff;padding:.68em .95em;margin:42px 0 14px;line-height:1.5;border-radius:3px}
+h3{font-size:18.5px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--dark);line-height:1.5}
+.hero{width:100%;height:auto;display:block;border-radius:6px}
+.eye{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#f4f6f8}
+.fig{width:100%;height:auto;display:block;margin:12px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:var(--mut);margin:6px 0 4px}
+.meta .cat{background:#eef1f5;border-radius:6px;padding:2px 10px;color:var(--ink)}
+.lead{font-size:17px}
+.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
+.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+strong.red{color:var(--red)}
+.toc{border:2px solid var(--dark);border-radius:8px;padding:14px 18px;margin:20px 0;background:#fbfbf7}
+.toc .ttl{font-weight:900;margin-bottom:6px}
+.toc ol{margin:6px 0 6px 20px;padding:0}
+.toc li{margin:4px 0}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0}
+table.spec{border-collapse:collapse;width:100%;min-width:520px;font-size:15.5px}
+table.spec th,table.spec td{border:1px solid #b9c0c7;padding:8px 10px;text-align:left;vertical-align:top}
+table.spec thead th{background:var(--dark);color:#fff;font-weight:800}
+table.spec tbody th{background:#f0f2f5;font-weight:800;white-space:nowrap}
+table.spec td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.spec td.hl{background:#fff3f3;font-weight:900;color:var(--red)}
+table.spec td.good{background:var(--acc2);font-weight:900;color:var(--acc)}
+.calc{background:#f7f9fb;border:1.5px solid var(--acc);border-radius:12px;padding:14px 18px;margin:14px 0}
+.calc .ttl{font-weight:900;color:var(--acc);margin-bottom:4px}
+.calc .row{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px dashed #c9d4e2;font-variant-numeric:tabular-nums}
+.calc .row:last-child{border-bottom:none}
+.calc .row.total{font-weight:900;font-size:18px;color:var(--red)}
+.piewrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:14px 0}
+.piewrap svg{flex:0 0 auto}
+.piewrap .legend{flex:1 1 220px;font-size:15px}
+.piewrap .legend div{margin:5px 0}
+.sw{display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:8px;vertical-align:-1px}
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+.talk.judge .bubble{border-color:var(--dark)}
+.talk.judge .bubble::before{border-color:var(--dark)}
+.talk.judge .who{color:var(--dark)}
+.talk.rev{flex-direction:row-reverse}
+.talk.rev .bubble::before{left:auto;right:-9px;border-left:none;border-bottom:none;border-right:1.5px solid var(--dark);border-top:1.5px solid var(--dark)}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
+.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:13px 24px;margin:8px 0;box-shadow:0 3px 0 #0f2c5c}
+.cta-wrap{margin:14px 0}
+.src{font-size:14px;color:var(--mut)}
+.src li{margin:4px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:14px 0}
+.acard{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.acard img{width:100%;height:auto;display:block}
+.acard .bd{padding:12px 14px}
+.acard .cat{font-size:12.5px;color:var(--acc);font-weight:800}
+.acard .ttl{font-weight:900;line-height:1.5;margin:4px 0}
+.acard .ttl a{color:var(--ink);text-decoration:none}
+.acard .more{font-size:13.5px;color:var(--acc);font-weight:700}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#3a3f47;margin:0 0 8px}
+.tiles a{background:var(--dark);color:#fff;text-decoration:none;text-align:center;padding:20px 6px;font-weight:800;font-size:16.5px}
+@media (max-width:640px){.tiles a{font-size:14.5px;padding:16px 4px}}
+.tree{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:14px 0}
+.tree a{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);background:#fff}
+.tree a:last-child{border-bottom:none}
+.tree a.l1{font-weight:800}
+.tree a.l2{padding-left:38px}
+.tree a.l3{padding-left:66px;color:#444}
+.tree a .chev{color:#9aa7b1;font-weight:900}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
+footer.site{background:var(--dark);color:#cfd4da;margin-top:40px}
+footer.site .in{max-width:1080px;margin:0 auto;padding:22px 16px;font-size:13.5px;line-height:1.9}
+footer.site a{color:#fff}
+#tocbtn{position:fixed;right:12px;bottom:14px;z-index:30;background:rgba(26,29,35,.92);color:#fff;text-decoration:none;border-radius:12px;padding:9px 13px;font-size:13px;font-weight:800;text-align:center;line-height:1.35;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+#tocbtn .ic{display:block;font-size:17px;line-height:1.1}
+.brandline{display:flex;align-items:center;gap:10px;margin:10px 0}
+.brandline img{height:26px;width:auto}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FXZPJWXX71');
+</script>
+</head>
+<body>
+<header class="site"><div class="in">
+<a class="sicon" href="./#menu" aria-label="メニューから探す"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16 L22 22"/></svg></a>
+<div class="brand"><a href="./">ガジェット判定</a><span class="catch">ガジェットと通信費を数字で判定するマガジン【随時更新】</span></div>
+<a class="menu-btn" href="./#menu"><span class="bars"><i></i><i></i><i></i></span>MENU</a>
+</div></header>
+<main>
+
+<h1>1GBしか使わないのに月4,565円。eximoの段階制は楽天モバイルと年41,844円差</h1>
+<div class="meta"><span class="cat">通信回線 ＞ 大手キャリア</span><span>2026年11月25日 公開</span></div>
+<img class="eye" src="img/eye_a1.svg" alt="eximoと楽天モバイルの月額比較">
+<p class="lead">ドコモのeximoは「使った分だけの段階制」を名乗るプランだ。ところが料金表を開くと、<span class="marker">1GBまでしか使わなかった月でも月額は4,565円</span>である。同じ段階制の楽天モバイルは、3GBまで使って1,078円。段階制という言葉は同じでも、中身はまったくの別物だ。この記事では公式料金表の数字だけで、両者の差を年額まで計算して判定する。</p>
+<div class="talk"><img src="img/chara_denta.svg" alt="キャラクター「デン太（案内係）」"><div class="bubble"><div class="who">デン太（案内係）</div><p>こんにちは、デン太です。この記事の数字は、ドコモ公式と楽天モバイル公式の料金ページで確認したものだけを使っています。</p></div></div>
+<div class="toc" id="toc"><div class="ttl">この記事の目次（クリックでジャンプ）</div><ol><li><a href="#table">まず料金表を見る</a></li><li><a href="#year">年額に直すと41,844円の差</a></li><li><a href="#why">なぜ大手の段階制は高いのか</a></li><li><a href="#conclusion">代わりにこれを選べ</a></li></ol></div>
+<h2 id="table">まず料金表を見る</h2>
+<p>結論は料金表が全てを語っている。割引適用前の基本料金で並べるとこうなる。</p>
+<div class="tscroll"><table class="spec">
+<thead><tr><th>使った量</th><th>ドコモ eximo</th><th>楽天モバイル（Rakuten最強プラン）</th></tr></thead>
+<tbody>
+<tr><th>〜1GB</th><td class="num hl">4,565円</td><td class="num good" rowspan="2">1,078円（〜3GB）</td></tr>
+<tr><th>1GB〜3GB</th><td class="num">5,665円</td></tr>
+<tr><th>〜20GB</th><td class="num">―（無制限のみ）</td><td class="num">2,178円</td></tr>
+<tr><th>無制限／20GB超</th><td class="num">7,315円</td><td class="num good">3,278円</td></tr>
+</tbody></table></div>
+<p>見るべき点は2つある。第一に、eximoの最安段階は「〜1GB」で4,565円であり、<strong>ほとんど使わない人ほど割高になる</strong>設計だということ。第二に、楽天モバイルは3GBまで1,078円で、eximoの最安段階よりデータ量の上限が3倍あるということ。つまり「1GBしか使わない人」は、eximoでは最高単価の段階に固定される。</p>
+<div class="talk judge rev"><img src="img/chara_hantei_point.svg" alt="キャラクター「ハンテイ（判定役）」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>判定。段階制の名乗りは同じでも、eximoの階段は「下の段」が存在しない。使わない月がある人にとって、これは段階制の看板だけ借りた固定料金だ。</p></div></div>
+<h2 id="year">年額に直すと41,844円の差</h2>
+<p>月額の差は小さく見える。年額に直すと印象が変わる。計算過程をそのまま置く。</p>
+<div class="calc"><div class="ttl">年額の比較計算（〜1GB利用のケース）</div>
+<div class="row"><span>eximo：4,565円 × 12か月</span><span>54,780円</span></div>
+<div class="row"><span>楽天モバイル：1,078円 × 12か月</span><span>12,936円</span></div>
+<div class="row"><span>月額差：4,565円 − 1,078円</span><span>3,487円</span></div>
+<div class="row total"><span>年額差：3,487円 × 12か月</span><span>41,844円</span></div></div>
+<p>eximoの年額54,780円のうち、楽天モバイルと同等の使い方で済む分は12,936円しかない。残りの41,844円、割合にして<strong class="red">76.4%</strong>が「差額」として消えていく。</p>
+<div class="piewrap"><svg width="190" height="190" viewBox="0 0 190 190" role="img" aria-label="円グラフ"><path d="M95.0,95.0 L95.0,4.0 A91.0,91.0 0 0 1 185.7,87.1 Z" fill="#19448e" stroke="#fff" stroke-width="2"/><path d="M95.0,95.0 L185.7,87.1 A91.0,91.0 0 1 1 95.0,4.0 Z" fill="#ce0000" stroke="#fff" stroke-width="2"/></svg><div class="legend"><div><span class="sw" style="background:#19448e"></span>楽天モバイルと同等の分：12,936円（23.6%）</div><div><span class="sw" style="background:#ce0000"></span>差額（払い過ぎ分）：41,844円（76.4%）</div></div></div>
+<p>しかもこの比較は、楽天側が3GBまで使える条件での話だ。データ量でも金額でも、eximoの最安段階が勝っている点はない。</p>
+<h2 id="why">なぜ大手の段階制は高いのか</h2>
+<p>ここからは数字ではなく読みの話として区別して書く。eximoの料金は、各種割引の適用を前提に組み立てられた基本料金であり、割引が効かない使い方では基本料金の高さがそのまま請求に残る。店舗網とサポート体制を抱える大手キャリアの価格には、その固定費が乗っている。段階制という形式だけを借りても、価格の出発点が違えば「使った分だけ」の意味は変わる。</p>
+<p>逆に楽天モバイルは、段階の刻み自体を「3GBまで1,078円」という安い出発点に置いている。段階制で得をするかどうかは、形式ではなく<strong>最安段階の価格と幅</strong>で決まる。これが今回の判定の核心だ。</p>
+<div class="talk judge rev"><img src="img/chara_hantei_warn.svg" alt="キャラクター「ハンテイ（判定役）」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>「段階制」という言葉に判定はしない。見るのは最安段階の金額と、その段階で使える量。この2点だけで十分に判定できる。</p></div></div>
+<h2 id="conclusion">代わりにこれを選べ</h2>
+<div class="concl"><div class="ttl">判定の結論</div><p>月に1〜3GBしか使わないなら、eximoに残る理由は料金表の中にない。<span class="marker">楽天モバイルなら同じ段階制で年41,844円安く、使える量は3倍</span>になる。乗り換えの手続きもオンラインで完結し、契約事務手数料はかからない。</p></div>
+<p>楽天モバイル（Rakuten最強プラン）の料金と条件は、公式ページで最新を確認してほしい。申し込みも公式ページから行える。</p>
+<div class="cta-wrap"><a class="cta" href="https://hb.afl.rakuten.co.jp/hsc/59e80148.07d82eda.59e80149.1cd7e4d8/?link_type=hybrid_url&rafst=rmn&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJoeWJyaWRfdXJsIiwiY29sIjoxLCJjYXQiOjEsImJhbiI6MjM3Nzg5NSwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener">楽天モバイル公式で料金を確認する</a></div>
+<p>なお、データ使用量が毎月20GBを超える使い方でも、楽天モバイルは3,278円が上限で、eximoの無制限7,315円との差は月4,037円ある。使用量が多い人でも結論は変わらない。</p>
+<div class="talk"><img src="img/chara_denta_point.svg" alt="キャラクター「デン太（案内係）」"><div class="bubble"><div class="who">デン太（案内係）</div><p>使用量が月によって変わる人は、まず先月の使用量をキャリアのアプリで確認してみてください。3GB以内なら、この記事の計算がそのまま当てはまります。</p></div></div>
+<h2>出典</h2>
+<ul class="src">
+<li>NTTドコモ公式「eximo」料金ページ（2026年11月25日確認） https://www.docomo.ne.jp/charge/eximo/</li>
+<li>楽天モバイル公式「Rakuten最強プラン」料金ページ（2026年11月25日確認） https://network.mobile.rakuten.co.jp/fee/saikyo-plan/</li>
+<li>年額差は上記の公式月額からの当編集部の計算</li>
+</ul>
+<h2>関連する判定</h2><div class="cards"><div class="acard"><img src="img/eye_a2.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 大手キャリア</div><div class="ttl"><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない。公式オンラインは手数料も0円</a></div><a class="more" href="a2-tokuten-online.html">続きを見る ›</a></div></div><div class="acard"><img src="img/eye_a3.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 格安SIM</div><div class="ttl"><a href="a3-bbexcite-fit.html">「使った分だけ払う」はBB.excite Fitが本家。3GB 690円の段階制を読む</a></div><a class="more" href="a3-bbexcite-fit.html">続きを見る ›</a></div></div><div class="acard"><img src="img/eye_a4.svg" alt=""><div class="bd"><div class="cat">通信回線 ＞ 格安SIM</div><div class="ttl"><a href="a4-daredemo.html">「審査なし」には値段がある。だれでもモバイル月1,990円と2年縛りの読み方</a></div><a class="more" href="a4-daredemo.html">続きを見る ›</a></div></div></div>
+<h2 id="menu-h">カテゴリーから探す</h2>
+<div class="tree" id="menu">
+<a class="l1" href="./#latest">お得情報<span class="chev">›</span></a>
+<a class="l1" href="./#latest">通信回線<span class="chev">›</span></a>
+<a class="l2" href="a1-eximo-rakuten.html">大手キャリア<span class="chev">›</span></a>
+<a class="l2" href="a3-bbexcite-fit.html">格安SIM<span class="chev">›</span></a>
+<a class="l1" href="./#latest">スマホ<span class="chev">›</span></a>
+<a class="l2" href="./#latest">iPhone・価格判定<span class="chev">›</span></a>
+<a class="l1" href="./#latest">ガジェット<span class="chev">›</span></a>
+<a class="l2" href="https://jiangtaiyede-lab.github.io/battery/">モバイルバッテリー・安全<span class="chev">›</span></a>
+<a class="l1" href="about.html">運営者情報<span class="chev">›</span></a>
+</div>
+<p class="disc">※このページにはアフィリエイト広告が含まれます（楽天アフィリエイト）。申し込みボタン（CTA）があるのは提携済みのリンクのみで、他の会社へのリンクは公式サイトへの通常リンクです。</p>
+
+</main>
+<footer class="site"><div class="in">ガジェット判定マガジン｜数字はメーカー・キャリア各社の公式情報に基づきます。契約や購入の前には、最新の公式案内を確認してください。<br><a href="./">トップ</a>｜<a href="a1-eximo-rakuten.html">eximoの段階制</a>｜<a href="a2-tokuten-online.html">頭金の正体</a>｜<a href="a3-bbexcite-fit.html">BB.excite Fit</a>｜<a href="a4-daredemo.html">だれでもモバイル</a>｜<a href="a5-au-price-hike.html">au値上げ</a>｜<a href="about.html">運営者情報</a></div></footer>
+<a id="tocbtn" href="#toc"><span class="ic">☰</span>目次</a>
+</body>
+</html>

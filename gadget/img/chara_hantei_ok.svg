@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="判定キャラクター「ハンテイ」（まとめ・合格）">
+<rect x="34" y="42" width="132" height="136" rx="30" fill="#23272e" stroke="#101216" stroke-width="6"/>
+<rect x="52" y="60" width="96" height="76" rx="20" fill="#ffffff"/>
+<path d="M68 88 Q80 80 92 88" fill="none" stroke="#20262b" stroke-width="6" stroke-linecap="round"/>
+<path d="M108 88 Q120 80 132 88" fill="none" stroke="#20262b" stroke-width="6" stroke-linecap="round"/>
+<circle cx="80" cy="103" r="6.5" fill="#20262b"/>
+<circle cx="120" cy="103" r="6.5" fill="#20262b"/>
+<path d="M84 118 Q100 132 116 118" fill="none" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="62" cy="114" rx="9" ry="5" fill="#f7b1c1"/>
+<ellipse cx="138" cy="114" rx="9" ry="5" fill="#f7b1c1"/>
+<circle cx="164" cy="140" r="24" fill="#ffffff" stroke="#ce0000" stroke-width="5"/>
+<path d="M152 140 L161 149 L177 131" fill="none" stroke="#ce0000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46 128 Q26 122 24 104" fill="none" stroke="#101216" stroke-width="8" stroke-linecap="round"/>
+<ellipse cx="72" cy="180" rx="15" ry="6" fill="#101216"/>
+<ellipse cx="128" cy="180" rx="15" ry="6" fill="#101216"/>
+</svg>

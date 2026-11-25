@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="au値上げのイメージ">
+<rect width="800" height="450" fill="#f4f6f8"/>
+<g font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">
+<text x="400" y="66" font-size="31" font-weight="900" text-anchor="middle" fill="#23272e">使い放題MAX+（5G／4G）</text>
+<rect x="110" y="240" width="240" height="110" fill="#9db6d2"/>
+<rect x="450" y="196" width="240" height="154" fill="#ce0000"/>
+<text x="230" y="222" font-size="30" font-weight="900" text-anchor="middle" fill="#23272e">7,458円</text>
+<text x="570" y="178" font-size="30" font-weight="900" text-anchor="middle" fill="#ce0000">7,788円</text>
+<text x="230" y="382" font-size="23" text-anchor="middle" fill="#5b6b7a">改定前</text>
+<text x="570" y="382" font-size="23" text-anchor="middle" fill="#5b6b7a">2025年8月1日〜</text>
+<path d="M368 236 L428 206" stroke="#23272e" stroke-width="7" stroke-linecap="round"/>
+<polygon points="428,206 402,204 416,226" fill="#23272e"/>
+<text x="400" y="130" font-size="44" font-weight="900" text-anchor="middle" fill="#ce0000">+330円／月 ＝ 年3,960円</text>
+</g>
+</svg>

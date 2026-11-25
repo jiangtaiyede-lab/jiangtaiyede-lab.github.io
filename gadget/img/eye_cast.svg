@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="案内キャストのデン太とハンテイ">
+<rect width="800" height="450" fill="#eef3fa"/>
+<g transform="translate(120,105) scale(1.25)">
+<rect x="78" y="16" width="44" height="24" rx="8" fill="#19448e"/>
+<path d="M42 104 Q18 96 16 74" fill="none" stroke="#19448e" stroke-width="8" stroke-linecap="round"/>
+<path d="M158 116 Q178 126 180 142" fill="none" stroke="#19448e" stroke-width="8" stroke-linecap="round"/>
+<rect x="38" y="38" width="124" height="140" rx="36" fill="#ffffff" stroke="#19448e" stroke-width="6"/>
+<ellipse cx="72" cy="180" rx="15" ry="6" fill="#19448e"/>
+<ellipse cx="128" cy="180" rx="15" ry="6" fill="#19448e"/>
+<circle cx="79" cy="96" r="7" fill="#20262b"/>
+<circle cx="121" cy="96" r="7" fill="#20262b"/>
+<path d="M85 116 Q100 128 115 116" fill="none" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="60" cy="112" rx="10" ry="6" fill="#f7b1c1"/>
+<ellipse cx="140" cy="112" rx="10" ry="6" fill="#f7b1c1"/>
+<polygon points="102,128 88,150 98,150 90,168 114,144 103,144 110,128" fill="#ffd900" stroke="#19448e" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g transform="translate(430,80) scale(1.4)">
+<rect x="34" y="42" width="132" height="136" rx="30" fill="#23272e" stroke="#101216" stroke-width="6"/>
+<rect x="52" y="60" width="96" height="76" rx="20" fill="#ffffff"/>
+<path d="M66 84 L92 90" stroke="#20262b" stroke-width="6" stroke-linecap="round"/>
+<path d="M134 84 L108 90" stroke="#20262b" stroke-width="6" stroke-linecap="round"/>
+<circle cx="80" cy="102" r="6.5" fill="#20262b"/>
+<circle cx="120" cy="102" r="6.5" fill="#20262b"/>
+<path d="M84 122 L116 122" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<rect x="88" y="140" width="24" height="10" rx="5" fill="#ce0000"/>
+<path d="M150 128 L172 96" stroke="#101216" stroke-width="9" stroke-linecap="round"/>
+<rect x="158" y="66" width="34" height="20" rx="6" transform="rotate(38 175 76)" fill="#8a5a2b" stroke="#101216" stroke-width="4"/>
+<rect x="140" y="88" width="30" height="13" rx="6" transform="rotate(38 155 94)" fill="#8a5a2b" stroke="#101216" stroke-width="4"/>
+<path d="M46 128 Q26 122 24 104" fill="none" stroke="#101216" stroke-width="8" stroke-linecap="round"/>
+<ellipse cx="72" cy="180" rx="15" ry="6" fill="#101216"/>
+<ellipse cx="128" cy="180" rx="15" ry="6" fill="#101216"/>
+</g>
+<g font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-weight="900">
+<text x="245" y="392" font-size="30" text-anchor="middle" fill="#19448e">デン太（案内係）</text>
+<text x="570" y="392" font-size="30" text-anchor="middle" fill="#23272e">ハンテイ（判定役）</text>
+</g>
+</svg>
