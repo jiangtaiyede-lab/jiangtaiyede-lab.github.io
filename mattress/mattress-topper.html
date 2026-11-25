@@ -15,7 +15,7 @@ header.site.in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;ali
 nav.g{display:flex;gap:14px;font-size:14px;margin-left:auto}nav.g a{color:var(--mut);text-decoration:none}
 main{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
 h1{font-size:clamp(24px,4.5vw,36px);line-height:1.4;margin:14px 0 10px}
-h2{font-size:clamp(20px,3.4vw,26px);background:var(--acc2);border-left:6px solid var(--acc);border-radius:0 8px 8px 0;padding:10px 14px;margin:40px 0 14px;line-height:1.5;color:var(--acc)}
+h2{font-size:clamp(20px,3.4vw,26px);background:var(--acc);padding:.75em 1em;position:relative;margin:40px 0 14px;line-height:1.5;color:#fff}h2::before{content:"";position:absolute;display:block;pointer-events:none;top:-4px;left:0;width:100%;height:calc(100% + 4px);box-sizing:content-box;border-top:solid 2px var(--acc);border-bottom:solid 2px var(--acc)}
 h3{font-size:19px;margin:26px 0 8px}
 .lead{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
 .concl{background:#fff8e1;border:2px solid #f5a623;border-radius:12px;padding:14px 18px;margin:14px 0}
