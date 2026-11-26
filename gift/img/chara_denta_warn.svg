@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="案内キャラクター デン太（注意喚起）">
+<rect x="78" y="16" width="44" height="24" rx="8" fill="#19448e"/>
+<path d="M42 110 Q22 118 20 132" fill="none" stroke="#19448e" stroke-width="8" stroke-linecap="round"/>
+<path d="M158 110 Q178 118 180 132" fill="none" stroke="#19448e" stroke-width="8" stroke-linecap="round"/>
+<rect x="38" y="38" width="124" height="140" rx="36" fill="#ffffff" stroke="#19448e" stroke-width="6"/>
+<ellipse cx="72" cy="180" rx="15" ry="6" fill="#19448e"/>
+<ellipse cx="128" cy="180" rx="15" ry="6" fill="#19448e"/>
+<path d="M68 80 l18 5" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<path d="M132 80 l-18 5" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<circle cx="79" cy="98" r="7" fill="#20262b"/>
+<circle cx="121" cy="98" r="7" fill="#20262b"/>
+<circle cx="100" cy="122" r="6" fill="none" stroke="#20262b" stroke-width="4"/>
+<ellipse cx="60" cy="112" rx="10" ry="6" fill="#f7b1c1"/>
+<ellipse cx="140" cy="112" rx="10" ry="6" fill="#f7b1c1"/>
+<polygon points="102,134 90,152 99,152 93,166 112,146 102,146 108,134" fill="#ffd900" stroke="#19448e" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="163" cy="33" r="19" fill="#e60033" stroke="#ffffff" stroke-width="3"/>
+<text x="163" y="46" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#ffffff">!</text>
+</svg>

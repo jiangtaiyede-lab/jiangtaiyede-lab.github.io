@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+<rect width="1200" height="420" fill="#ffffff"/>
+<text x="60" y="70" font-family="sans-serif" font-size="30" font-weight="900" fill="#20262b">予算5,000円は、先に3つに分ける</text>
+<rect x="60" y="110" width="640" height="90" rx="10" fill="#c62828"/>
+<rect x="700" y="110" width="180" height="90" rx="10" fill="#f6c453"/>
+<rect x="880" y="110" width="260" height="90" rx="10" fill="#90a4ae"/>
+<text x="380" y="150" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="900" fill="#ffffff">メインギフト</text>
+<text x="380" y="185" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="900" fill="#ffffff">3,500円（70%）</text>
+<text x="790" y="150" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="900" fill="#20262b">プチギフト</text>
+<text x="790" y="185" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="900" fill="#20262b">1,000円（20%）</text>
+<text x="1010" y="150" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="900" fill="#ffffff">ラッピング・カード</text>
+<text x="1010" y="185" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="900" fill="#ffffff">500円（10%）</text>
+<text x="60" y="270" font-family="sans-serif" font-size="22" fill="#20262b">・メインを1点に絞ると、予算内でも「ちゃんとした1品」になる</text>
+<text x="60" y="320" font-family="sans-serif" font-size="22" fill="#20262b">・2点組み合わせる場合は、合計が5,000円を超えないかを先に計算する</text>
+<text x="60" y="370" font-family="sans-serif" font-size="22" fill="#20262b">・送料とラッピング代は、商品代とは別枠で見る</text>
+</svg>

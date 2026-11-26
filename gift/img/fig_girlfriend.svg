@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+<rect width="1200" height="420" fill="#ffffff"/>
+<text x="60" y="70" font-family="sans-serif" font-size="30" font-weight="900" fill="#20262b">彼女向けは「毎日使う小物」から選ぶ</text>
+<g font-family="sans-serif">
+<rect x="60" y="110" width="520" height="110" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
+<text x="90" y="155" font-size="24" font-weight="900" fill="#c62828">スマホケース</text>
+<text x="90" y="195" font-size="20" fill="#20262b">毎日手に取る。機種の確認だけは必須</text>
+<rect x="620" y="110" width="520" height="110" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
+<text x="650" y="155" font-size="24" font-weight="900" fill="#c62828">イヤホン・音楽まわり</text>
+<text x="650" y="195" font-size="20" fill="#20262b">通勤・移動で毎日使う実用品</text>
+<rect x="60" y="250" width="520" height="110" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
+<text x="90" y="295" font-size="24" font-weight="900" fill="#c62828">色は定番から</text>
+<text x="90" y="335" font-size="20" fill="#20262b">好みが読めないときは無難な色・形を選ぶ</text>
+<rect x="620" y="250" width="520" height="110" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
+<text x="650" y="295" font-size="24" font-weight="900" fill="#c62828">組み合わせも手</text>
+<text x="650" y="335" font-size="20" fill="#20262b">3,000円台＋1,000円台で合計を予算内に</text>
+</g>
+</svg>

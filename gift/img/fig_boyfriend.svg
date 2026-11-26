@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+<rect width="1200" height="420" fill="#ffffff"/>
+<text x="60" y="70" font-family="sans-serif" font-size="30" font-weight="900" fill="#20262b">贈る前に潰す、失敗ポイント3つ</text>
+<g font-family="sans-serif">
+<rect x="60" y="110" width="340" height="240" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
+<text x="90" y="165" font-size="24" font-weight="900" fill="#c62828">1. 対応の確認</text>
+<text x="90" y="215" font-size="20" fill="#20262b">スマホ関連は相手の機種</text>
+<text x="90" y="250" font-size="20" fill="#20262b">（iPhone／Android）と</text>
+<text x="90" y="285" font-size="20" fill="#20262b">端子（USB-C等）を確認</text>
+<rect x="430" y="110" width="340" height="240" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
+<text x="460" y="165" font-size="24" font-weight="900" fill="#c62828">2. 付属品の確認</text>
+<text x="460" y="215" font-size="20" fill="#20262b">ケーブル別売りの充電</text>
+<text x="460" y="250" font-size="20" fill="#20262b">まわりは、単体で贈ると</text>
+<text x="460" y="285" font-size="20" fill="#20262b">その場で使えない</text>
+<rect x="800" y="110" width="340" height="240" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
+<text x="830" y="165" font-size="24" font-weight="900" fill="#c62828">3. サイズ・好み</text>
+<text x="830" y="215" font-size="20" fill="#20262b">ケースは機種専用設計。</text>
+<text x="830" y="250" font-size="20" fill="#20262b">色や形の好みも分かれる</text>
+<text x="830" y="285" font-size="20" fill="#20262b">ので事前にさりげなく</text>
+</g>
+</svg>
