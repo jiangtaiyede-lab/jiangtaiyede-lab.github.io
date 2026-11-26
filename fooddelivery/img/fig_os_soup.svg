@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="レトルトスープ"><rect width="800" height="450" fill="#e9f4ea"/>
+<path d="M352 168 q 10 -22 0 -44 q -10 -22 0 -44" fill="none" stroke="#2e7d32" stroke-width="6" stroke-linecap="round"/><path d="M388 168 q 10 -22 0 -44 q -10 -22 0 -44" fill="none" stroke="#2e7d32" stroke-width="6" stroke-linecap="round"/><path d="M424 168 q 10 -22 0 -44 q -10 -22 0 -44" fill="none" stroke="#2e7d32" stroke-width="6" stroke-linecap="round"/>
+<path d="M250 190 h 300 q -14 96 -110 118 h -80 q -96 -22 -110 -118 Z" fill="#ffffff" stroke="#2e7d32" stroke-width="7"/>
+<ellipse cx="400" cy="190" rx="150" ry="20" fill="#ffd900" stroke="#2e7d32" stroke-width="6"/>
+<rect x="330" y="316" width="140" height="14" rx="7" fill="#2e7d32"/>
+<text x="400" y="415" text-anchor="middle" font-family="Hiragino Sans,Noto Sans JP,sans-serif" font-size="34" font-weight="900" fill="#20262b">レトルトスープ</text></svg>

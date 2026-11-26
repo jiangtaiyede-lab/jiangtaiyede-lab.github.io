@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="缶詰・瓶詰"><rect width="800" height="450" fill="#e9f4ea"/>
+<path d="M316 120 h 168 v 178 a 84 22 0 0 1 -168 0 Z" fill="#ffffff" stroke="#2e7d32" stroke-width="7"/>
+<ellipse cx="400" cy="120" rx="84" ry="20" fill="#ffffff" stroke="#2e7d32" stroke-width="7"/>
+<ellipse cx="400" cy="120" rx="46" ry="11" fill="none" stroke="#2e7d32" stroke-width="5"/>
+<rect x="316" y="186" width="168" height="62" fill="#ffd900"/>
+<line x1="316" y1="186" x2="484" y2="186" stroke="#2e7d32" stroke-width="5"/><line x1="316" y1="248" x2="484" y2="248" stroke="#2e7d32" stroke-width="5"/>
+<circle cx="400" cy="217" r="15" fill="#ffffff" stroke="#2e7d32" stroke-width="5"/>
+<path d="M540 176 q 44 30 30 84" fill="none" stroke="#2e7d32" stroke-width="6" stroke-linecap="round"/>
+<circle cx="566" cy="272" r="12" fill="#2e7d32"/>
+<text x="400" y="415" text-anchor="middle" font-family="Hiragino Sans,Noto Sans JP,sans-serif" font-size="34" font-weight="900" fill="#20262b">缶詰・瓶詰</text></svg>

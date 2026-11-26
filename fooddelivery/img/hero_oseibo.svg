@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="少量・常温・日持ちで贈る お歳暮"><rect width="800" height="450" fill="#e9f4ea"/>
+<rect x="290" y="150" width="220" height="160" rx="10" fill="#ffffff" stroke="#2e7d32" stroke-width="7"/>
+<rect x="272" y="118" width="256" height="38" rx="8" fill="#ffd900" stroke="#2e7d32" stroke-width="7"/>
+<line x1="400" y1="118" x2="400" y2="310" stroke="#2e7d32" stroke-width="10"/>
+<path d="M400 112 q -52 -44 -78 -12 q -22 28 34 26 q 34 -2 44 -14 Z" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<path d="M400 112 q 52 -44 78 -12 q 22 28 -34 26 q -34 -2 -44 -14 Z" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<rect x="120" y="238" width="104" height="72" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<line x1="172" y1="238" x2="172" y2="310" stroke="#2e7d32" stroke-width="7"/>
+<rect x="586" y="222" width="84" height="88" rx="10" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<path d="M604 222 v -18 h 48 v 18" fill="none" stroke="#2e7d32" stroke-width="6"/>
+<circle cx="628" cy="266" r="17" fill="#ffd900" stroke="#2e7d32" stroke-width="5"/>
+<circle cx="150" cy="120" r="7" fill="#2e7d32"/><circle cx="668" cy="96" r="7" fill="#2e7d32"/><circle cx="596" cy="140" r="5" fill="#2e7d32"/><circle cx="206" cy="160" r="5" fill="#2e7d32"/>
+<text x="400" y="415" text-anchor="middle" font-family="Hiragino Sans,Noto Sans JP,sans-serif" font-size="34" font-weight="900" fill="#20262b">少量・常温・日持ちで贈る お歳暮</text></svg>
