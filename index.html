@@ -104,6 +104,13 @@
 
   .cat-sec { margin-top:32px; }
   .cat-head { font-size:20px; font-weight:900; margin:0; padding-bottom:8px; border-bottom:2px solid #111; }
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid #111;border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid #111;border-bottom:1.5px solid #111;transform:rotate(45deg)}
+.talk .who{font-weight:900;color:#111;font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
@@ -142,8 +149,10 @@
 </div>
 
 <main>
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>こんにちは、デン太です。このページでは、動画で紹介した商品だけをまとめています。気になる道具を、カテゴリーごとに探してみてください。</p></div></div>
   <div class="grid-head"><h2 id="grid">商品一覧</h2><span class="pr-note">カテゴリー別・各カテゴリー内は安い順／PRを含みます</span></div>
   <div id="productGrid">
+  <div class="talk"><img src="img/chara_denta_point.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>ポイントは並び方です。商品はカテゴリー別に、各カテゴリーの中では安い順に並んでいます。価格を見比べながら選んでみてください。</p></div></div>
   <section class="cat-sec" data-sec="家電"><h3 class="cat-head">家電</h3>
   <div class="grid">
     <div class="p-card" data-name="SwitchBot ハブ3" data-cat="家電" data-price="16980">
@@ -294,6 +303,7 @@
     </div>
   </div></section>
   </div>
+<div class="talk"><img src="img/chara_denta_ok.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（安全案内係）</div><p>まとめ：このページは、動画で紹介した商品だけを集めた公式まとめページです。一人暮らしのキッチンと暮らしを、少しだけ便利にする道具を選んでいます。</p></div></div>
 </main>
 
 <div class="line-band"><div class="line-box"><div class="lt">LINEで新着を受け取る</div><div class="ld">新しい商品や動画の紹介を、LINEでお届けします。</div><a class="line-btn" href="https://lin.ee/zdbbxsi" target="_blank" rel="noopener">友だち追加する</a></div></div>
