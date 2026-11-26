@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#fdf3f0"/>
+<rect x="450" y="90" width="300" height="450" rx="44" fill="#eef3f6" stroke="#90a4ae" stroke-width="6"/>
+<rect x="478" y="118" width="110" height="110" rx="26" fill="#ffffff" stroke="#90a4ae" stroke-width="5"/>
+<circle cx="512" cy="152" r="17" fill="#78909c"/><circle cx="554" cy="152" r="17" fill="#78909c"/><circle cx="512" cy="194" r="17" fill="#78909c"/>
+<circle cx="600" cy="370" r="52" fill="#ffffff" opacity="0.65"/>
+<path d="M845 190 l 22 0 M856 179 l 0 22 M300 470 l 22 0 M311 459 l 0 22" stroke="#c62828" stroke-width="7" stroke-linecap="round"/>
+<text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="900" fill="#7a1f1f">フロスト（半透明）ケース（タイプ図）</text>
+<text x="600" y="595" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#5b6b7a">すりガラス調で、指紋が目立ちにくいタイプ</text>
+</svg>

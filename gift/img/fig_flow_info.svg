@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+<rect width="1200" height="420" fill="#ffffff"/>
+<text x="60" y="66" font-family="sans-serif" font-size="30" font-weight="900" fill="#20262b">情報の作り方：公式の公表が正本</text>
+<g font-family="sans-serif">
+<rect x="50" y="140" width="240" height="130" rx="12" fill="#fdecea" stroke="#e0c8c4"/>
+<text x="170" y="195" text-anchor="middle" font-size="23" font-weight="900" fill="#c62828">メーカー公式</text>
+<text x="170" y="235" text-anchor="middle" font-size="19" fill="#20262b">価格・仕様の公表</text>
+<text x="315" y="220" text-anchor="middle" font-size="36" font-weight="900" fill="#90a4ae">→</text>
+<rect x="340" y="140" width="240" height="130" rx="12" fill="#fdecea" stroke="#e0c8c4"/>
+<text x="460" y="195" text-anchor="middle" font-size="23" font-weight="900" fill="#c62828">確認日を記録</text>
+<text x="460" y="235" text-anchor="middle" font-size="19" fill="#20262b">出典と日付を明記</text>
+<text x="605" y="220" text-anchor="middle" font-size="36" font-weight="900" fill="#90a4ae">→</text>
+<rect x="630" y="140" width="240" height="130" rx="12" fill="#fdecea" stroke="#e0c8c4"/>
+<text x="750" y="195" text-anchor="middle" font-size="23" font-weight="900" fill="#c62828">計算して整理</text>
+<text x="750" y="235" text-anchor="middle" font-size="19" fill="#20262b">過程もそのまま載せる</text>
+<text x="895" y="220" text-anchor="middle" font-size="36" font-weight="900" fill="#90a4ae">→</text>
+<rect x="920" y="140" width="240" height="130" rx="12" fill="#fdecea" stroke="#e0c8c4"/>
+<text x="1040" y="195" text-anchor="middle" font-size="23" font-weight="900" fill="#c62828">公開</text>
+<text x="1040" y="235" text-anchor="middle" font-size="19" fill="#20262b">注意点も省略しない</text>
+<text x="60" y="350" font-size="20" fill="#5b6b7a">実使用テストはしていないため、使い心地の断定や体験談の形では書きません</text>
+</g>
+</svg>

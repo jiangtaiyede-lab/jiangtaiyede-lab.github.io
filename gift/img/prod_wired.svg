@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#fdf3f0"/>
+<path d="M420 130 C 420 300, 560 330, 600 430 C 630 505, 560 545, 620 560" stroke="#20262b" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M780 130 C 780 300, 660 330, 620 430" stroke="#20262b" stroke-width="9" fill="none" stroke-linecap="round"/>
+<ellipse cx="420" cy="115" rx="52" ry="66" fill="#263238"/>
+<ellipse cx="420" cy="115" rx="24" ry="34" fill="#eceff1"/>
+<ellipse cx="780" cy="115" rx="52" ry="66" fill="#263238"/>
+<ellipse cx="780" cy="115" rx="24" ry="34" fill="#eceff1"/>
+<rect x="606" y="548" width="28" height="52" rx="8" fill="#90a4ae"/>
+<rect x="614" y="600" width="12" height="26" fill="#f6c453"/>
+<text x="600" y="70" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="900" fill="#7a1f1f">有線イヤホン（タイプ図）</text>
+<text x="600" y="330" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#5b6b7a">充電いらずで、渡してすぐ使える</text>
+</svg>

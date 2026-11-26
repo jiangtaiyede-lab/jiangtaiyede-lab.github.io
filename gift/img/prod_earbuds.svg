@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#fdf3f0"/>
+<rect x="380" y="300" width="440" height="240" rx="60" fill="#ffffff" stroke="#c62828" stroke-width="6"/>
+<rect x="380" y="300" width="440" height="70" rx="35" fill="#fdecea"/>
+<ellipse cx="600" cy="470" rx="60" ry="16" fill="#e8b4b8"/>
+<path d="M470 300 C 450 200, 520 170, 545 230 C 560 265, 540 300, 520 315 C 495 335, 465 340, 470 300 Z" fill="#ffffff" stroke="#20262b" stroke-width="6"/>
+<circle cx="505" cy="255" r="16" fill="#c62828"/>
+<path d="M730 300 C 750 200, 680 170, 655 230 C 640 265, 660 300, 680 315 C 705 335, 735 340, 730 300 Z" fill="#ffffff" stroke="#20262b" stroke-width="6"/>
+<circle cx="695" cy="255" r="16" fill="#c62828"/>
+<path d="M250 200 q 30 -40 0 -80 M950 200 q -30 -40 0 -80" stroke="#f6c453" stroke-width="10" fill="none" stroke-linecap="round"/>
+<text x="600" y="105" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="900" fill="#7a1f1f">ワイヤレスイヤホン（タイプ図）</text>
+<text x="600" y="590" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#5b6b7a">充電ケース＋左右イヤホン。スマホの機種を選ばず贈れる</text>
+</svg>

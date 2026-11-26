@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470">
+<rect width="1200" height="470" fill="#ffffff"/>
+<text x="60" y="66" font-family="sans-serif" font-size="30" font-weight="900" fill="#20262b">渡し方で差がつく：ラッピング＋手書きカード</text>
+<rect x="90" y="120" width="300" height="220" rx="12" fill="#c62828"/>
+<rect x="90" y="120" width="300" height="40" rx="12" fill="#a51f1f"/>
+<rect x="222" y="120" width="36" height="220" fill="#f6c453"/>
+<text x="240" y="395" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="900" fill="#20262b">包む（ラッピング）</text>
+<text x="600" y="250" text-anchor="middle" font-family="sans-serif" font-size="60" font-weight="900" fill="#c62828">＋</text>
+<rect x="760" y="130" width="330" height="200" rx="10" fill="#fff7cc" stroke="#e8d98a" stroke-width="3"/>
+<path d="M790 185 l 270 0 M790 235 l 270 0 M790 285 l 170 0" stroke="#b0a26a" stroke-width="6" stroke-linecap="round"/>
+<text x="925" y="395" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="900" fill="#20262b">ひとこと書く（カード）</text>
+<text x="60" y="450" font-family="sans-serif" font-size="20" fill="#5b6b7a">予算の1割（500円）を渡し方に残すのが、このサイトの配分の目安</text>
+</svg>
