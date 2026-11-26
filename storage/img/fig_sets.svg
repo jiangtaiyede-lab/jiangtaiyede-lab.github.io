@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="予算別スターターセット2件（合計金額の見える化）の図">
+<rect width="1200" height="520" fill="#ffffff"/>
+<rect x="30" y="30" width="555" height="460" rx="16" fill="#eef3fa"/>
+<text x="307" y="82" font-size="28" font-weight="bold" fill="#1a365d" text-anchor="middle">セットA｜まず揃える3点</text>
+<rect x="70" y="120" width="475" height="66" rx="10" fill="#ffffff"/>
+<text x="92" y="162" font-size="24" fill="#20262b">カラーメタルラック CMF-55075</text><text x="523" y="162" font-size="24" font-weight="bold" fill="#ff0000" text-anchor="end">¥3,608</text>
+<rect x="70" y="200" width="475" height="66" rx="10" fill="#ffffff"/>
+<text x="92" y="242" font-size="24" fill="#20262b">突っ張りラック SP-60</text><text x="523" y="242" font-size="24" font-weight="bold" fill="#ff0000" text-anchor="end">¥5,999</text>
+<rect x="70" y="280" width="475" height="66" rx="10" fill="#ffffff"/>
+<text x="92" y="322" font-size="24" fill="#20262b">すき間収納ワゴン 幅15cm</text><text x="523" y="322" font-size="24" font-weight="bold" fill="#ff0000" text-anchor="end">¥4,090</text>
+<text x="307" y="412" font-size="30" font-weight="bold" fill="#20262b" text-anchor="middle">合計 <tspan fill="#ff0000">¥13,697</tspan></text>
+<text x="307" y="452" font-size="21" fill="#5b6b7a" text-anchor="middle">ラック＋壁面＋隙間で、置き場所3系統をカバー</text>
+<rect x="615" y="30" width="555" height="460" rx="16" fill="#eef3fa"/>
+<text x="892" y="82" font-size="28" font-weight="bold" fill="#1a365d" text-anchor="middle">セットB｜衣類をまるごと収納</text>
+<rect x="655" y="120" width="475" height="66" rx="10" fill="#ffffff"/>
+<text x="677" y="162" font-size="24" fill="#20262b">フィッツプラスイージー FE5505</text><text x="1108" y="162" font-size="24" font-weight="bold" fill="#ff0000" text-anchor="end">¥12,980</text>
+<rect x="655" y="200" width="475" height="66" rx="10" fill="#ffffff"/>
+<text x="677" y="242" font-size="24" fill="#20262b">カラーメタルラック CMM-55083</text><text x="1108" y="242" font-size="24" font-weight="bold" fill="#ff0000" text-anchor="end">¥4,980</text>
+<rect x="655" y="280" width="475" height="66" rx="10" fill="#ffffff"/>
+<text x="677" y="322" font-size="24" fill="#20262b">（チェストは完成品＝組み立て不要）</text><text x="1108" y="322" font-size="24" font-weight="bold" fill="#2e9e5b" text-anchor="end">0円の手間</text>
+<text x="892" y="412" font-size="30" font-weight="bold" fill="#20262b" text-anchor="middle">合計 <tspan fill="#ff0000">¥17,960</tspan></text>
+<text x="892" y="452" font-size="21" fill="#5b6b7a" text-anchor="middle">衣類はチェスト、日用品はラックに分担</text>
+</svg>

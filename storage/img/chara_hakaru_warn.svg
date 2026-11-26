@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="計測キャラクター ハカル（注意・心配）">
+<rect x="36" y="46" width="118" height="118" rx="34" fill="#ffd900" stroke="#20262b" stroke-width="6"/>
+<circle cx="95" cy="108" r="34" fill="#fff3b0" stroke="#20262b" stroke-width="5"/>
+<circle cx="95" cy="108" r="7" fill="#20262b"/>
+<path d="M42 70 Q24 60 18 44" fill="none" stroke="#20262b" stroke-width="7" stroke-linecap="round"/>
+<path d="M152 70 Q170 60 176 44" fill="none" stroke="#20262b" stroke-width="7" stroke-linecap="round"/>
+<path d="M66 58 L86 64 M124 58 L104 64" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<circle cx="76" cy="74" r="6.5" fill="#20262b"/>
+<circle cx="118" cy="74" r="6.5" fill="#20262b"/>
+<path d="M84 94 Q97 84 110 94" fill="none" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<path d="M168 30 q7 12 0 18 q-7 -6 0 -18" fill="#7ec8e3"/>
+<ellipse cx="72" cy="172" rx="14" ry="5.5" fill="#20262b"/>
+<ellipse cx="122" cy="172" rx="14" ry="5.5" fill="#20262b"/>
+</svg>

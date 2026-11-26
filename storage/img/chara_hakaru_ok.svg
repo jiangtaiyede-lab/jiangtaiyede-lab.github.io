@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="計測キャラクター ハカル（まとめ・OK）">
+<circle cx="164" cy="40" r="24" fill="#2e9e5b"/>
+<path d="M152 40 l9 9 l18 -19" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="36" y="46" width="118" height="118" rx="34" fill="#ffd900" stroke="#20262b" stroke-width="6"/>
+<circle cx="95" cy="108" r="34" fill="#fff3b0" stroke="#20262b" stroke-width="5"/>
+<circle cx="95" cy="108" r="7" fill="#20262b"/>
+<path d="M40 84 Q22 90 20 108" fill="none" stroke="#20262b" stroke-width="7" stroke-linecap="round"/>
+<path d="M66 68 Q76 58 86 68 M104 68 Q114 58 124 68" fill="none" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<path d="M82 80 Q97 94 112 80" fill="none" stroke="#20262b" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="58" cy="80" rx="9" ry="5.5" fill="#f7b1c1"/>
+<ellipse cx="136" cy="80" rx="9" ry="5.5" fill="#f7b1c1"/>
+<ellipse cx="72" cy="172" rx="14" ry="5.5" fill="#20262b"/>
+<ellipse cx="122" cy="172" rx="14" ry="5.5" fill="#20262b"/>
+</svg>

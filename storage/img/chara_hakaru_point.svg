@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="計測キャラクター ハカル（要点・指さし）">
+<path d="M150 110 Q176 104 184 84" fill="none" stroke="#20262b" stroke-width="7" stroke-linecap="round"/>
+<path d="M184 84 l2 -22 M184 84 l-14 -14" stroke="#20262b" stroke-width="6" stroke-linecap="round"/>
+<rect x="36" y="46" width="118" height="118" rx="34" fill="#ffd900" stroke="#20262b" stroke-width="6"/>
+<circle cx="95" cy="108" r="34" fill="#fff3b0" stroke="#20262b" stroke-width="5"/>
+<circle cx="95" cy="108" r="7" fill="#20262b"/>
+<path d="M40 84 Q22 90 20 108" fill="none" stroke="#20262b" stroke-width="7" stroke-linecap="round"/>
+<circle cx="76" cy="66" r="6.5" fill="#20262b"/>
+<circle cx="118" cy="66" r="6.5" fill="#20262b"/>
+<ellipse cx="97" cy="84" rx="6" ry="8" fill="#20262b"/>
+<ellipse cx="58" cy="80" rx="9" ry="5.5" fill="#f7b1c1"/>
+<ellipse cx="136" cy="80" rx="9" ry="5.5" fill="#f7b1c1"/>
+<ellipse cx="72" cy="172" rx="14" ry="5.5" fill="#20262b"/>
+<ellipse cx="122" cy="172" rx="14" ry="5.5" fill="#20262b"/>
+<path d="M168 22 l0 14 M161 29 l14 0" stroke="#e8a100" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>収納家具のサイズの測り方｜測る場所は3か所 ― 一人暮らし収納くらべマガジン</title>
+<meta name="description" content="収納家具を買う前に測る3か所（置き場所・搬入経路・開閉スペース）の測り方。6畳の面積計算とサイズ早見表つき。">
+<style>
+:root{--ink:#20262b;--mut:#5b6b7a;--line:#d8dee3;--bg:#f7f7f7;--card:#fff;--acc:#1a365d;--acc2:#eef3fa;--yel:#ffd900;--red:#ff0000}
+*{box-sizing:border-box}body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;font-size:16.5px;letter-spacing:.025em}
+a{color:var(--acc)}
+header.site{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+header.site .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:900;font-size:18px;color:var(--ink);text-decoration:none;line-height:1.3}.logo span{color:var(--acc)}
+nav.g{display:flex;gap:14px;font-size:14px;margin-left:auto}nav.g a{color:var(--mut);text-decoration:none}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:clamp(24px,4.5vw,36px);line-height:1.4;margin:14px 0 10px}
+h2{font-size:clamp(20px,3.4vw,26px);background:var(--acc);padding:.75em 1em;position:relative;margin:40px 0 14px;line-height:1.5;color:#fff}h2::before{content:"";position:absolute;display:block;pointer-events:none;top:-4px;left:0;width:100%;height:calc(100% + 4px);box-sizing:content-box;border-top:solid 2px var(--acc);border-bottom:solid 2px var(--acc)}
+h3{font-size:19px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--acc);line-height:1.5}
+.hero{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block}
+.fig{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block;margin:12px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:#5c676d;margin:6px 0 4px}
+.meta .who{background:#eef1f5;border-radius:6px;padding:2px 10px}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
+.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat .num{font-size:30px;font-weight:900;color:var(--acc);line-height:1.2}
+.stat .lbl{font-size:13.5px;color:var(--mut)}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:#fff;margin:12px 0}
+table{border-collapse:collapse;min-width:560px;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--acc);color:#fff;font-weight:800}
+td.hl{background:var(--acc2);font-weight:800}
+td.no{color:#9aa7b1}
+.steps{display:grid;gap:12px;margin:14px 0}
+.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;gap:14px}
+.step .no{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:var(--acc);color:#fff;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center}
+.step h3{border:none;padding:0;margin:0 0 4px;font-size:18px}
+.step p{margin:4px 0}
+.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 22px;margin:8px 0}
+.cta.pending{background:#eef1f5;color:#5b6b7a;border:2px dashed #9aa7b1;font-size:14px}
+.pcard{display:flex;gap:16px;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:14px;margin:12px 0;align-items:flex-start}
+.pcard a.pimg{flex:0 0 auto;line-height:0}
+.pcard a.pimg img{width:150px;height:150px;object-fit:contain;border:1px solid var(--line);border-radius:10px;background:#fff;display:block}
+.pcard .pinfo{flex:1 1 auto;min-width:0}
+.pcard .pname{font-weight:900;font-size:17px;line-height:1.5;margin:2px 0 4px}
+.pcard .pname a{color:var(--ink);text-decoration:none}
+.pcard .pprice{font-size:15px;margin:4px 0 6px}
+.pcard .pprice strong{color:#ff0000;font-size:19px}
+@media (max-width:640px){.pcard{flex-direction:column;align-items:center}.pcard a.pimg img{width:200px;height:200px}.pcard .pinfo{width:100%}}
+.prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.prod h3{margin-top:0}
+.price{font-size:15px;margin:4px 0 6px}
+.price strong{color:var(--red);font-size:19px}
+.calc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.calc .total{font-size:24px;font-weight:900}
+.calc .total strong{color:var(--red)}
+.faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 18px;margin:12px 0}
+.faq dt{font-weight:900;margin:14px 0 4px;color:var(--acc)}
+.faq dd{margin:0 0 14px}
+.src{font-size:13.5px;color:var(--mut)}
+.nexts{display:grid;gap:10px;margin:14px 0}
+.nexts a{display:block;background:#fff;border:1px solid var(--line);border-left:8px solid var(--acc);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700}
+footer.site{border-top:1px solid var(--line);background:#fff;padding:24px 16px;font-size:13px;color:var(--mut)}
+footer.site .in{max-width:1080px;margin:0 auto}
+@media (max-width:640px){nav.g{display:none}table{font-size:13.5px}.stat .num{font-size:26px}}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
+.official{background:#fff;border:2px solid var(--acc);border-radius:12px;padding:16px 18px;margin:16px 0}
+.official .brand{height:26px;width:auto;display:block;margin-bottom:6px}
+.official .ttl{font-weight:900;color:var(--acc);font-size:17px;margin-bottom:4px}
+.official p{margin:4px 0}
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
+.piewrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.piewrap svg{flex:0 0 auto}
+.piewrap .lg{font-size:14.5px}
+.piewrap .lg .sw{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FXZPJWXX71');
+</script>
+</head>
+<body>
+<header class="site"><div class="in">
+<a class="logo" href="./">一人暮らし収納<span>くらべ</span>マガジン</a>
+<nav class="g"><a href="./">買う前に見る5つ</a><a href="size-guide.html">サイズの測り方</a><a href="products.html">カテゴリ別おすすめ</a><a href="sets.html">予算別セット</a><a href="about.html">運営者情報</a></nav>
+</div></header>
+<main>
+
+<h1>収納家具のサイズの測り方｜測る場所は「置き場所・搬入経路・開閉スペース」の3か所</h1>
+<div class="meta"><span>↻ 2026年11月26日</span><span class="who">執筆・編集　一人暮らし収納くらべマガジン編集部</span></div>
+<img class="hero" src="img/fig_size.svg" alt="測る場所は3か所（置き場所・搬入経路・開閉スペース）の図">
+<div class="talk"><img src="img/chara_hakaru.svg" alt="計測キャラクター「ハカル」"><div class="bubble"><div class="who">ハカル（計測役）</div><p>計測役のハカルです。サイズで失敗する人のほとんどは、置き場所しか測っていません。あと2か所を足すだけで、失敗の芽はほぼ摘めます。</p></div></div>
+<div class="concl"><div class="ttl">結論</div>
+<p>測るのは3か所だけです。<span class="marker">置き場所（幅・奥行・高さ）／搬入経路（いちばん狭い場所）／開閉スペース（引き出し・扉の前）</span>。この3か所の数字と商品ページの外寸を見比べれば、「入らない」「開かない」は買う前に分かります。</p>
+</div>
+
+<h2>1. 置き場所：幅・奥行・高さ＋巾木とコンセント</h2>
+<p>置きたい場所の幅・奥行・高さを、メジャーで実測します。ポイントは3つです。</p>
+<ul>
+<li><strong>幅は余白つきで見る</strong>：置き場所の幅 − 商品の幅 ＝ 余白。たとえば置き場所が幅60cmで商品が幅55cmなら、余白は5cmです。余白がゼロに近いと、掃除の手も入りません</li>
+<li><strong>奥行は巾木（幅木）分を差し引く</strong>：床と壁の境にある巾木は数mm〜1cmほど出っ張ります。壁にぴったり付ける家具は、その分を引いて考えます</li>
+<li><strong>高さは梁とエアコンも見る</strong>：突っ張りラックは天井までの高さが設置可能範囲に入るかが条件です。SP-60の対応高さは166.5〜295.5cmと公表されています</li>
+</ul>
+<div class="talk"><img src="img/chara_denta_point.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（案内係）</div><p>メジャーが手元にないときは、A4用紙（短辺21cm・長辺29.7cm）や500mlペットボトルを物差し代わりにする手もあります。</p></div></div>
+
+<h2>2. 搬入経路：いちばん狭い場所が上限</h2>
+<p>完成品のチェストや大型のラックは、「部屋に置けるか」の前に「部屋まで運べるか」が関門になります。玄関ドアの有効幅、廊下の曲がり角、エレベーターの扉と奥行、階段の踊り場を測り、いちばん狭い場所の数字を上限として商品の外寸と比べます。</p>
+<p>フィッツプラスイージー FE5505は幅55×奥行41×高さ105cmの完成品です。ドアの有効幅がこれを下回る部屋では、要組立のラックに切り替えるか、搬入できる別サイズを選ぶ必要があります。</p>
+<div class="talk"><img src="img/chara_hakaru_warn.svg" alt="計測キャラクター「ハカル」"><div class="bubble"><div class="who">ハカル（計測役）</div><p>完成品は「組み立ての手間ゼロ」と引き換えに「搬入の自由度ゼロ」です。ここを見落とすのが、いちばん高くつく失敗です。</p></div></div>
+
+<h2>3. 開閉スペース：引き出しは「本体＋引き出す分」</h2>
+<p>引き出し式のチェストは、本体の奥行と同じくらい前に引き出します。FE5505なら奥行41cmの引き出しが前に出てくるため、本体の前に最低でも41cm＋自分が立つ場所が必要です。扉式のキャビネットも、扉が開く半径の分だけ前を空けます。</p>
+<div class="tscroll"><table>
+<tr><th>家具の形</th><th>前に必要なスペースの目安</th></tr>
+<tr><td class="hl">引き出し式チェスト</td><td>本体の奥行（引き出しの奥行）＋立つ場所 約40cm</td></tr>
+<tr><td class="hl">扉式キャビネット</td><td>扉の幅と同じ半径分</td></tr>
+<tr><td class="hl">オープンラック</td><td>物の出し入れに 約30cm</td></tr>
+<tr><td class="hl">隙間ワゴン</td><td>引き出す方向に、本体の長さ分</td></tr>
+</table></div>
+
+<h2>6畳の部屋で計算してみる</h2>
+<p>6畳の部屋は、1畳＝1.62㎡として計算すると約9.72㎡です。シングルベッド（97×195cm＝約1.89㎡）、チェストとラック（合計 約0.42㎡）、デスク（100×50cm＝0.50㎡）を置くと、残りは通路と余白になります。</p>
+<div class="piewrap"><svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="割合を示す円グラフ"><path d="M110,110 L110.0,10.0 A100,100 0 0 1 204.0,75.8 Z" fill="#1a365d"/><path d="M110,110 L204.0,75.8 A100,100 0 0 1 209.7,102.3 Z" fill="#ffd900"/><path d="M110,110 L209.7,102.3 A100,100 0 0 1 207.0,134.3 Z" fill="#7ec8e3"/><path d="M110,110 L207.0,134.3 A100,100 0 1 1 110.0,10.0 Z" fill="#d8dee3"/></svg><div class="lg"><p><strong>6畳（約9.72㎡）の面積配分</strong></p>
+<p><span class="sw" style="background:#1a365d"></span>ベッド 約1.89㎡（19.4%）</p>
+<p><span class="sw" style="background:#ffd900"></span>収納家具 約0.42㎡（4.3%）</p>
+<p><span class="sw" style="background:#7ec8e3"></span>デスク 約0.50㎡（5.1%）</p>
+<p><span class="sw" style="background:#d8dee3"></span>通路・余白 約6.91㎡（71.1%）</p>
+<p>収納家具が床に占める割合は意外と小さいものです。圧迫感を決めるのは面積より「高さ」と「置く位置」で、背の低い家具を壁際に寄せるのが基本になります。</p></div></div>
+
+<h2>サイズ早見表｜置き場所の幅から逆算する</h2>
+<div class="tscroll"><table>
+<tr><th>置き場所の幅</th><th>商品の幅の目安（余白5cm以上）</th><th>入る商品の例</th></tr>
+<tr><td class="hl">60cm</td><td>55cmまで</td><td>カラーメタルラック（幅55cm）／フィッツプラスイージー FE5505（幅55cm）</td></tr>
+<tr><td class="hl">45cm</td><td>40cmまで</td><td>すき間収納ワゴン（長さ40cmを横向きに）</td></tr>
+<tr><td class="hl">20cm</td><td>15cmまで</td><td>すき間収納ワゴン（幅15cm）</td></tr>
+<tr><td class="hl">壁際の縦空間</td><td>高さ166.5〜295.5cm対応</td><td>突っ張りラック SP-60（幅60cm）</td></tr>
+</table></div>
+<div class="talk"><img src="img/chara_hantei_ok.svg" alt="判定キャラクター「ハンテイ」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>判定：測る順番は「置き場所→搬入→開閉」。この順で数字が揃えば、サイズの失敗はほぼゼロになります。</p></div></div>
+<p class="src">出典：楽天市場の各商品ページ（外寸、確認日：2026年11月26日）。部屋の広さの計算は1畳＝1.62㎡としての概算です。</p>
+<p class="disc">※このページにはアフィリエイト広告リンクは設置していません。本文のリンクは、サイト内の案内です。</p>
+
+</main>
+<footer class="site"><div class="in">一人暮らし収納くらべマガジン｜商品のサイズ・価格は楽天市場とメーカーの公表に基づきます。購入の前には、最新の商品ページで価格とサイズを確認してください。<br><a href="./">買う前に見る5つ</a>｜<a href="size-guide.html">サイズの測り方</a>｜<a href="products.html">カテゴリ別おすすめ</a>｜<a href="sets.html">予算別セット</a>｜<a href="about.html">運営者情報</a></div></footer>
+</body>
+</html>
