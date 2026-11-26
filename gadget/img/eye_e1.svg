@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="SoftBank 光とSoftBank Airの値上げイメージ">
+<rect width="800" height="450" fill="#f4f6f8"/>
+<rect x="60" y="70" width="300" height="300" rx="18" fill="#ffffff" stroke="#23272e" stroke-width="5"/>
+<text x="210" y="140" font-size="34" font-weight="900" text-anchor="middle" fill="#23272e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">SoftBank 光</text>
+<text x="210" y="240" font-size="64" font-weight="900" text-anchor="middle" fill="#ce0000" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">+330円</text>
+<text x="210" y="292" font-size="25" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">5,720円 → 6,050円</text>
+<text x="210" y="338" font-size="22" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">ファミリー・2年自動更新プラン</text>
+<rect x="440" y="70" width="300" height="300" rx="18" fill="#ffffff" stroke="#23272e" stroke-width="5"/>
+<text x="590" y="140" font-size="34" font-weight="900" text-anchor="middle" fill="#23272e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">SoftBank Air</text>
+<text x="590" y="240" font-size="64" font-weight="900" text-anchor="middle" fill="#ce0000" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">+330円</text>
+<text x="590" y="292" font-size="25" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">5,368円 → 5,698円</text>
+<text x="590" y="338" font-size="22" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">Air 4G/5G共通プラン</text>
+<text x="400" y="415" font-size="30" font-weight="900" text-anchor="middle" fill="#23272e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">解除料0円で解約できるのは11月30日まで</text>
+</svg>
