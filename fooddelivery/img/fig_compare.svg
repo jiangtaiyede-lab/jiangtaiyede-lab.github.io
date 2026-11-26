@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Hiragino Sans,Noto Sans JP,sans-serif">
+<rect width="800" height="450" fill="#ffffff"/>
+<text x="40" y="48" font-size="25" font-weight="bold" fill="#20262b">1食あたりの単価くらべ（代表プラン・円）</text>
+<g font-size="19" fill="#20262b">
+<text x="40" y="108">ヨシケイ</text>
+<text x="40" y="163">ナッシュ（10食）</text>
+<text x="40" y="218">三ツ星ファーム</text>
+<text x="40" y="273">わんまいる</text>
+<text x="40" y="328">フィシュル</text>
+<text x="40" y="383">Oisix Kit（1人あたり）</text>
+</g>
+<g>
+<rect x="250" y="82" width="158" height="34" fill="#43a047"/>
+<rect x="250" y="137" width="315" height="34" fill="#2e7d32"/>
+<rect x="250" y="192" width="357" height="34" fill="#2e7d32"/>
+<rect x="250" y="247" width="366" height="34" fill="#2e7d32"/>
+<rect x="250" y="302" width="472" height="34" fill="#8a9a8b"/>
+<rect x="250" y="357" width="499" height="34" fill="#8a9a8b"/>
+</g>
+<g font-size="21" font-weight="bold">
+<text x="418" y="108" fill="#ff0000">300円</text>
+<text x="575" y="163" fill="#20262b">599円</text>
+<text x="617" y="218" fill="#20262b">680円〜</text>
+<text x="626" y="273" fill="#20262b">696円</text>
+<text x="730" y="328" fill="#20262b">898円</text>
+<text x="262" y="383" fill="#ffffff">850〜1,050円</text>
+</g>
+<text x="40" y="432" font-size="15" fill="#5b6b7a">※各社の代表プランの価格を食数で割った当編集部の計算値。送料は含まない</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Hiragino Sans,Noto Sans JP,sans-serif">
+<rect width="800" height="450" fill="#e9f4ea"/>
+<rect y="360" width="800" height="90" fill="#d5e8d4"/>
+<!-- house -->
+<polygon points="110,150 260,60 410,150" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<rect x="140" y="150" width="240" height="180" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<rect x="225" y="240" width="70" height="90" fill="#2e7d32"/>
+<circle cx="282" cy="288" r="5" fill="#ffd900"/>
+<rect x="165" y="180" width="55" height="45" fill="#bfe3c2" stroke="#2e7d32" stroke-width="4"/>
+<rect x="300" y="180" width="55" height="45" fill="#bfe3c2" stroke="#2e7d32" stroke-width="4"/>
+<!-- delivery box -->
+<rect x="470" y="215" width="220" height="140" rx="8" fill="#f3c96b" stroke="#8a6d1f" stroke-width="5"/>
+<rect x="470" y="215" width="220" height="34" rx="8" fill="#e0aa3e"/>
+<rect x="560" y="215" width="40" height="140" fill="#e0aa3e" opacity="0.55"/>
+<!-- vegetables on box -->
+<circle cx="520" cy="180" r="34" fill="#e8572a"/>
+<path d="M520 148 q6 -22 26 -26 M520 148 q-14 -18 -30 -16" stroke="#2e7d32" stroke-width="7" fill="none" stroke-linecap="round"/>
+<ellipse cx="600" cy="188" rx="40" ry="24" fill="#43a047"/>
+<ellipse cx="648" cy="196" rx="28" ry="18" fill="#66bb6a"/>
+<path d="M470 120 q30 -28 62 -6" stroke="#2e7d32" stroke-width="7" fill="none" stroke-linecap="round"/>
+<!-- clock -->
+<circle cx="700" cy="90" r="42" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<path d="M700 90 L700 62 M700 90 L722 102" stroke="#2e7d32" stroke-width="6" stroke-linecap="round"/>
+<text x="400" y="425" font-size="26" font-weight="bold" fill="#2e7d32" text-anchor="middle">買い物に行かなくても、夕食が届く</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Hiragino Sans,Noto Sans JP,sans-serif">
+<rect width="800" height="450" fill="#ffffff"/>
+<g>
+<circle cx="150" cy="150" r="78" fill="#e8f3ea" stroke="#2e7d32" stroke-width="5"/>
+<text x="150" y="140" font-size="44" font-weight="bold" fill="#2e7d32" text-anchor="middle">1</text>
+<text x="150" y="182" font-size="19" fill="#20262b" text-anchor="middle">1人分で頼める</text>
+<circle cx="400" cy="150" r="78" fill="#e8f3ea" stroke="#2e7d32" stroke-width="5"/>
+<text x="400" y="140" font-size="44" font-weight="bold" fill="#2e7d32" text-anchor="middle">2</text>
+<text x="400" y="182" font-size="19" fill="#20262b" text-anchor="middle">冷凍・弁当がある</text>
+<circle cx="650" cy="150" r="78" fill="#e8f3ea" stroke="#2e7d32" stroke-width="5"/>
+<text x="650" y="140" font-size="44" font-weight="bold" fill="#2e7d32" text-anchor="middle">3</text>
+<text x="650" y="182" font-size="19" fill="#20262b" text-anchor="middle">受け取れる</text>
+</g>
+<g font-size="18" fill="#20262b" text-anchor="middle">
+<text x="150" y="300">最低注文金額と</text>
+<text x="150" y="330">送料を先に見る</text>
+<text x="400" y="300">温めるだけで</text>
+<text x="400" y="330">食べられる形か</text>
+<text x="650" y="300">置き配か</text>
+<text x="650" y="330">土日配送か</text>
+</g>
+<text x="400" y="410" font-size="21" font-weight="bold" fill="#2e7d32" text-anchor="middle">一人暮らしの選び方は、この3点でほぼ決まる</text>
+</svg>

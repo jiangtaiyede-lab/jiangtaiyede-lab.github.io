@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1食単価で比べる｜プラン価格÷食数の計算過程まで見せる ― 食材宅配くらべマガジン</title>
+<meta name="description" content="食材宅配の1食単価を、プラン価格÷食数の割り算過程と月20食換算、送料の内訳円グラフで比較します。">
+<style>
+:root{--ink:#20262b;--mut:#5b6b7a;--line:#d8dee3;--bg:#f7f7f7;--card:#fff;--acc:#2e7d32;--acc2:#e8f3ea;--yel:#ffd900;--red:#ff0000}
+*{box-sizing:border-box}body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;font-size:16.5px;letter-spacing:.025em}
+a{color:var(--acc)}
+header.site{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+header.site .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:900;font-size:18px;color:var(--ink);text-decoration:none;line-height:1.3}.logo span{color:var(--acc)}
+nav.g{display:flex;gap:14px;font-size:14px;margin-left:auto}nav.g a{color:var(--mut);text-decoration:none}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:clamp(24px,4.5vw,36px);line-height:1.4;margin:14px 0 10px}
+h2{font-size:clamp(20px,3.4vw,26px);background:var(--acc);padding:.75em 1em;position:relative;margin:40px 0 14px;line-height:1.5;color:#fff}h2::before{content:"";position:absolute;display:block;pointer-events:none;top:-4px;left:0;width:100%;height:calc(100% + 4px);box-sizing:content-box;border-top:solid 2px var(--acc);border-bottom:solid 2px var(--acc)}
+h3{font-size:19px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--acc);line-height:1.5}
+.hero{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block}
+.fig{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block;margin:12px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:#5c676d;margin:6px 0 4px}
+.meta .who{background:#eef1f5;border-radius:6px;padding:2px 10px}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
+.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat .num{font-size:30px;font-weight:900;color:var(--acc);line-height:1.2}
+.stat .num strong{color:var(--red)}
+.stat .lbl{font-size:13.5px;color:var(--mut)}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:#fff;margin:12px 0}
+table{border-collapse:collapse;min-width:560px;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--acc);color:#fff;font-weight:800}
+td.hl{background:var(--acc2);font-weight:800}
+td.best{background:#e8f3ea;font-weight:800;color:var(--red)}
+td.no{color:#9aa7b1}
+.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 22px;margin:8px 0}
+.prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.prod h3{margin-top:0}
+.price{font-size:15px;margin:4px 0 6px}
+.price strong{color:var(--red);font-size:19px}
+.calc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.calc .total{font-size:24px;font-weight:900}
+.calc .total strong{color:var(--red)}
+.faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 18px;margin:12px 0}
+.faq dt{font-weight:900;margin:14px 0 4px;color:var(--acc)}
+.faq dd{margin:0 0 14px}
+.src{font-size:13.5px;color:var(--mut)}
+footer.site{border-top:1px solid var(--line);background:#fff;padding:24px 16px;font-size:13px;color:var(--mut)}
+footer.site .in{max-width:1080px;margin:0 auto}
+@media (max-width:640px){nav.g{display:none}table{font-size:13.5px}.stat .num{font-size:26px}}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
+.official{background:#fff;border:2px solid var(--acc);border-radius:12px;padding:16px 18px;margin:16px 0}
+.official .brand{height:30px;width:auto;display:block;margin-bottom:6px}
+.official .ttl{font-weight:900;color:var(--acc);font-size:17px;margin-bottom:4px}
+.official p{margin:4px 0}
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
+.piewrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.piewrap svg{flex:0 0 auto}
+.piewrap .lg{font-size:14.5px}
+.piewrap .lg .sw{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FXZPJWXX71');
+</script>
+</head>
+<body>
+<header class="site"><div class="in">
+<a class="logo" href="./">食材宅配<span>くらべ</span>マガジン</a>
+<nav class="g"><a href="./">入門ガイド</a><a href="compare.html">単価くらべ</a><a href="oisix.html">Oisix詳説</a><a href="choose.html">選び方</a><a href="about.html">運営者情報</a></nav>
+</div></header>
+<main>
+
+<h1>1食単価で比べる｜プラン価格÷食数の計算過程まで見せる</h1>
+<div class="meta"><span>↻ 2026年11月26日</span><span class="who">執筆・編集　食材宅配くらべマガジン編集部</span></div>
+<img class="hero" src="img/fig_compare.svg" alt="1食あたり単価の棒グラフ">
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（案内係）</div><p>「1食いくら」と聞かれても、プランの総額だけでは比べられません。食数で割って、同じ物差しに直します。</p></div></div>
+<div class="concl"><div class="ttl">結論</div>
+<p>1食単価が最も安いのはヨシケイの<span class="marker">300円</span>。ただしこれは調理するミールキット系の値段で、「温めるだけ」の冷凍弁当ではナッシュの<span class="marker">599円</span>が目安。OisixのKitは1人あたり850〜1,050円と割高ですが、初回おためし1,980円で試せる分、始めるリスクは小さい、という位置づけです。</p>
+<a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGINN+ASSEDM+3RK+2TBJQA" rel="nofollow sponsored">Oisixのおためしセット（1,980円）を公式で見る</a>
+</div>
+
+<h2>1食単価の割り算｜代表プランで計算する</h2>
+<div class="tscroll"><table>
+<tr><th>サービス</th><th>代表プラン</th><th>計算</th><th>1食単価</th></tr>
+<tr><td class="hl">ヨシケイ</td><td>シンプルミール</td><td>プラン表示の1食価格</td><td class="best">300円</td></tr>
+<tr><td class="hl">ナッシュ</td><td>10食プラン 5,990円</td><td>5,990円 ÷ 10食</td><td>599円</td></tr>
+<tr><td class="hl">三ツ星ファーム</td><td>おかずプレート</td><td>公式表示の1食価格</td><td>680円〜</td></tr>
+<tr><td class="hl">わんまいる</td><td>5食セット 3,480円</td><td>3,480円 ÷ 5食</td><td>696円</td></tr>
+<tr><td class="hl">フィシュル</td><td>6パック 5,390円</td><td>5,390円 ÷ 6パック</td><td>898円</td></tr>
+<tr><td class="hl">Oisix（Kit Oisix）</td><td>2人前 1,700〜2,100円</td><td>2人前価格 ÷ 2人</td><td>850〜1,050円</td></tr>
+</table></div>
+<p>ナッシュは食数が多いプランほど1食単価が下がります（6食プランでは4,188円÷6食＝698円）。一人暮らしの冷凍庫の容量と相談して選ぶのが現実的です。</p>
+
+<h2>月20食に置き換えるといくらか｜計算過程</h2>
+<p>夕食のうち月20食を食材宅配に置き換えた場合の、商品代だけの目安です（送料は別に注記）。</p>
+<div class="calc">
+<p>ヨシケイ：300円 × 20食 ＝ <span class="total"><strong>6,000円</strong></span>（送料無料）</p>
+<p>ナッシュ：599円 × 20食 ＝ <span class="total"><strong>11,980円</strong></span>（＋送料913円〜／回）</p>
+<p>わんまいる：696円 × 20食 ＝ <span class="total"><strong>13,920円</strong></span>（＋送料918円／回）</p>
+<p>Oisix Kit：950円（中央値）× 20食 ＝ <span class="total"><strong>19,000円</strong></span>（送料は注文額で変動）</p>
+</div>
+<div class="talk"><img src="img/chara_hantei_point.svg" alt="判定キャラクター「ハンテイ」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>判定：月額の差は、単価の差そのままです。ヨシケイとOisix Kitでは月13,000円の開きがあります。「何に払うか」（調理の手間か、食材の質か）を先に決めるのが先です。</p></div></div>
+
+<h2>送料は「頼み方」で変わる｜Oisixの内訳を円グラフで</h2>
+<p>Oisixの定期会員の送料（本州）は、1回の注文額で変わります。税抜6,500円以上で無料、税抜4,500円以上で300円です。少額の注文を月4回（各税抜4,500円）続けると、送料だけで月1,200円になります。</p>
+<div class="piewrap"><svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="月額内訳の円グラフ"><path d="M110,110 L110.0,10.0 A100,100 0 1 1 71.7,17.6 Z" fill="#2e7d32"/><path d="M110,110 L71.7,17.6 A100,100 0 0 1 110.0,10.0 Z" fill="#ffd900"/></svg><div class="lg"><p><strong>少額注文を月4回続けた場合の月額内訳</strong></p>
+<p><span class="sw" style="background:#2e7d32"></span>商品代 18,000円（93.8%）</p>
+<p><span class="sw" style="background:#ffd900"></span>送料 1,200円（6.2%）</p>
+<p>注文を隔週のまとめ買いに変えて1回税抜6,500円以上にすれば、この送料は0円になります。同じ商品でも「頼み方」で月1,200円の差です。</p></div></div>
+<a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGINN+ASSEDM+3RK+2TBJQA" rel="nofollow sponsored">Oisix公式でおためしセットを見る</a>
+<p class="src">出典：Oisix公式の料金案内（送料は定期会員・本州の条件、確認日：2026年11月26日）／各社公式のプラン価格。価格は変動します。</p>
+<p class="disc">※このページにはアフィリエイト広告が含まれます（A8.net）。申し込みボタン（CTA）があるのは提携済みのOisixのみで、他の会社へのリンクは公式サイトへの通常リンクです。</p>
+
+</main>
+<footer class="site"><div class="in">食材宅配くらべマガジン｜価格・条件は各社の公式の公表に基づきます。申し込みの前には、最新の公式ページで価格と条件を確認してください。<br><a href="./">入門ガイド</a>｜<a href="compare.html">単価くらべ</a>｜<a href="oisix.html">Oisix詳説</a>｜<a href="choose.html">選び方</a>｜<a href="about.html">運営者情報</a></div></footer>
+</body>
+</html>
