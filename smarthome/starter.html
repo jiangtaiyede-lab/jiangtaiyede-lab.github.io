@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スマートホームのスターターセット3選｜合計金額の計算過程まで見せる ― スマートホームくらべマガジン</title>
+<meta name="description" content="予算別スターターセット3選。単品価格の足し算で合計金額の計算過程と費用内訳の円グラフまで見せます。">
+<style>
+:root{--ink:#20262b;--mut:#5b6b7a;--line:#d8dee3;--bg:#f7f7f7;--card:#fff;--acc:#1a365d;--acc2:#eef3fa;--yel:#ffd900;--red:#ff0000}
+*{box-sizing:border-box}body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;font-size:16.5px;letter-spacing:.025em}
+a{color:var(--acc)}
+header.site{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+header.site .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:900;font-size:18px;color:var(--ink);text-decoration:none;line-height:1.3}.logo span{color:var(--acc)}
+nav.g{display:flex;gap:14px;font-size:14px;margin-left:auto}nav.g a{color:var(--mut);text-decoration:none}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:clamp(24px,4.5vw,36px);line-height:1.4;margin:14px 0 10px}
+h2{font-size:clamp(20px,3.4vw,26px);background:var(--acc);padding:.75em 1em;position:relative;margin:40px 0 14px;line-height:1.5;color:#fff}h2::before{content:"";position:absolute;display:block;pointer-events:none;top:-4px;left:0;width:100%;height:calc(100% + 4px);box-sizing:content-box;border-top:solid 2px var(--acc);border-bottom:solid 2px var(--acc)}
+h3{font-size:19px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--acc);line-height:1.5}
+.hero{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block}
+.fig{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block;margin:12px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:#5c676d;margin:6px 0 4px}
+.meta .who{background:#eef1f5;border-radius:6px;padding:2px 10px}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
+.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat .num{font-size:30px;font-weight:900;color:var(--acc);line-height:1.2}
+.stat .lbl{font-size:13.5px;color:var(--mut)}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:#fff;margin:12px 0}
+table{border-collapse:collapse;min-width:560px;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--acc);color:#fff;font-weight:800}
+td.hl{background:var(--acc2);font-weight:800}
+td.no{color:#9aa7b1}
+.steps{display:grid;gap:12px;margin:14px 0}
+.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;gap:14px}
+.step .no{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:var(--acc);color:#fff;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center}
+.step h3{border:none;padding:0;margin:0 0 4px;font-size:18px}
+.step p{margin:4px 0}
+.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 22px;margin:8px 0}
+.prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.prod h3{margin-top:0}
+.price{font-size:15px;margin:4px 0 6px}
+.price strong{color:var(--red);font-size:19px}
+.calc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.calc .total{font-size:24px;font-weight:900}
+.calc .total strong{color:var(--red)}
+.faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 18px;margin:12px 0}
+.faq dt{font-weight:900;margin:14px 0 4px;color:var(--acc)}
+.faq dd{margin:0 0 14px}
+.src{font-size:13.5px;color:var(--mut)}
+.nexts{display:grid;gap:10px;margin:14px 0}
+.nexts a{display:block;background:#fff;border:1px solid var(--line);border-left:8px solid var(--acc);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700}
+footer.site{border-top:1px solid var(--line);background:#fff;padding:24px 16px;font-size:13px;color:var(--mut)}
+footer.site .in{max-width:1080px;margin:0 auto}
+@media (max-width:640px){nav.g{display:none}table{font-size:13.5px}.stat .num{font-size:26px}}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
+.official{background:#fff;border:2px solid var(--acc);border-radius:12px;padding:16px 18px;margin:16px 0}
+.official .brand{height:26px;width:auto;display:block;margin-bottom:6px}
+.official .ttl{font-weight:900;color:var(--acc);font-size:17px;margin-bottom:4px}
+.official p{margin:4px 0}
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
+.piewrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.piewrap svg{flex:0 0 auto}
+.piewrap .lg{font-size:14.5px}
+.piewrap .lg .sw{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FXZPJWXX71');
+</script>
+</head>
+<body>
+<header class="site"><div class="in">
+<a class="logo" href="./">スマートホーム<span>くらべ</span>マガジン</a>
+<nav class="g"><a href="./">入門ガイド</a><a href="hub.html">ハブ比較</a><a href="devices.html">カテゴリ別おすすめ</a><a href="starter.html">スターターセット</a><a href="about.html">運営者情報</a></nav>
+</div></header>
+<main>
+
+<h1>スマートホームのスターターセット3選｜合計金額の計算過程まで見せる</h1>
+<div class="meta"><span>↻ 2026年11月26日</span><span class="who">執筆・編集　スマートホームくらべマガジン編集部</span></div>
+<img class="hero" src="img/fig_starter.svg" alt="スターターセット3選と合計金額の図">
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（案内係）</div><p>セットの金額は、単品価格の足し算です。何にいくらかかるのか、内訳から見ていきましょう。</p></div></div>
+<div class="concl"><div class="ttl">結論</div>
+<p>最初に揃えるなら<span class="marker">最小構成（¥11,960）</span>で十分にスマートホームを体験できます。朝の自動化まで欲しい人は「朝が変わる構成」、見守りが目的の人は「見守り構成」を選んでください。</p>
+<a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOMCDE+4W9U+5YRHE" rel="nofollow sponsored">SwitchBot公式でセット製品の価格を見る</a>
+</div>
+
+<h2>1. 最小構成｜まず体験したい人（合計 ¥11,960）</h2>
+<div class="calc">
+<p>ハブ2 <strong>¥9,980</strong> ＋ プラグミニ（JP）<strong>¥1,980</strong> ＝ <span class="total">合計 <strong>¥11,960</strong></span></p>
+<p>エアコン・テレビ・照明のリモコンをスマホにまとめ（ハブ2）、リモコンのない家電の電源も操作できる（プラグミニ）最小の組み合わせです。ハブ2には温湿度センサーがあるため、「室温が上がったらエアコンをオン」の自動化もこの構成で組めます。</p>
+</div>
+<div class="piewrap"><svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="費用内訳の円グラフ"><path d="M110,110 L110.0,10.0 A100,100 0 1 1 23.7,59.4 Z" fill="#1a365d"/><path d="M110,110 L23.7,59.4 A100,100 0 0 1 110.0,10.0 Z" fill="#ffd900"/></svg><div class="lg"><p><strong>最小構成の費用内訳</strong></p>
+<p><span class="sw" style="background:#1a365d"></span>ハブ2 ¥9,980（83.4%）</p>
+<p><span class="sw" style="background:#ffd900"></span>プラグミニ ¥1,980（16.6%）</p>
+<p>費用の8割以上はハブです。だからこそ、ハブ選び（<a href="hub.html">ハブ比較</a>）を先に済ませるのが順番です。</p></div></div>
+
+<h2>2. 朝が変わる構成｜目覚めを自動化したい人（合計 ¥25,960）</h2>
+<div class="calc">
+<p>ハブ3 <strong>¥16,980</strong> ＋ カーテン3 <strong>¥8,980</strong> ＝ <span class="total">合計 <strong>¥25,960</strong></span></p>
+<p>起床時刻にカーテンが開き、照明とエアコンをハブ3のシーンでまとめて動かす構成です。ハブ3は本体のダイヤルと画面でも操作できるため、スマホを持たない家族がいる家庭にも向きます。</p>
+</div>
+
+<h2>3. 見守り構成｜帰宅確認と空気の見える化（合計 ¥21,440）</h2>
+<div class="calc">
+<p>ハブ2 <strong>¥9,980</strong> ＋ 開閉センサー <strong>¥3,480</strong> ＋ CO2センサー（温湿度計）<strong>¥7,980</strong> ＝ <span class="total">合計 <strong>¥21,440</strong></span></p>
+<p>玄関ドアの開閉で帰宅を通知し、部屋のCO2濃度と温湿度を見える化する構成です。子どもの帰宅確認や、在宅ワーク中の換気判断に使えます。</p>
+</div>
+<a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOMCDE+4W9U+5YRHE" rel="nofollow sponsored">SwitchBot公式で価格と在庫を見る</a>
+<div class="talk"><img src="img/chara_hantei_ok.svg" alt="判定キャラクター「ハンテイ」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>判定：3セットとも、後から製品を足せる構成です。最初に大きく買う必要はありません。</p></div></div>
+<h2>金額についての注記</h2>
+<ul>
+<li>単品価格は公式価格（ハブ3は2026年11月26日、その他は2026年11月25日に公式ページ・公式の特集ページで確認）で、変動します</li>
+<li>セール期間中は公式価格から割り引かれる場合があります。購入直前に公式ページで確認してください</li>
+<li>送料は公式の安心保証サービスの表記では「￥2,000以上のご購入で送料無料」です</li>
+</ul>
+<p class="src">出典：SwitchBot公式サイト（製品ページ・ブラックフライデー特集ページ、確認日：2026年11月25〜26日）。</p>
+<p class="disc">※このページにはアフィリエイト広告が含まれます（A8.net）。申し込みボタン（CTA）があるのは提携済みのリンクのみで、他の会社へのリンクは公式サイトへの通常リンクです。</p>
+
+</main>
+<footer class="site"><div class="in">スマートホームくらべマガジン｜製品の仕様・価格はメーカー公式の公表に基づきます。購入の前には、最新の公式ページで価格と条件を確認してください。<br><a href="./">入門ガイド</a>｜<a href="hub.html">ハブ比較</a>｜<a href="devices.html">カテゴリ別おすすめ</a>｜<a href="starter.html">スターターセット</a>｜<a href="about.html">運営者情報</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="Hiragino Sans,Noto Sans JP,sans-serif">
+<rect width="800" height="450" fill="#eef3fa"/>
+<polygon points="400,60 700,220 640,220 640,390 160,390 160,220 100,220" fill="#ffffff" stroke="#1a365d" stroke-width="6"/>
+<rect x="160" y="220" width="480" height="170" fill="#ffffff"/>
+<rect x="355" y="290" width="90" height="100" fill="#1a365d"/>
+<circle cx="428" cy="342" r="5" fill="#ffd900"/>
+<rect x="205" y="255" width="80" height="60" fill="#bcd3f0" stroke="#1a365d" stroke-width="4"/>
+<rect x="515" y="255" width="80" height="60" fill="#bcd3f0" stroke="#1a365d" stroke-width="4"/>
+<circle cx="400" cy="150" r="34" fill="#ffd900" stroke="#1a365d" stroke-width="5"/>
+<path d="M370 150 a30 30 0 0 1 60 0" fill="none" stroke="#1a365d" stroke-width="5"/>
+<path d="M352 132 a52 52 0 0 1 96 0" fill="none" stroke="#1a365d" stroke-width="5"/>
+<rect x="216" y="330" width="52" height="34" rx="6" fill="#fff" stroke="#1a365d" stroke-width="4"/>
+<text x="242" y="353" font-size="17" text-anchor="middle" fill="#1a365d" font-weight="bold">ハブ</text>
+<rect x="520" y="330" width="66" height="34" rx="17" fill="#fff" stroke="#1a365d" stroke-width="4"/>
+<text x="553" y="353" font-size="15" text-anchor="middle" fill="#1a365d" font-weight="bold">カーテン</text>
+<text x="400" y="428" font-size="21" text-anchor="middle" fill="#1a365d" font-weight="bold">声とスマホで、家電がまとめて動く家</text>
+</svg>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スマートホームの始め方｜初心者はまず「ハブ＋プラグ」の2点から ― スマートホームくらべマガジン</title>
+<meta name="description" content="スマートホーム初心者向け入門ガイド。プラットフォームとMatterの基礎、カテゴリ別デバイス、予算別スターターセット3選（計算過程つき）を公式情報に基づいて整理。">
+<style>
+:root{--ink:#20262b;--mut:#5b6b7a;--line:#d8dee3;--bg:#f7f7f7;--card:#fff;--acc:#1a365d;--acc2:#eef3fa;--yel:#ffd900;--red:#ff0000}
+*{box-sizing:border-box}body{margin:0;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;font-size:16.5px;letter-spacing:.025em}
+a{color:var(--acc)}
+header.site{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+header.site .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:900;font-size:18px;color:var(--ink);text-decoration:none;line-height:1.3}.logo span{color:var(--acc)}
+nav.g{display:flex;gap:14px;font-size:14px;margin-left:auto}nav.g a{color:var(--mut);text-decoration:none}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:clamp(24px,4.5vw,36px);line-height:1.4;margin:14px 0 10px}
+h2{font-size:clamp(20px,3.4vw,26px);background:var(--acc);padding:.75em 1em;position:relative;margin:40px 0 14px;line-height:1.5;color:#fff}h2::before{content:"";position:absolute;display:block;pointer-events:none;top:-4px;left:0;width:100%;height:calc(100% + 4px);box-sizing:content-box;border-top:solid 2px var(--acc);border-bottom:solid 2px var(--acc)}
+h3{font-size:19px;margin:26px 0 8px;padding-left:10px;border-left:7px solid var(--acc);line-height:1.5}
+.hero{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block}
+.fig{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#fff;display:block;margin:12px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px;color:#5c676d;margin:6px 0 4px}
+.meta .who{background:#eef1f5;border-radius:6px;padding:2px 10px}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.concl{background:#fff7cc;border:1px solid #e8d98a;border-radius:12px;padding:16px 18px;margin:16px 0}
+.concl .ttl{font-weight:900;color:#7a5b00;margin-bottom:4px}
+.marker{background:linear-gradient(transparent 62%,var(--yel) 62%);font-weight:800;padding:0 2px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat .num{font-size:30px;font-weight:900;color:var(--acc);line-height:1.2}
+.stat .lbl{font-size:13.5px;color:var(--mut)}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:#fff;margin:12px 0}
+table{border-collapse:collapse;min-width:560px;width:100%;font-size:14.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--acc);color:#fff;font-weight:800}
+td.hl{background:var(--acc2);font-weight:800}
+td.no{color:#9aa7b1}
+.steps{display:grid;gap:12px;margin:14px 0}
+.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;gap:14px}
+.step .no{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:var(--acc);color:#fff;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center}
+.step h3{border:none;padding:0;margin:0 0 4px;font-size:18px}
+.step p{margin:4px 0}
+.cta{display:inline-block;background:var(--acc);color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:12px 22px;margin:8px 0}
+.prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.prod h3{margin-top:0}
+.price{font-size:15px;margin:4px 0 6px}
+.price strong{color:var(--red);font-size:19px}
+.calc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.calc .total{font-size:24px;font-weight:900}
+.calc .total strong{color:var(--red)}
+.faq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 18px;margin:12px 0}
+.faq dt{font-weight:900;margin:14px 0 4px;color:var(--acc)}
+.faq dd{margin:0 0 14px}
+.src{font-size:13.5px;color:var(--mut)}
+.nexts{display:grid;gap:10px;margin:14px 0}
+.nexts a{display:block;background:#fff;border:1px solid var(--line);border-left:8px solid var(--acc);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:700}
+footer.site{border-top:1px solid var(--line);background:#fff;padding:24px 16px;font-size:13px;color:var(--mut)}
+footer.site .in{max-width:1080px;margin:0 auto}
+@media (max-width:640px){nav.g{display:none}table{font-size:13.5px}.stat .num{font-size:26px}}
+.disc{font-size:11.5px;color:#78909c;line-height:1.7;margin:18px 0 4px}
+.official{background:#fff;border:2px solid var(--acc);border-radius:12px;padding:16px 18px;margin:16px 0}
+.official .brand{height:26px;width:auto;display:block;margin-bottom:6px}
+.official .ttl{font-weight:900;color:var(--acc);font-size:17px;margin-bottom:4px}
+.official p{margin:4px 0}
+.talk{display:flex;gap:12px;align-items:flex-start;margin:16px 0}
+.talk img{flex:0 0 auto;width:76px;height:76px}
+.talk .bubble{position:relative;flex:1;background:#fff;border:1.5px solid var(--acc);border-radius:14px;padding:10px 16px}
+.talk .bubble::before{content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;background:#fff;border-left:1.5px solid var(--acc);border-bottom:1.5px solid var(--acc);transform:rotate(45deg)}
+.talk .who{font-weight:900;color:var(--acc);font-size:13.5px}
+.talk p{margin:2px 0}
+@media (max-width:640px){.talk img{width:58px;height:58px}.talk .bubble{padding:8px 12px}}
+.piewrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.piewrap svg{flex:0 0 auto}
+.piewrap .lg{font-size:14.5px}
+.piewrap .lg .sw{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FXZPJWXX71');
+</script>
+</head>
+<body>
+<header class="site"><div class="in">
+<a class="logo" href="./">スマートホーム<span>くらべ</span>マガジン</a>
+<nav class="g"><a href="./">入門ガイド</a><a href="hub.html">ハブ比較</a><a href="devices.html">カテゴリ別おすすめ</a><a href="starter.html">スターターセット</a><a href="about.html">運営者情報</a></nav>
+</div></header>
+<main>
+
+<h1>スマートホームの始め方｜初心者はまず「ハブ＋プラグ」の2点から</h1>
+<div class="meta"><span>↻ 2026年11月26日</span><span class="who">執筆・編集　スマートホームくらべマガジン編集部</span></div>
+<img class="hero" src="img/hero_home.svg" alt="スマートホーム化した家のイメージ（ハブ・カーテン・照明が連携する図）">
+<div class="talk"><img src="img/chara_denta.svg" alt="案内キャラクター「デン太」"><div class="bubble"><div class="who">デン太（案内係）</div><p>こんにちは、デン太です。スマートホームは「全部を一気に」ではなく、今の暮らしに少し足すのが失敗しない始め方です。</p></div></div>
+<div class="talk"><img src="img/chara_hantei_point.svg" alt="判定キャラクター「ハンテイ」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>判定：最初の一歩は、スマートリモコン（ハブ）とスマートプラグの2点です。理由はこのページで順に説明します。</p></div></div>
+<div class="concl"><div class="ttl">結論</div>
+<p>初心者がまず買うべきは、<span class="marker">スマートリモコン（ハブ）1台と、スマートプラグ1個</span>です。ハブでエアコン・テレビ・照明のリモコンをスマホにまとめ、プラグでリモコンのない家電（こたつ・扇風機・加湿器など）の電源を操作できるようにします。この2点で「外出先からエアコンをつける」「消し忘れを遠隔で切る」ができるようになります。</p>
+<a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOMCDE+4W9U+5YRHE" rel="nofollow sponsored">SwitchBot公式でハブとプラグの価格を見る</a>
+</div>
+<div class="lead"><p>朝、カーテンが自動で開いて照明が少しずつ明るくなる。外出したら家電が自動でオフになり、帰宅すれば快適な温度で迎えてくれる。スマートホームでできるのは、こうした「毎日の細かい面倒を減らす」仕組みです。このページでは、プラットフォームと通信規格の基礎から、カテゴリ別のデバイス、予算別のスターターセットまでを順に整理します。製品は、国内で入手しやすく製品群が広いSwitchBotを中心に取り上げます（当編集部は実機テストをしておらず、仕様・価格は公式の公表に基づきます）。</p></div>
+
+<h2>最初に決めるのは「プラットフォーム」</h2>
+<p>スマートホームの土台になるのが、家中のデバイスをまとめて管理するプラットフォームです。普段使っているスマホやスピーカーに合わせると失敗しにくくなります。</p>
+<div class="tscroll"><table>
+<tr><th>プラットフォーム</th><th>特徴</th></tr>
+<tr><td class="hl">Amazon Alexa</td><td>対応デバイス数が非常に多く、日本国内の普及度も高い</td></tr>
+<tr><td class="hl">Google Home</td><td>Googleサービスとの連携に強く、音声認識の精度が高い</td></tr>
+<tr><td class="hl">Apple HomeKit</td><td>セキュリティ重視で、iPhoneやApple Watchとの相性がよい</td></tr>
+<tr><td class="hl">Home Assistant</td><td>玄人向けのオープンソース。自由度が高いが設定はやや難しい</td></tr>
+</table></div>
+<p>最初から完璧に選ぶ必要はありません。ただし、デバイスごとにアプリが分かれると管理が煩雑になり、結局使わなくなるのが典型的な失敗です。最初は同じブランドで揃えるか、AlexaやGoogle Homeなどの統合アプリでまとめるのが続けやすくなります。</p>
+
+<h2>通信規格は「Matter対応」だけ押さえる</h2>
+<div class="tscroll"><table>
+<tr><th>規格</th><th>特徴</th><th>例えイメージ</th></tr>
+<tr><td class="hl">Wi-Fi</td><td>単体で導入しやすい。消費電力は大きめでルーター依存度も高い</td><td>自宅のネット回線と同じ。大容量通信が得意だけど電力は食う</td></tr>
+<tr><td class="hl">Zigbee</td><td>低電力で安定通信。専用ハブが必要な場合が多い</td><td>小さな信号を省エネでやり取りするトランシーバー</td></tr>
+<tr><td class="hl">Thread</td><td>比較的新しい規格。機器同士が中継し合うメッシュで安定性が高い</td><td>友達同士が声を掛け合ってつながるイメージ</td></tr>
+<tr><td class="hl">Matter</td><td>主要各社が推進する共通規格。ブランドをまたいで使えることを目指す</td><td>コンセントの形を世界で統一するようなもの</td></tr>
+</table></div>
+<p>初心者は、規格を全部覚える必要はありません。新しく買う製品では<span class="marker">Matter対応かどうか</span>を確認しておくと、後から土台（プラットフォーム）を変えても使い回しやすくなります。</p>
+
+<h2>カテゴリ別：何ができるか</h2>
+<img class="fig" src="img/fig_devices.svg" alt="スマートホームのデバイスカテゴリ一覧の図">
+<div class="tscroll"><table>
+<tr><th>カテゴリ</th><th>できること</th><th>代表的な製品（SwitchBot）</th></tr>
+<tr><td class="hl">スマートリモコン（ハブ）</td><td>赤外線リモコン家電をスマホ・音声にまとめる</td><td>ハブ3／ハブ2／ハブミニ</td></tr>
+<tr><td class="hl">スマートプラグ</td><td>リモコンのない家電の電源をオン・オフ</td><td>プラグミニ（JP）</td></tr>
+<tr><td class="hl">ボット</td><td>壁スイッチなど物理ボタンを押す</td><td>ボット</td></tr>
+<tr><td class="hl">カーテン</td><td>今あるカーテンを自動開閉</td><td>カーテン3</td></tr>
+<tr><td class="hl">照明</td><td>調光・調色、消し忘れ防止</td><td>スマート電球 E26</td></tr>
+<tr><td class="hl">センサー</td><td>開閉・温湿度を検知して通知と自動化</td><td>開閉センサー／CO2センサー（温湿度計）</td></tr>
+<tr><td class="hl">ロック</td><td>後付けで鍵をスマホ・暗証番号で解錠</td><td>ロックシリーズ</td></tr>
+</table></div>
+<p>カテゴリごとの価格と「こんな人に」は「<a href="devices.html">カテゴリ別おすすめ</a>」に、ハブ3機種の違いは「<a href="hub.html">ハブ比較</a>」にまとめました。どれも工事不要で後付けできる製品が中心なので、賃貸でも導入しやすい分野です。</p>
+
+<h2>スターターセット3選（予算別）</h2>
+<img class="fig" src="img/fig_starter.svg" alt="スターターセット3選と合計金額の図">
+<p>迷ったら、目的に合うセットから始めるのが近道です。金額は公式価格の単純な足し算で、計算過程もそのまま載せます（詳しい内訳は「<a href="starter.html">スターターセット</a>」）。</p>
+<div class="stats">
+<div class="stat"><div class="num">¥11,960</div><div class="lbl">最小構成：ハブ2（¥9,980）＋プラグミニ（¥1,980）</div></div>
+<div class="stat"><div class="num">¥25,960</div><div class="lbl">朝が変わる構成：ハブ3（¥16,980）＋カーテン3（¥8,980）</div></div>
+<div class="stat"><div class="num">¥21,440</div><div class="lbl">見守り構成：ハブ2（¥9,980）＋開閉センサー（¥3,480）＋CO2センサー（¥7,980）</div></div>
+</div>
+<a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOMCDE+4W9U+5YRHE" rel="nofollow sponsored">SwitchBot公式で価格と在庫を見る</a>
+
+<h2>SwitchBot ブラックフライデー2026は11月27日スタート</h2>
+<div class="official"><img class="brand" src="img/official/switchbot.svg" alt="SwitchBot（スイッチボット）公式ロゴ">
+<div class="ttl">公式セールの案内</div>
+<p>SwitchBot公式のブラックフライデー2026が11月27日にスタートします。対象商品は最大58%OFF（公式表記）。スマートリモコンのハブや「今ある家電をスマート化」するプラグミニ（JP）、カーテン3など、公式の特集ページに掲載された商品のセール価格と通常価格は公式ページで確認できます。</p>
+<p>価格は商品ごとに変わります。気になる商品のセール価格を公式ページで確認してください。</p>
+<a class="cta" href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOMCDE+4W9U+5YRHE" rel="nofollow sponsored">公式ページでセール対象商品を見る</a>
+<p class="src">￥2,000以上のご購入で送料無料／30日間返品・返金保証（いずれも公式の安心保証サービスの表記）</p></div>
+
+<h2>よくある質問</h2>
+<dl class="faq">
+<dt>Q. スマートホーム、最初に何から買えばいいですか？</dt>
+<dd>ハブ（スマートリモコン）とスマートプラグの2点が入口です。エアコン・テレビ・照明をスマホで操作でき、リモコンのない家電の消し忘れも遠隔で切れるようになります。</dd>
+<dt>Q. 賃貸でも導入できますか？</dt>
+<dd>できます。このページで取り上げる製品は、貼るだけ・差し替えるだけ・置くだけの後付け型が中心で、工事は不要です。退去時の原状回復で困りにくい構成です。</dd>
+<dt>Q. ハブはどの機種を選べばいいですか？</dt>
+<dd>赤外線家電の操作だけならハブミニ（Matter対応）、温湿度で自動化したいならハブ2、家族も本体から操作したいならハブ3が目安です。詳しくは「<a href="hub.html">ハブ比較</a>」へ。</dd>
+<dt>Q. 価格はどこで確認するのが確実ですか？</dt>
+<dd>価格と在庫は変動するため、購入直前に公式ページで確認してください。このページの価格は、出典に書いた確認日時点の公式価格です。</dd>
+</dl>
+<div class="talk"><img src="img/chara_hantei_ok.svg" alt="判定キャラクター「ハンテイ」"><div class="bubble"><div class="who">ハンテイ（判定役）</div><p>判定のまとめ：土台はMatter対応で揃え、最初は2点だけ。増やすのは「困りごと」が出てからで十分です。</p></div></div>
+<p class="src">出典：SwitchBot公式サイト（製品ページ・ブラックフライデー特集ページ、確認日：2026年11月25〜26日）／A8.net広告主ニュース（2026年11月23日）。価格は確認日時点の公式価格で、変動します。</p>
+<p class="disc">※このページにはアフィリエイト広告が含まれます（A8.net）。申し込みボタン（CTA）があるのは提携済みのリンクのみで、他の会社へのリンクは公式サイトへの通常リンクです。</p>
+
+</main>
+<footer class="site"><div class="in">スマートホームくらべマガジン｜製品の仕様・価格はメーカー公式の公表に基づきます。購入の前には、最新の公式ページで価格と条件を確認してください。<br><a href="./">入門ガイド</a>｜<a href="hub.html">ハブ比較</a>｜<a href="devices.html">カテゴリ別おすすめ</a>｜<a href="starter.html">スターターセット</a>｜<a href="about.html">運営者情報</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Hiragino Sans,Noto Sans JP,sans-serif">
+<rect width="800" height="360" fill="#ffffff"/>
+<g font-size="17" fill="#1a365d" font-weight="bold" text-anchor="middle">
+<rect x="50" y="60" width="160" height="110" rx="12" fill="#eef3fa"/><text x="130" y="125">プラグ</text>
+<rect x="230" y="60" width="160" height="110" rx="12" fill="#eef3fa"/><text x="310" y="125">ボット</text>
+<rect x="410" y="60" width="160" height="110" rx="12" fill="#eef3fa"/><text x="490" y="125">カーテン</text>
+<rect x="590" y="60" width="160" height="110" rx="12" fill="#eef3fa"/><text x="670" y="125">電球</text>
+<rect x="140" y="200" width="160" height="110" rx="12" fill="#fff7cc"/><text x="220" y="265">開閉センサー</text>
+<rect x="320" y="200" width="160" height="110" rx="12" fill="#fff7cc"/><text x="400" y="265">CO2センサー</text>
+<rect x="500" y="200" width="160" height="110" rx="12" fill="#fff7cc"/><text x="580" y="265">ロック</text>
+</g></svg>

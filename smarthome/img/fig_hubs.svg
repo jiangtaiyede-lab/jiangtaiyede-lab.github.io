@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Hiragino Sans,Noto Sans JP,sans-serif">
+<rect width="800" height="360" fill="#ffffff"/>
+<g stroke="#1a365d" stroke-width="4">
+<rect x="60" y="90" width="180" height="130" rx="14" fill="#eef3fa"/>
+<rect x="310" y="70" width="180" height="150" rx="14" fill="#eef3fa"/>
+<rect x="560" y="50" width="180" height="170" rx="14" fill="#fff7cc"/>
+</g>
+<circle cx="650" cy="105" r="26" fill="#fff" stroke="#1a365d" stroke-width="4"/>
+<text x="150" y="290" font-size="22" text-anchor="middle" fill="#1a365d" font-weight="bold">ハブミニ</text>
+<text x="400" y="290" font-size="22" text-anchor="middle" fill="#1a365d" font-weight="bold">ハブ2</text>
+<text x="650" y="290" font-size="22" text-anchor="middle" fill="#1a365d" font-weight="bold">ハブ3</text>
+<text x="150" y="322" font-size="16" text-anchor="middle" fill="#5b6b7a">赤外線だけを安く</text>
+<text x="400" y="322" font-size="16" text-anchor="middle" fill="#5b6b7a">温湿度で自動化</text>
+<text x="650" y="322" font-size="16" text-anchor="middle" fill="#5b6b7a">本体操作と表示つき</text>
+<text x="150" y="165" font-size="19" text-anchor="middle" fill="#1a365d">リモコン集約</text>
+<text x="400" y="150" font-size="19" text-anchor="middle" fill="#1a365d">＋温湿度センサー</text>
+<text x="650" y="185" font-size="19" text-anchor="middle" fill="#1a365d">＋ダイヤル・画面</text>
+</svg>
