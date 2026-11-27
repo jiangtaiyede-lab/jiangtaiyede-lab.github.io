@@ -121,6 +121,17 @@
 .sum-table th, .sum-table td { border:1px solid #ddd; padding:9px 10px; text-align:left; vertical-align:top; }
 .sum-table th { background:#111; color:#fff; font-weight:800; }
 .sum-table td a { color:#111; font-weight:700; }
+
+.site-panel { margin-top:36px; }
+.site-lead { font-size:13.5px; color:#555; margin-top:2px; }
+.site-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:26px 18px; margin-top:14px; }
+@media (max-width:1023px) { .site-grid { grid-template-columns:repeat(3,1fr); } }
+@media (max-width:599px) { .site-grid { grid-template-columns:repeat(2,1fr); gap:22px 12px; } }
+.site-card { display:flex; flex-direction:column; background:#fff; border:1.5px solid #e2e2de; border-radius:20px; box-shadow:5px 5px 0 rgba(17,17,17,.10); padding:16px 14px; text-decoration:none; }
+.site-genre { font-size:12px; font-weight:800; color:#777; letter-spacing:.08em; }
+.site-name { margin-top:6px; font-size:15.5px; font-weight:900; line-height:1.4; }
+.site-desc { margin-top:6px; font-size:12.5px; color:#555; line-height:1.55; flex:1; }
+.site-go { margin-top:12px; font-size:13.5px; font-weight:800; }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXZPJWXX71"></script>
@@ -322,6 +333,23 @@
   </div>
 <div class="talk"><img src="img/chara_oshio_ok.svg" alt="案内キャラクター「オシオ」"><div class="bubble"><div class="who">オシオ（安全案内係）</div><p>まとめ：このページは、動画で紹介した商品だけを集めた公式まとめページです。一人暮らしのキッチンと暮らしを、少しだけ便利にする道具を選んでいます。</p></div></div>
 <p class="seclink">SwitchBot ハブ3：<a href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOM1KI+4W9U+BW0YB&a8ejpredirect=https://www.switchbot.jp/products/switchbot-hub3" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></p>
+<div class="talk"><img src="img/chara_oshio_ok.svg" alt="案内キャラクター「オシオ」"><div class="bubble"><div class="who">オシオ（安全案内係）</div><p>テーマごとの専門サイトも運営しています。スマホ代や寝具、食材宅配など、気になるテーマの「くらべマガジン」へどうぞ。</p></div></div>
+<section class="site-panel" id="sites">
+  <div class="grid-head"><h2>ジャンル別くらべマガジン</h2></div>
+  <p class="site-lead">テーマごとに、公式情報と数字で比べる専門サイトです。気になるジャンルからご覧ください。</p>
+  <div class="site-grid">
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/sim/"><span class="site-genre">格安SIM</span><span class="site-name">格安SIMくらべマガジン</span><span class="site-desc">料金とデータ量で、格安SIM各社を比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/desk/"><span class="site-genre">デスク・椅子</span><span class="site-name">デスク・椅子くらべマガジン</span><span class="site-desc">在宅ワークのデスクと椅子を、サイズと価格で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/mattress/"><span class="site-genre">マットレス</span><span class="site-name">マットレスくらべマガジン</span><span class="site-desc">硬さ・厚さ・価格で、マットレスを比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/battery/"><span class="site-genre">モバイルバッテリー</span><span class="site-name">モバイルバッテリー安全くらべマガジン</span><span class="site-desc">リコール対象の確認方法を、公式情報で案内します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gadget/"><span class="site-genre">ガジェット</span><span class="site-name">ガジェット判定マガジン</span><span class="site-desc">ガジェットと通信費を、数字で判定します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fx/"><span class="site-genre">FX</span><span class="site-name">FXデモトレードくらべマガジン</span><span class="site-desc">FXデモトレードを、仮想資金と利用期限で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/smarthome/"><span class="site-genre">スマートホーム</span><span class="site-name">スマートホームくらべマガジン</span><span class="site-desc">初心者向けに、スマートホームの始め方を案内します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fooddelivery/"><span class="site-genre">食材宅配</span><span class="site-name">食材宅配くらべマガジン</span><span class="site-desc">食材宅配を、1食単価と送料で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/storage/"><span class="site-genre">収納家具</span><span class="site-name">一人暮らし収納くらべマガジン</span><span class="site-desc">収納家具を、サイズと組み立てで比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gift/"><span class="site-genre">ギフト</span><span class="site-name">ギフト判定マガジン</span><span class="site-desc">予算内で外さないプレゼント選びを判定します</span><span class="site-go">サイトを見る →</span></a>
+  </div>
+</section>
 </main>
 
 <div class="line-band"><div class="line-box"><div class="lt">LINEで新着を受け取る</div><div class="ld">新しい商品や動画の紹介を、LINEでお届けします。</div><a class="line-btn" href="https://lin.ee/zdbbxsi" target="_blank" rel="noopener">友だち追加する</a></div></div>
