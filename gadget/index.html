@@ -6,9 +6,9 @@
 <title>ガジェット判定マガジン｜ガジェットと通信費を数字で判定する</title>
 <meta name="description" content="ドコモeximoと楽天モバイルの年額差41,844円、携帯ショップの頭金の正体、BB.excite Fitの段階料金など、公式数字だけで判定する分析マガジン。">
 <style>
-:root{--ink:#333;--head:#222428;--mut:#777;--line:#e3e3e3;--link:#4682b4;--red:#ce0000;--yel:#ffd900;--kaiwa:#edfbff}
+:root{--ink:#36393f;--head:#222428;--mut:#66707a;--line:#e7e2d9;--link:#b45309;--red:#ce0000;--yel:#ffd900;--kaiwa:#fff7e6}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#f4f4f4;font-size:15px;line-height:1.67}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#f4f4f4;font-size:15px;line-height:1.67}
 a{color:var(--link)}
 img{max-width:100%}
 #wrap{background:#fff;max-width:1160px;margin:0 auto}
@@ -24,6 +24,12 @@ header.site .logobox{padding:2px 20px 0}
 header.site .logo{font-size:30px;font-weight:700;font-style:italic;color:#fff;text-decoration:none;letter-spacing:.02em;line-height:1.3}
 header.site .catch{display:block;font-size:13px;color:#fff;padding:2px 0 12px}
 .hero{display:block;width:100%;height:auto}
+.ahero{margin:0;background:linear-gradient(to bottom,#ffffff 0%,#f4f4f4 100%);border-bottom:1px solid var(--line)}
+.ahero img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain}
+.ahero figcaption{font-size:12px;color:var(--mut);padding:6px 15px 8px;text-align:center}
+.ahero.logo img{padding:12px 30px}
+.tiles a{display:flex;align-items:center;justify-content:center;gap:6px}
+.tiles img{width:26px;height:26px;object-fit:cover;border-radius:4px;background:#fff;flex:0 0 auto}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#454a51;border-top:1px solid #454a51;border-bottom:1px solid #454a51}
 .tiles a{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff;text-decoration:none;text-align:center;font-size:12.8px;padding:10px 2px;line-height:1.5}
 .layout{padding:0 15px}
@@ -48,10 +54,10 @@ h1.entry{font-size:24px;line-height:38px;font-weight:700;color:var(--ink);margin
 .post ul,.post ol{margin:0 0 20px;padding-left:1.4em}
 .post li{margin:3px 0}
 h2{position:relative;font-size:22px;line-height:35px;font-weight:700;color:var(--head);background:linear-gradient(to bottom,#fff 0%,#fafafa 100%);border:1px solid var(--head);padding:10px 22px 10px 28.6px;margin:66px 0 20px;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
-h2::after{content:"";position:absolute;top:.5em;left:.5em;width:5px;height:calc(100% - 1em);background:var(--head)}
+h2::after{content:"";position:absolute;top:.5em;left:.5em;width:5px;height:calc(100% - 1em);background:var(--link)}
 h3{position:relative;font-size:19px;line-height:27px;font-weight:700;color:var(--head);padding:10px 20px 10px 10px;margin:20px 0;border-bottom:3px solid #fafafa;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
-h3::after{content:"";position:absolute;bottom:-3px;left:0;width:5em;height:3px;background:var(--head)}
-h4{font-size:18px;line-height:28px;font-weight:700;color:var(--head);border-left:5px solid var(--head);padding:7px 15px 7px 20px;margin:20px 0}
+h3::after{content:"";position:absolute;bottom:-3px;left:0;width:5em;height:3px;background:var(--link)}
+h4{font-size:18px;line-height:28px;font-weight:700;color:var(--head);border-left:5px solid var(--link);padding:7px 15px 7px 20px;margin:20px 0}
 @media (min-width:960px){
  h1.entry{font-size:27px;line-height:40px}
  h2{font-size:24px;line-height:35px}
@@ -164,7 +170,7 @@ gtag('config', 'G-FXZPJWXX71');
 </header>
 <img class="hero" src="img/hero_top.svg" alt="ガジェット判定マガジン メインビジュアル">
 <nav class="tiles">
-<a href="./#latest">通信回線</a><a href="./#latest">スマホ</a><a href="./#latest">ガジェット</a><a href="./#latest">お得情報</a><a href="about.html">判定キャスト</a><a href="about.html">運営者情報</a>
+<a href="./#latest"><img src="img/official/docomo_hr03.png" alt="">通信回線</a><a href="./#latest"><img src="img/official/rakuten_iphone17.jpg" alt="">スマホ</a><a href="./#latest"><img src="img/official/earfun_air_pro_4.jpg" alt="">ガジェット</a><a href="./#latest"><img src="img/official/anker_powercore_a1263.jpg" alt="">お得情報</a><a href="about.html"><img src="img/chara_giako.svg" alt="">判定キャスト</a><a href="about.html"><img src="img/chara_jajji.svg" alt="">運営者情報</a>
 </nav>
 <div class="layout">
 <main>
@@ -265,7 +271,7 @@ gtag('config', 'G-FXZPJWXX71');
 </main>
 <aside><div class="profcard"><img src="img/chara_giako.svg" alt="案内係ギアコ">
 <p class="pname2">ガジェット判定 編集部</p>
-<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算の過程も含めて公開します。感覚だけのレビューは書きません。</p>
 </div><div class="tree" id="menu">
 <a class="l1" href="./#latest">お得情報<span class="chev">›</span></a>
 <a class="l1" href="./#latest">通信回線<span class="chev">›</span></a>
@@ -286,7 +292,7 @@ gtag('config', 'G-FXZPJWXX71');
 <footer class="site">
 <div class="profcard"><img src="img/chara_giako.svg" alt="案内係ギアコ">
 <p class="pname2">ガジェット判定 編集部</p>
-<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算の過程も含めて公開します。感覚だけのレビューは書きません。</p>
 </div>
 <div class="flogo">ガジェット判定</div>
 <div class="fcatch">ガジェットと通信費を数字で判定するマガジン【随時更新】</div>

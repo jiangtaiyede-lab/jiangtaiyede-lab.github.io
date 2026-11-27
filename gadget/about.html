@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>運営者情報・判定キャスト｜ガジェット判定</title>
-<meta name="description" content="ガジェット判定マガジンの運営者情報、編集方針、判定キャスト（ギアコ・ジャッジ）の紹介と広告についてのページ。">
+<meta name="description" content="ガジェット判定マガジンの運営者情報、情報の扱い方、判定キャスト（ギアコ・ジャッジ）の紹介と広告についてのページ。">
 <style>
-:root{--ink:#333;--head:#222428;--mut:#777;--line:#e3e3e3;--link:#4682b4;--red:#ce0000;--yel:#ffd900;--kaiwa:#edfbff}
+:root{--ink:#36393f;--head:#222428;--mut:#66707a;--line:#e7e2d9;--link:#b45309;--red:#ce0000;--yel:#ffd900;--kaiwa:#fff7e6}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#f4f4f4;font-size:15px;line-height:1.67}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#f4f4f4;font-size:15px;line-height:1.67}
 a{color:var(--link)}
 img{max-width:100%}
 #wrap{background:#fff;max-width:1160px;margin:0 auto}
@@ -24,6 +24,12 @@ header.site .logobox{padding:2px 20px 0}
 header.site .logo{font-size:30px;font-weight:700;font-style:italic;color:#fff;text-decoration:none;letter-spacing:.02em;line-height:1.3}
 header.site .catch{display:block;font-size:13px;color:#fff;padding:2px 0 12px}
 .hero{display:block;width:100%;height:auto}
+.ahero{margin:0;background:linear-gradient(to bottom,#ffffff 0%,#f4f4f4 100%);border-bottom:1px solid var(--line)}
+.ahero img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain}
+.ahero figcaption{font-size:12px;color:var(--mut);padding:6px 15px 8px;text-align:center}
+.ahero.logo img{padding:12px 30px}
+.tiles a{display:flex;align-items:center;justify-content:center;gap:6px}
+.tiles img{width:26px;height:26px;object-fit:cover;border-radius:4px;background:#fff;flex:0 0 auto}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#454a51;border-top:1px solid #454a51;border-bottom:1px solid #454a51}
 .tiles a{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff;text-decoration:none;text-align:center;font-size:12.8px;padding:10px 2px;line-height:1.5}
 .layout{padding:0 15px}
@@ -48,10 +54,10 @@ h1.entry{font-size:24px;line-height:38px;font-weight:700;color:var(--ink);margin
 .post ul,.post ol{margin:0 0 20px;padding-left:1.4em}
 .post li{margin:3px 0}
 h2{position:relative;font-size:22px;line-height:35px;font-weight:700;color:var(--head);background:linear-gradient(to bottom,#fff 0%,#fafafa 100%);border:1px solid var(--head);padding:10px 22px 10px 28.6px;margin:66px 0 20px;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
-h2::after{content:"";position:absolute;top:.5em;left:.5em;width:5px;height:calc(100% - 1em);background:var(--head)}
+h2::after{content:"";position:absolute;top:.5em;left:.5em;width:5px;height:calc(100% - 1em);background:var(--link)}
 h3{position:relative;font-size:19px;line-height:27px;font-weight:700;color:var(--head);padding:10px 20px 10px 10px;margin:20px 0;border-bottom:3px solid #fafafa;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
-h3::after{content:"";position:absolute;bottom:-3px;left:0;width:5em;height:3px;background:var(--head)}
-h4{font-size:18px;line-height:28px;font-weight:700;color:var(--head);border-left:5px solid var(--head);padding:7px 15px 7px 20px;margin:20px 0}
+h3::after{content:"";position:absolute;bottom:-3px;left:0;width:5em;height:3px;background:var(--link)}
+h4{font-size:18px;line-height:28px;font-weight:700;color:var(--head);border-left:5px solid var(--link);padding:7px 15px 7px 20px;margin:20px 0}
 @media (min-width:960px){
  h1.entry{font-size:27px;line-height:40px}
  h2{font-size:24px;line-height:35px}
@@ -137,7 +143,7 @@ footer.site .copy{font-size:13px;color:#cfd4da}
 footer.site .profcard{color:var(--ink);max-width:560px;margin:0 auto 22px}
 #tocbtn{position:fixed;right:0;top:55%;z-index:30;background:rgba(4,4,4,.65);color:#fff;text-decoration:none;border-radius:10px 0 0 10px;padding:10px;width:50px;font-size:14px;font-weight:700;text-align:center;line-height:1.5;writing-mode:vertical-rl}
 .src{font-size:13.5px;color:var(--mut);padding-left:1.3em}
-.src li{margin:4px 0}
+.src li{margin:4px 0;overflow-wrap:anywhere}
 .brandline{display:flex;align-items:center;gap:10px;margin:0 0 14px}
 .brandline img{height:26px;width:auto}
 .official{border:2px solid var(--head);border-radius:6px;padding:14px 16px;margin:0 0 20px}
@@ -164,7 +170,7 @@ gtag('config', 'G-FXZPJWXX71');
 </header>
 <img class="hero" src="img/hero_top.svg" alt="ガジェット判定マガジン メインビジュアル">
 <nav class="tiles">
-<a href="./#latest">通信回線</a><a href="./#latest">スマホ</a><a href="./#latest">ガジェット</a><a href="./#latest">お得情報</a><a href="about.html">判定キャスト</a><a href="about.html">運営者情報</a>
+<a href="./#latest"><img src="img/official/docomo_hr03.png" alt="">通信回線</a><a href="./#latest"><img src="img/official/rakuten_iphone17.jpg" alt="">スマホ</a><a href="./#latest"><img src="img/official/earfun_air_pro_4.jpg" alt="">ガジェット</a><a href="./#latest"><img src="img/official/anker_powercore_a1263.jpg" alt="">お得情報</a><a href="about.html"><img src="img/chara_giako.svg" alt="">判定キャスト</a><a href="about.html"><img src="img/chara_jajji.svg" alt="">運営者情報</a>
 </nav>
 <div class="layout">
 <main>
@@ -181,7 +187,7 @@ gtag('config', 'G-FXZPJWXX71');
 <a class="cp" href="#share" aria-label="URLをコピー">URL</a>
 </div>
 <div class="post">
-<p>ガジェット判定マガジンは、ガジェットと通信費を「数字」で判定する専門サイトです。編集部が公式料金表・公式発表などの一次情報を確認し、比較計算の過程まで公開する形で記事を作っています。</p>
+<p>ガジェット判定マガジンは、ガジェットと通信費を「数字」で判定する専門サイトです。公式料金表・公式発表などの一次情報を確認し、比較計算の過程まで公開しています。</p>
 <div class="official">
 <div class="ttl">このサイトの要点</div>
 <ul>
@@ -190,8 +196,8 @@ gtag('config', 'G-FXZPJWXX71');
 <li>収益の得方：A8.netと楽天アフィリエイトの広告報酬です。広告の有無で、比較の数字や判定を変えることはありません（詳しくは下の「広告について」）</li>
 </ul>
 </div>
-<h2>編集方針</h2>
-<p>1. 数字は公式の一次情報（キャリア・メーカーの公式ページと公式発表）だけで構成します。出典は各記事の末尾に明記します。</p>
+<h2>情報の扱い方と約束</h2>
+<p>1. 数字は、キャリア・メーカーの公式ページと公式発表だけで比べます。出典と確認日は、各記事の末尾に書いてあります。</p>
 <p>2. 月額の比較は年額まで計算し、計算過程（掛け算・引き算）を表でそのまま見せます。</p>
 <div class="kaiwa"><div class="face"><img src="img/chara_giako.svg" alt="キャラクター「ギアコ（案内係）」"></div><div class="huki"><div class="who">ギアコ（案内係）</div><p>計算過程をそのまま見せるのは、読んだ人が自分の料金プランで検算できるようにするためです。数字の出どころが追えない記事は出しません。</p></div></div>
 <p>3. 実体験レビューは書きません。持っていない製品の使用感は語らず、スペックと価格と条件の分析に徹します。</p>
@@ -201,7 +207,7 @@ gtag('config', 'G-FXZPJWXX71');
 <div class="kaiwa rev"><div class="face"><img src="img/chara_jajji.svg" alt="キャラクター「ジャッジ（判定役）」"></div><div class="huki"><div class="who">ジャッジ（判定役）</div><p>判定役のジャッジだ。料金表と公式発表の数字だけを見て、得か損かを言い切る。情状酌量はしない。キャリアの肩を持つことも、提携先の肩を持つこともない。</p></div></div>
 <p>姉妹サイト「モバイルバッテリー安全くらべマガジン」には、専任キャストのボルト（安全・回収案内）とワット（充電・選び方係）がいます。ジャッジはこのサイトの判定専任キャストです。記事の結論（「代わりにこれを選べ」）は、公式情報と比較計算に基づく当編集部の結論をジャッジの吹き出しで示したもので、実体験ではありません。</p>
 <h2>広告について</h2>
-<p>当サイトは、A8.netおよび楽天アフィリエイトのアフィリエイトプログラムに参加しています。記事内の申し込みボタンや商品リンクの一部は広告リンクであり、リンク経由で申し込み・購入が発生した場合、当サイトに報酬が支払われることがあります。広告である旨は各ページの最下部にも表示しています。なお、広告の有無によって比較の数字や判定を変えることはありません。</p>
+<p>当サイトは、A8.netおよび楽天アフィリエイトのアフィリエイトプログラムに参加しています。記事内の申し込みボタンや商品リンクの一部は広告リンクであり、リンク経由で申し込み・購入が発生した場合、当サイトに報酬が支払われることがあります。なお、広告の有無によって比較の数字や判定を変えることはありません。</p>
 <div class="kaiwa rev"><div class="face"><img src="img/chara_jajji.svg" alt="キャラクター「ジャッジ（判定役）」"></div><div class="huki"><div class="who">ジャッジ（判定役）</div><p>広告の有無で判定は曲げない。自分たちの提携先であっても、数字で負ける帯域があれば負けたと書く。それがこのサイトの判定だ。</p></div></div>
 <h2>姉妹サイト</h2>
 <div class="cardlink"><img src="img/chara_giako.svg" alt="案内キャラクター「ギアコ」"><div><p class="ct"><a href="https://jiangtaiyede-lab.github.io/battery/">モバイルバッテリー安全くらべマガジン</a></p><a class="more" href="https://jiangtaiyede-lab.github.io/battery/">続きを見る</a></div></div>
@@ -210,7 +216,7 @@ gtag('config', 'G-FXZPJWXX71');
 </main>
 <aside><div class="profcard"><img src="img/chara_giako.svg" alt="案内係ギアコ">
 <p class="pname2">ガジェット判定 編集部</p>
-<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算の過程も含めて公開します。感覚だけのレビューは書きません。</p>
 </div><div class="tree" id="menu">
 <a class="l1" href="./#latest">お得情報<span class="chev">›</span></a>
 <a class="l1" href="./#latest">通信回線<span class="chev">›</span></a>
@@ -231,7 +237,7 @@ gtag('config', 'G-FXZPJWXX71');
 <footer class="site">
 <div class="profcard"><img src="img/chara_giako.svg" alt="案内係ギアコ">
 <p class="pname2">ガジェット判定 編集部</p>
-<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算の過程も含めて公開します。感覚だけのレビューは書きません。</p>
 </div>
 <div class="flogo">ガジェット判定</div>
 <div class="fcatch">ガジェットと通信費を数字で判定するマガジン【随時更新】</div>

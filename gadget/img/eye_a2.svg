@@ -4,7 +4,7 @@
 <text x="210" y="140" font-size="34" font-weight="900" text-anchor="middle" fill="#23272e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">店頭で契約</text>
 <text x="210" y="228" font-size="27" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">契約事務手数料</text>
 <text x="210" y="292" font-size="58" font-weight="900" text-anchor="middle" fill="#ce0000" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">4,950円</text>
-<text x="210" y="338" font-size="22" text-anchor="middle" fill="#ce0000" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">＋「頭金」は店舗独自の上乗せ</text>
+<text x="210" y="338" font-size="20" text-anchor="middle" fill="#ce0000" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">＋「頭金」は店舗独自の上乗せ</text>
 <rect x="440" y="70" width="300" height="300" rx="18" fill="#ffffff" stroke="#19448e" stroke-width="5"/>
 <text x="590" y="140" font-size="34" font-weight="900" text-anchor="middle" fill="#19448e" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">公式オンライン</text>
 <text x="590" y="228" font-size="27" text-anchor="middle" fill="#5b6b7a" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif">契約事務手数料</text>

@@ -6,9 +6,9 @@
 <title>SoftBank 光・SoftBank Airは12月から月330円値上げ 解約の解除料が0円になるのは11月30日まで｜ガジェット判定</title>
 <meta name="description" content="SoftBank 光・SoftBank Airの2026年12月からの月330円値上げと、11月30日までの解除料免除の条件をソフトバンク公式の公表で整理し、WiMAX各社の公式料金と2年総額で比較する記事。">
 <style>
-:root{--ink:#333;--head:#222428;--mut:#777;--line:#e3e3e3;--link:#4682b4;--red:#ce0000;--yel:#ffd900;--kaiwa:#edfbff}
+:root{--ink:#36393f;--head:#222428;--mut:#66707a;--line:#e7e2d9;--link:#b45309;--red:#ce0000;--yel:#ffd900;--kaiwa:#fff7e6}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#f4f4f4;font-size:15px;line-height:1.67}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#f4f4f4;font-size:15px;line-height:1.67}
 a{color:var(--link)}
 img{max-width:100%}
 #wrap{background:#fff;max-width:1160px;margin:0 auto}
@@ -24,6 +24,12 @@ header.site .logobox{padding:2px 20px 0}
 header.site .logo{font-size:30px;font-weight:700;font-style:italic;color:#fff;text-decoration:none;letter-spacing:.02em;line-height:1.3}
 header.site .catch{display:block;font-size:13px;color:#fff;padding:2px 0 12px}
 .hero{display:block;width:100%;height:auto}
+.ahero{margin:0;background:linear-gradient(to bottom,#ffffff 0%,#f4f4f4 100%);border-bottom:1px solid var(--line)}
+.ahero img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain}
+.ahero figcaption{font-size:12px;color:var(--mut);padding:6px 15px 8px;text-align:center}
+.ahero.logo img{padding:12px 30px}
+.tiles a{display:flex;align-items:center;justify-content:center;gap:6px}
+.tiles img{width:26px;height:26px;object-fit:cover;border-radius:4px;background:#fff;flex:0 0 auto}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#454a51;border-top:1px solid #454a51;border-bottom:1px solid #454a51}
 .tiles a{background:linear-gradient(to bottom,#34373d 0%,#222428 100%);color:#fff;text-decoration:none;text-align:center;font-size:12.8px;padding:10px 2px;line-height:1.5}
 .layout{padding:0 15px}
@@ -48,10 +54,10 @@ h1.entry{font-size:24px;line-height:38px;font-weight:700;color:var(--ink);margin
 .post ul,.post ol{margin:0 0 20px;padding-left:1.4em}
 .post li{margin:3px 0}
 h2{position:relative;font-size:22px;line-height:35px;font-weight:700;color:var(--head);background:linear-gradient(to bottom,#fff 0%,#fafafa 100%);border:1px solid var(--head);padding:10px 22px 10px 28.6px;margin:66px 0 20px;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
-h2::after{content:"";position:absolute;top:.5em;left:.5em;width:5px;height:calc(100% - 1em);background:var(--head)}
+h2::after{content:"";position:absolute;top:.5em;left:.5em;width:5px;height:calc(100% - 1em);background:var(--link)}
 h3{position:relative;font-size:19px;line-height:27px;font-weight:700;color:var(--head);padding:10px 20px 10px 10px;margin:20px 0;border-bottom:3px solid #fafafa;font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif}
-h3::after{content:"";position:absolute;bottom:-3px;left:0;width:5em;height:3px;background:var(--head)}
-h4{font-size:18px;line-height:28px;font-weight:700;color:var(--head);border-left:5px solid var(--head);padding:7px 15px 7px 20px;margin:20px 0}
+h3::after{content:"";position:absolute;bottom:-3px;left:0;width:5em;height:3px;background:var(--link)}
+h4{font-size:18px;line-height:28px;font-weight:700;color:var(--head);border-left:5px solid var(--link);padding:7px 15px 7px 20px;margin:20px 0}
 @media (min-width:960px){
  h1.entry{font-size:27px;line-height:40px}
  h2{font-size:24px;line-height:35px}
@@ -137,7 +143,7 @@ footer.site .copy{font-size:13px;color:#cfd4da}
 footer.site .profcard{color:var(--ink);max-width:560px;margin:0 auto 22px}
 #tocbtn{position:fixed;right:0;top:55%;z-index:30;background:rgba(4,4,4,.65);color:#fff;text-decoration:none;border-radius:10px 0 0 10px;padding:10px;width:50px;font-size:14px;font-weight:700;text-align:center;line-height:1.5;writing-mode:vertical-rl}
 .src{font-size:13.5px;color:var(--mut);padding-left:1.3em}
-.src li{margin:4px 0}
+.src li{margin:4px 0;overflow-wrap:anywhere}
 .brandline{display:flex;align-items:center;gap:10px;margin:0 0 14px}
 .brandline img{height:26px;width:auto}
 .official{border:2px solid var(--head);border-radius:6px;padding:14px 16px;margin:0 0 20px}
@@ -162,9 +168,9 @@ gtag('config', 'G-FXZPJWXX71');
 <div class="navrow"><a class="navbtn" href="./#menu" aria-label="検索"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16 L22 22"/></svg></a><a class="navbtn menuwrap" href="./#menu" aria-label="メニュー"><span><span class="bars"><i></i><i></i><i></i></span><span class="mtxt">MENU</span></span></a></div>
 <div class="logobox"><a class="logo" href="./">ガジェット判定</a><span class="catch">ガジェットと通信費を数字で判定するマガジン【随時更新】</span></div>
 </header>
-<img class="hero" src="img/hero_top.svg" alt="ガジェット判定マガジン メインビジュアル">
+<figure class="ahero"><img src="img/official/softbank_air_terminal6.png" alt="SoftBank Air ターミナル6の実物写真（ソフトバンク公式の製品画像）"><figcaption>写真：SoftBank Air ターミナル6（ソフトバンク公式の製品画像）</figcaption></figure>
 <nav class="tiles">
-<a href="./#latest">通信回線</a><a href="./#latest">スマホ</a><a href="./#latest">ガジェット</a><a href="./#latest">お得情報</a><a href="about.html">判定キャスト</a><a href="about.html">運営者情報</a>
+<a href="./#latest"><img src="img/official/docomo_hr03.png" alt="">通信回線</a><a href="./#latest"><img src="img/official/rakuten_iphone17.jpg" alt="">スマホ</a><a href="./#latest"><img src="img/official/earfun_air_pro_4.jpg" alt="">ガジェット</a><a href="./#latest"><img src="img/official/anker_powercore_a1263.jpg" alt="">お得情報</a><a href="about.html"><img src="img/chara_giako.svg" alt="">判定キャスト</a><a href="about.html"><img src="img/chara_jajji.svg" alt="">運営者情報</a>
 </nav>
 <div class="layout">
 <main><div class="crumb"><a href="./">HOME</a> ＞ <a href="./#latest">通信回線</a> ＞ <a href="./#latest">自宅インターネット</a> ＞</div>
@@ -186,7 +192,7 @@ gtag('config', 'G-FXZPJWXX71');
 <div class="kaiwa"><div class="face"><img src="img/chara_giako.svg" alt="キャラクター「ギアコ（案内係）」"></div><div class="huki"><div class="who">ギアコ（案内係）</div><p>ギアコです。料金と条件は、ソフトバンク公式の「一部月額基本料金改定」の特設ページと、2026年8月3日掲載の公式お知らせで確認しています。自分のプランが対象かどうかは、まず公式の案内で確かめてください。</p></div></div>
 <div class="official">
 <div class="ttl">まず公式情報で確認する</div>
-<p>この値上げと解除料の免除を行っているのはソフトバンクです。対象プラン・適用時期・免除の条件は、公式の案内が正本です。</p>
+<p>この値上げと解除料の免除を行っているのはソフトバンクです。対象プラン・適用時期・免除の条件は、公式の案内が正式な情報です。</p>
 <ul>
 <li><a href="https://www.softbank.jp/internet/special/information2026/" target="_blank" rel="noopener">月額基本料金改定の特設ページ（ソフトバンク公式・改定後の料金表）</a></li>
 <li><a href="https://www.softbank.jp/internet/info/service/20260803a/" target="_blank" rel="noopener">サービス規約改定および月額基本料金改定に関するお知らせ（公式・2026年8月3日掲載／解除料免除の条件）</a></li>
@@ -195,7 +201,7 @@ gtag('config', 'G-FXZPJWXX71');
 </div>
 <div class="mybtn"><a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+7NNZ4I+B4+2BD44I" target="_blank" rel="nofollow sponsored noopener">BIGLOBE WiMAX +5G公式で申し込み条件を確認する</a></div>
 <h2 id="quick">結論と早見表</h2>
-<p>先に結論と早見表を置く。<span class="marker">値上げは対象プラン一律+330円で、解除料0円で動けるのは2026年11月30日まで</span>。Airの人は同じ「置くだけ」の形のままWiMAXへ移れば、2年間の月額で最大53,768円の差がつく。光の人は、まず自分のプランの適用時期を確認することだ。今の選択肢と乗り換え先を、端末の実物写真と並べる。</p>
+<p><span class="marker">値上げは対象プラン一律+330円で、解除料0円で動けるのは2026年11月30日まで</span>。Airの人は同じ「置くだけ」の形のままWiMAXへ移れば、2年間の月額で最大53,768円の差がつく。光の人は、まず自分のプランの適用時期を確認することだ</p>
 <div class="pcard"><div class="pimg"><img src="img/prod_e2_air6.svg" alt="SoftBank Air（Airターミナル6）の実物写真（ソフトバンク公式の製品画像）" style="object-fit:contain"></div><div>
 <p class="pname">SoftBank Air（今のまま）</p>
 <p class="pprice">月5,698円（改定後・共通プラン）</p>
@@ -298,7 +304,7 @@ gtag('config', 'G-FXZPJWXX71');
 <img class="fig" src="img/fig_e1_08.svg" alt="乗り換え先の月額">
 <p>乗り換え先の顔ぶれを整理する。月額で一番安いのはBIGLOBE WiMAX +5Gで、サービス開始の翌月から24か月間は月3,608円（通常5,258円から1,650円引き）、開始月は無料だ。契約解除料がかからないのも、割引が終わる25か月目以降の判断を軽くする。</p>
 <p><a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+81YDN6+50+3HMGN6" target="_blank" rel="nofollow sponsored noopener">GMOとくとくBB WiMAX</a>は月5,566円の定額で、端末代33,264円が端末購入サポートで実質0円（36か月利用時）、解約違約金なし。「割引期間が終わると上がる」構造が嫌いな人向けだ。WiMAX本家のUQ WiMAXは、ギガ放題プラスSが13か月間4,598円、その後5,280円になる。プロバイダ型が不安なら<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+7T0VKI+2JMM+1BN3TU" target="_blank" rel="nofollow sponsored noopener">VisionWiMAX</a>のような他のWiMAX +5Gプロバイダや、旧世代回線の<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+7PG9XU+1QFI+2NCKJ6" target="_blank" rel="nofollow sponsored noopener">DTI WiMAX 2+</a>も選択肢に入る。</p>
-<p>その他の乗り換え候補も、公式料金・条件（2026年11月27日確認）をカードで並べる。</p>
+<p>その他の乗り換え候補も、公式料金・条件（2026年11月27日確認）で比べます。</p>
 <div class="pcard"><div class="pimg"><img src="img/prod_e2_l13.svg" alt="WiMAX +5Gの端末 Speed Wi-Fi HOME 5G L13の実物写真（UQ WiMAX公式オンラインショップの製品画像）" style="object-fit:contain"></div><div>
 <p class="pname"><a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+7T0VKI+2JMM+1BN3TU" target="_blank" rel="nofollow sponsored noopener">VisionWiMAX</a></p>
 <p class="pprice">月4,411円〜（1〜24か月目・2年プラン）</p>
@@ -319,7 +325,7 @@ gtag('config', 'G-FXZPJWXX71');
 <p>左がAirターミナル6、右がWiMAX +5Gの端末（Speed Wi-Fi HOME 5G L13）。どちらもコンセントに挿すだけの据え置き型で、工事はいらない。違いは端末の姿ではなく料金の組み立てに出る。</p>
 <img class="fig" src="img/fig_e1_11.svg" alt="乗り換えの順序">
 <p>順序だけ間違えないでほしい。乗り換え先を先に開通させてから、11月30日までにSoftBank側の解約手続きをする。逆にすると、ネットが使えない期間と、免除を逃すリスクの両方が出る。</p>
-<p>乗り換え先の条件は各社の公式ページが正本だ。月額の安さで選ぶなら<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+7NNZ4I+B4+2BD44I" target="_blank" rel="nofollow sponsored noopener">BIGLOBE WiMAX +5G</a>、定額の分かりやすさで選ぶなら<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+81YDN6+50+3HMGN6" target="_blank" rel="nofollow sponsored noopener">GMOとくとくBB WiMAX</a>が、公式料金で比べられる現実的な受け皿になる。</p>
+<p>乗り換え先の条件は各社の公式ページが正式な情報だ。月額の安さで選ぶなら<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+7NNZ4I+B4+2BD44I" target="_blank" rel="nofollow sponsored noopener">BIGLOBE WiMAX +5G</a>、定額の分かりやすさで選ぶなら<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+81YDN6+50+3HMGN6" target="_blank" rel="nofollow sponsored noopener">GMOとくとくBB WiMAX</a>が、公式料金で比べられる現実的な受け皿になる。</p>
 <div class="mybtn"><a href="https://px.a8.net/svt/ejp?a8mat=4BGUDR+7NNZ4I+B4+2BD44I" target="_blank" rel="nofollow sponsored noopener">BIGLOBE WiMAX +5G公式で申し込み条件を確認する</a></div>
 <div class="kaiwa rev"><div class="face"><img src="img/chara_jajji_ok.svg" alt="キャラクター「ジャッジ（判定役）」"></div><div class="huki"><div class="who">ジャッジ（判定役）</div><p>値上げの通知は「払うか、動くか」の通知でもある。解除料0円の窓が開いているのは11月30日まで。その日を過ぎれば、同じ解約に解除料が戻ってくる。判定は以上。</p></div></div>
 <div class="cardlink"><img src="img/eye_a1.svg" alt=""><div><p class="ct"><a href="a1-eximo-rakuten.html">ドコモeximoの「段階制」はなぜ高い？ 楽天モバイルと年額で比べたら41,844円の差だった</a></p><a class="more" href="a1-eximo-rakuten.html">続きを見る</a></div></div><div class="cardlink"><img src="img/eye_a2.svg" alt=""><div><p class="ct"><a href="a2-tokuten-online.html">携帯ショップの「頭金」は端末代ではない 店頭と公式オンラインの差を計算した</a></p><a class="more" href="a2-tokuten-online.html">続きを見る</a></div></div>
@@ -350,7 +356,7 @@ gtag('config', 'G-FXZPJWXX71');
 </main>
 <aside><div class="profcard"><img src="img/chara_giako.svg" alt="案内係ギアコ">
 <p class="pname2">ガジェット判定 編集部</p>
-<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算の過程も含めて公開します。感覚だけのレビューは書きません。</p>
 </div><div class="tree" id="menu">
 <a class="l1" href="./#latest">お得情報<span class="chev">›</span></a>
 <a class="l1" href="./#latest">通信回線<span class="chev">›</span></a>
@@ -372,7 +378,7 @@ gtag('config', 'G-FXZPJWXX71');
 <footer class="site">
 <div class="profcard"><img src="img/chara_giako.svg" alt="案内係ギアコ">
 <p class="pname2">ガジェット判定 編集部</p>
-<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算過程を公開するのが編集方針。感覚のレビューは書かない。</p>
+<p>ガジェットと通信費を「数字」で判定する専門マガジン。公式料金表・公式発表の一次情報だけで比較し、年額差まで計算の過程も含めて公開します。感覚だけのレビューは書きません。</p>
 </div>
 <div class="flogo">ガジェット判定</div>
 <div class="fcatch">ガジェットと通信費を数字で判定するマガジン【随時更新】</div>
