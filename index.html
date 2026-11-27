@@ -132,6 +132,10 @@
 .site-name { margin-top:6px; font-size:15.5px; font-weight:900; line-height:1.4; }
 .site-desc { margin-top:6px; font-size:12.5px; color:#555; line-height:1.55; flex:1; }
 .site-go { margin-top:12px; font-size:13.5px; font-weight:800; }
+.site-thumb { width:100%; height:120px; object-fit:cover; border-radius:12px; margin-bottom:10px; background:#f4f4f0; }
+.cat-head { display:flex; align-items:center; gap:10px; }
+.cat-thumb { width:46px; height:46px; object-fit:cover; border-radius:10px; flex:none; }
+
 .p-bf-badge { align-self:flex-start; margin-top:10px; background:#111; color:#fff; font-size:11.5px; font-weight:800; padding:4px 10px; border-radius:999px; }
 .p-bf-note { font-size:12.5px; color:#333; line-height:1.6; margin-top:8px; }
 .bf-banner { margin:2px 0 20px; text-align:center; }
@@ -181,22 +185,22 @@
   <div class="grid-head"><h2>ジャンル別くらべマガジン</h2></div>
   <p class="site-lead">テーマごとに、公式情報と数字で比べる専門サイトです。気になるジャンルからご覧ください。</p>
   <div class="site-grid">
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/sim/"><span class="site-genre">格安SIM</span><span class="site-name">格安SIMくらべマガジン</span><span class="site-desc">料金とデータ量で、格安SIM各社を比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/desk/"><span class="site-genre">デスク・椅子</span><span class="site-name">デスク・椅子くらべマガジン</span><span class="site-desc">在宅ワークのデスクと椅子を、サイズと価格で比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/mattress/"><span class="site-genre">マットレス</span><span class="site-name">マットレスくらべマガジン</span><span class="site-desc">硬さ・厚さ・価格で、マットレスを比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/battery/"><span class="site-genre">モバイルバッテリー</span><span class="site-name">モバイルバッテリー安全くらべマガジン</span><span class="site-desc">リコール対象の確認方法を、公式情報で案内します</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gadget/"><span class="site-genre">ガジェット</span><span class="site-name">ガジェット判定マガジン</span><span class="site-desc">ガジェットと通信費を、数字で判定します</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fx/"><span class="site-genre">FX</span><span class="site-name">FXデモトレードくらべマガジン</span><span class="site-desc">FXデモトレードを、仮想資金と利用期限で比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/smarthome/"><span class="site-genre">スマートホーム</span><span class="site-name">スマートホームくらべマガジン</span><span class="site-desc">初心者向けに、スマートホームの始め方を案内します</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fooddelivery/"><span class="site-genre">食材宅配</span><span class="site-name">食材宅配くらべマガジン</span><span class="site-desc">食材宅配を、1食単価と送料で比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/storage/"><span class="site-genre">収納家具</span><span class="site-name">一人暮らし収納くらべマガジン</span><span class="site-desc">収納家具を、サイズと組み立てで比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gift/"><span class="site-genre">ギフト</span><span class="site-name">ギフト判定マガジン</span><span class="site-desc">予算内で外さないプレゼント選びを判定します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/sim/"><img class="site-thumb" src="img/genre_sim.svg" alt="iPhone 17（楽天モバイル公式ストアの商品画像）"><span class="site-genre">格安SIM</span><span class="site-name">格安SIMくらべマガジン</span><span class="site-desc">料金とデータ量で、格安SIM各社を比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/desk/"><img class="site-thumb" src="https://image.office-com.jp/168_168_/k/CELVO-LOC-W14D75/CELVO-LOC-W14D75_001.jpg" alt="オフィスチェア（オフィスコム公式商品画像）"><span class="site-genre">デスク・椅子</span><span class="site-name">デスク・椅子くらべマガジン</span><span class="site-desc">在宅ワークのデスクと椅子を、サイズと価格で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/mattress/"><img class="site-thumb" src="https://image1.shopserve.jp/minamotobed.jp/pic-labo/llimg/th_sakuyareal_01.jpg" alt="咲夜レアルマットレス（源ベッド公式ストアの商品画像）"><span class="site-genre">マットレス</span><span class="site-name">マットレスくらべマガジン</span><span class="site-desc">硬さ・厚さ・価格で、マットレスを比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/battery/"><img class="site-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/elecom/cabinet/s500_24/ec-c03bk_03r.jpg?_ex=240x240" alt="エレコム モバイルバッテリー（楽天市場エレコム公式ストアの商品画像）"><span class="site-genre">モバイルバッテリー</span><span class="site-name">モバイルバッテリー安全くらべマガジン</span><span class="site-desc">リコール対象の確認方法を、公式情報で案内します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gadget/"><img class="site-thumb" src="img/genre_gadget.svg" alt="EarFun ワイヤレスイヤホン（公式商品画像）"><span class="site-genre">ガジェット</span><span class="site-name">ガジェット判定マガジン</span><span class="site-desc">ガジェットと通信費を、数字で判定します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fx/"><img class="site-thumb" src="img/genre_fx.svg" alt="FXチャートのイメージ"><span class="site-genre">FX</span><span class="site-name">FXデモトレードくらべマガジン</span><span class="site-desc">FXデモトレードを、仮想資金と利用期限で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/smarthome/"><img class="site-thumb" src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/switchbot_hub3.jpg" alt="SwitchBot ハブ3（公式商品画像）"><span class="site-genre">スマートホーム</span><span class="site-name">スマートホームくらべマガジン</span><span class="site-desc">初心者向けに、スマートホームの始め方を案内します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fooddelivery/"><img class="site-thumb" src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/oisix.jpg" alt="Oisixの食材宅配セット（公式商品画像）"><span class="site-genre">食材宅配</span><span class="site-name">食材宅配くらべマガジン</span><span class="site-desc">食材宅配を、1食単価と送料で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/storage/"><img class="site-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/livingut/cabinet/maker_tenma10/4904746077141.jpg?_ex=240x240" alt="天馬の収納ケース（楽天市場の商品画像）"><span class="site-genre">収納家具</span><span class="site-name">一人暮らし収納くらべマガジン</span><span class="site-desc">収納家具を、サイズと組み立てで比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gift/"><img class="site-thumb" src="img/genre_gift.svg" alt="Edifier ワイヤレスイヤホン（公式商品画像）"><span class="site-genre">ギフト</span><span class="site-name">ギフト判定マガジン</span><span class="site-desc">予算内で外さないプレゼント選びを判定します</span><span class="site-go">サイトを見る →</span></a>
   </div>
 </section>
   <div class="grid-head"><h2 id="grid">商品一覧</h2><span class="pr-note">カテゴリー別・各カテゴリー内は安い順／PRを含みます</span></div>
   <div id="productGrid">
   <div class="talk"><img src="img/chara_oshio_point.svg" alt="案内キャラクター「オシオ」"><div class="bubble"><div class="who">オシオ（安全案内係）</div><p>ポイントは並び方です。商品はカテゴリー別に、各カテゴリーの中では安い順に並んでいます。価格を見比べながら選んでみてください。</p></div></div>
-  <section class="cat-sec" data-sec="家電"><h3 class="cat-head">家電</h3>
+  <section class="cat-sec" data-sec="家電"><h3 class="cat-head"><img class="cat-thumb" src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/switchbot_hub3.jpg" alt="SwitchBot ハブ3（公式商品画像）">家電</h3>
   <div class="grid">
     <div class="p-card" data-name="SwitchBot ハブ3" data-cat="家電" data-price="16980">
       <a class="p-stage" href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOM1KI+4W9U+BW0YB&a8ejpredirect=https://www.switchbot.jp/products/switchbot-hub3" target="_blank" rel="nofollow sponsored noopener"><img src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/switchbot_hub3.jpg" alt="SwitchBot ハブ3"></a>
@@ -211,7 +215,7 @@
   </div><p class="seclink">SwitchBot ハブ3：<a href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOM1KI+4W9U+BW0YB&a8ejpredirect=https://www.switchbot.jp/products/switchbot-hub3" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></p>
 </section>
   <div class="bf-banner"><a href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOM1KI+4W9U+61JSH" target="_blank" rel="nofollow sponsored noopener"><img src="img/switchbot_bf_300x250.svg" alt="SwitchBot ブラックフライデー2026（12月7日まで開催中）" width="300" height="250"></a><p class="bf-cap">SwitchBot公式 ブラックフライデー2026｜11月27日〜12月7日 開催中</p></div>
-  <section class="cat-sec" data-sec="キッチン"><h3 class="cat-head">キッチン</h3>
+  <section class="cat-sec" data-sec="キッチン"><h3 class="cat-head"><img class="cat-thumb" src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/bakery.jpg" alt="foodable コンパクトベーカリー（公式商品画像）">キッチン</h3>
   <div class="grid">
     <div class="p-card" data-name="foodable コンパクトベーカリー" data-cat="キッチン" data-price="1980">
       <a class="p-stage" href="https://px.a8.net/svt/ejp?a8mat=4BGINR+D2CGOI+5DQQ+25DPHV" target="_blank" rel="nofollow sponsored noopener"><img src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/bakery.jpg" alt="foodable コンパクトベーカリー"></a>
@@ -263,7 +267,7 @@
     </div>
   </div><p class="seclink">foodable コンパクトベーカリー：<a href="https://px.a8.net/svt/ejp?a8mat=4BGINR+D2CGOI+5DQQ+25DPHV" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></p>
 </section>
-  <section class="cat-sec" data-sec="食品・雑貨"><h3 class="cat-head">食品・雑貨</h3>
+  <section class="cat-sec" data-sec="食品・雑貨"><h3 class="cat-head"><img class="cat-thumb" src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/oisix.jpg" alt="Oisixの食材宅配セット（公式商品画像）">食品・雑貨</h3>
   <div class="grid">
     <div class="p-card" data-name="ニシダや 京つけもの" data-cat="食品・雑貨" data-price="486">
       <a class="p-stage" href="https://px.a8.net/svt/ejp?a8mat=4BGPOR+912P2Q+4O0M+5YJRM" target="_blank" rel="nofollow sponsored noopener"><img src="https://nishidaya.itembox.cloud/item/img/common/ogimage.jpg" alt="ニシダや 京つけもの"></a>
@@ -331,7 +335,7 @@
     </div>
   </div><p class="seclink">ニシダや 京つけもの：<a href="https://px.a8.net/svt/ejp?a8mat=4BGPOR+912P2Q+4O0M+5YJRM" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></p>
 </section>
-  <section class="cat-sec" data-sec="日用品"><h3 class="cat-head">日用品</h3>
+  <section class="cat-sec" data-sec="日用品"><h3 class="cat-head"><img class="cat-thumb" src="https://sodaterutowel.com/cdn/shop/files/og_image_2_56cb094d-a5c4-4cfa-80ca-91651d483cbf.jpg?v=1632095325" alt="育てるタオル（公式商品画像）">日用品</h3>
   <div class="grid">
     <div class="p-card" data-name="育てるタオル プチハンドタオル" data-cat="日用品" data-price="1320">
       <a class="p-stage" href="https://px.a8.net/svt/ejp?a8mat=4BGPOR+9FYJ76+53GG+5YJRM" target="_blank" rel="nofollow sponsored noopener"><img src="https://sodaterutowel.com/cdn/shop/files/og_image_2_56cb094d-a5c4-4cfa-80ca-91651d483cbf.jpg?v=1632095325" alt="育てるタオル プチハンドタオル"></a>
@@ -352,6 +356,7 @@
     </div>
   </div><p class="seclink">育てるタオル プチハンドタオル：<a href="https://px.a8.net/svt/ejp?a8mat=4BGPOR+9FYJ76+53GG+5YJRM" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></p>
 </section>
+<div class="talk"><img src="img/chara_oshio_warn.svg" alt="案内キャラクター「オシオ」"><div class="bubble"><div class="who">オシオ（安全案内係）</div><p>最後に早見表です。このページの商品を、カテゴリーと価格で一覧にしました。迷ったら、まずここで全体を見渡してみてください。</p></div></div>
 <h3 class="cat-head" id="hayami">商品早見表</h3>
 <div class="sum-wrap"><table class="sum-table"><tr><th>カテゴリ</th><th>商品名</th><th>価格</th><th>販売ページ</th></tr><tr><td>家電</td><td>SwitchBot ハブ3</td><td>¥16,980（税込）</td><td><a href="https://px.a8.net/svt/ejp?a8mat=4BGINN+AOM1KI+4W9U+BW0YB&a8ejpredirect=https://www.switchbot.jp/products/switchbot-hub3" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></td></tr><tr><td>キッチン</td><td>foodable コンパクトベーカリー</td><td>月額¥1,980（税込・送料込）</td><td><a href="https://px.a8.net/svt/ejp?a8mat=4BGINR+D2CGOI+5DQQ+25DPHV" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></td></tr><tr><td>食品・雑貨</td><td>ニシダや 京つけもの</td><td>¥486〜（税込）</td><td><a href="https://px.a8.net/svt/ejp?a8mat=4BGPOR+912P2Q+4O0M+5YJRM" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></td></tr><tr><td>日用品</td><td>育てるタオル プチハンドタオル</td><td>¥1,320（表示価格）</td><td><a href="https://px.a8.net/svt/ejp?a8mat=4BGPOR+9FYJ76+53GG+5YJRM" target="_blank" rel="nofollow sponsored noopener">商品を見る</a></td></tr></table></div>
   </div>
@@ -362,16 +367,16 @@
   <div class="grid-head"><h2>ジャンル別くらべマガジン</h2></div>
   <p class="site-lead">テーマごとに、公式情報と数字で比べる専門サイトです。気になるジャンルからご覧ください。</p>
   <div class="site-grid">
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/sim/"><span class="site-genre">格安SIM</span><span class="site-name">格安SIMくらべマガジン</span><span class="site-desc">料金とデータ量で、格安SIM各社を比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/desk/"><span class="site-genre">デスク・椅子</span><span class="site-name">デスク・椅子くらべマガジン</span><span class="site-desc">在宅ワークのデスクと椅子を、サイズと価格で比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/mattress/"><span class="site-genre">マットレス</span><span class="site-name">マットレスくらべマガジン</span><span class="site-desc">硬さ・厚さ・価格で、マットレスを比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/battery/"><span class="site-genre">モバイルバッテリー</span><span class="site-name">モバイルバッテリー安全くらべマガジン</span><span class="site-desc">リコール対象の確認方法を、公式情報で案内します</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gadget/"><span class="site-genre">ガジェット</span><span class="site-name">ガジェット判定マガジン</span><span class="site-desc">ガジェットと通信費を、数字で判定します</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fx/"><span class="site-genre">FX</span><span class="site-name">FXデモトレードくらべマガジン</span><span class="site-desc">FXデモトレードを、仮想資金と利用期限で比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/smarthome/"><span class="site-genre">スマートホーム</span><span class="site-name">スマートホームくらべマガジン</span><span class="site-desc">初心者向けに、スマートホームの始め方を案内します</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fooddelivery/"><span class="site-genre">食材宅配</span><span class="site-name">食材宅配くらべマガジン</span><span class="site-desc">食材宅配を、1食単価と送料で比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/storage/"><span class="site-genre">収納家具</span><span class="site-name">一人暮らし収納くらべマガジン</span><span class="site-desc">収納家具を、サイズと組み立てで比べます</span><span class="site-go">サイトを見る →</span></a>
-    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gift/"><span class="site-genre">ギフト</span><span class="site-name">ギフト判定マガジン</span><span class="site-desc">予算内で外さないプレゼント選びを判定します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/sim/"><img class="site-thumb" src="img/genre_sim.svg" alt="iPhone 17（楽天モバイル公式ストアの商品画像）"><span class="site-genre">格安SIM</span><span class="site-name">格安SIMくらべマガジン</span><span class="site-desc">料金とデータ量で、格安SIM各社を比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/desk/"><img class="site-thumb" src="https://image.office-com.jp/168_168_/k/CELVO-LOC-W14D75/CELVO-LOC-W14D75_001.jpg" alt="オフィスチェア（オフィスコム公式商品画像）"><span class="site-genre">デスク・椅子</span><span class="site-name">デスク・椅子くらべマガジン</span><span class="site-desc">在宅ワークのデスクと椅子を、サイズと価格で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/mattress/"><img class="site-thumb" src="https://image1.shopserve.jp/minamotobed.jp/pic-labo/llimg/th_sakuyareal_01.jpg" alt="咲夜レアルマットレス（源ベッド公式ストアの商品画像）"><span class="site-genre">マットレス</span><span class="site-name">マットレスくらべマガジン</span><span class="site-desc">硬さ・厚さ・価格で、マットレスを比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/battery/"><img class="site-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/elecom/cabinet/s500_24/ec-c03bk_03r.jpg?_ex=240x240" alt="エレコム モバイルバッテリー（楽天市場エレコム公式ストアの商品画像）"><span class="site-genre">モバイルバッテリー</span><span class="site-name">モバイルバッテリー安全くらべマガジン</span><span class="site-desc">リコール対象の確認方法を、公式情報で案内します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gadget/"><img class="site-thumb" src="img/genre_gadget.svg" alt="EarFun ワイヤレスイヤホン（公式商品画像）"><span class="site-genre">ガジェット</span><span class="site-name">ガジェット判定マガジン</span><span class="site-desc">ガジェットと通信費を、数字で判定します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fx/"><img class="site-thumb" src="img/genre_fx.svg" alt="FXチャートのイメージ"><span class="site-genre">FX</span><span class="site-name">FXデモトレードくらべマガジン</span><span class="site-desc">FXデモトレードを、仮想資金と利用期限で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/smarthome/"><img class="site-thumb" src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/switchbot_hub3.jpg" alt="SwitchBot ハブ3（公式商品画像）"><span class="site-genre">スマートホーム</span><span class="site-name">スマートホームくらべマガジン</span><span class="site-desc">初心者向けに、スマートホームの始め方を案内します</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/fooddelivery/"><img class="site-thumb" src="https://oshibuzz.wordpress.com/wp-content/uploads/2026/11/oisix.jpg" alt="Oisixの食材宅配セット（公式商品画像）"><span class="site-genre">食材宅配</span><span class="site-name">食材宅配くらべマガジン</span><span class="site-desc">食材宅配を、1食単価と送料で比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/storage/"><img class="site-thumb" src="https://thumbnail.image.rakuten.co.jp/@0_mall/livingut/cabinet/maker_tenma10/4904746077141.jpg?_ex=240x240" alt="天馬の収納ケース（楽天市場の商品画像）"><span class="site-genre">収納家具</span><span class="site-name">一人暮らし収納くらべマガジン</span><span class="site-desc">収納家具を、サイズと組み立てで比べます</span><span class="site-go">サイトを見る →</span></a>
+    <a class="site-card" href="https://jiangtaiyede-lab.github.io/gift/"><img class="site-thumb" src="img/genre_gift.svg" alt="Edifier ワイヤレスイヤホン（公式商品画像）"><span class="site-genre">ギフト</span><span class="site-name">ギフト判定マガジン</span><span class="site-desc">予算内で外さないプレゼント選びを判定します</span><span class="site-go">サイトを見る →</span></a>
   </div>
 </section>
 </main>
