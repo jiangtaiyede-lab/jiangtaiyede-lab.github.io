@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="2027年2月1日のカレンダーと値札の図解（自作イラスト）"><rect width="800" height="450" fill="#e9f4ea"/>
+<rect x="90" y="90" width="300" height="280" rx="14" fill="#ffffff" stroke="#2e7d32" stroke-width="7"/>
+<rect x="90" y="90" width="300" height="64" rx="14" fill="#2e7d32"/>
+<rect x="90" y="140" width="300" height="14" fill="#2e7d32"/>
+<circle cx="150" cy="78" r="13" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<circle cx="330" cy="78" r="13" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<text x="240" y="133" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="Hiragino Sans, Noto Sans JP, sans-serif">2027年2月</text>
+<text x="240" y="268" font-size="110" font-weight="900" fill="#ff0000" text-anchor="middle" font-family="Hiragino Sans, Noto Sans JP, sans-serif">1</text>
+<text x="240" y="330" font-size="30" font-weight="800" fill="#20262b" text-anchor="middle" font-family="Hiragino Sans, Noto Sans JP, sans-serif">納品分から改定</text>
+<g transform="rotate(-10 560 200)">
+<path d="M470 130 h150 l70 70 l-150 150 l-70 -70 Z" fill="#ffd900" stroke="#2e7d32" stroke-width="7" stroke-linejoin="round"/>
+<circle cx="512" cy="172" r="13" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<text x="578" y="238" font-size="31" font-weight="900" fill="#20262b" text-anchor="middle" font-family="Hiragino Sans, Noto Sans JP, sans-serif">出荷価格</text>
+<text x="578" y="282" font-size="31" font-weight="900" fill="#ff0000" text-anchor="middle" font-family="Hiragino Sans, Noto Sans JP, sans-serif">最大+14.6%</text>
+</g>
+<circle cx="520" cy="356" r="34" fill="#e4572e"/>
+<path d="M520 322 q4 -18 22 -24" fill="none" stroke="#2e7d32" stroke-width="7" stroke-linecap="round"/>
+<circle cx="606" cy="368" r="26" fill="#e4572e"/>
+<path d="M606 342 q3 -14 17 -19" fill="none" stroke="#2e7d32" stroke-width="6" stroke-linecap="round"/>
+<rect x="648" y="322" width="66" height="66" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="6"/>
+<line x1="648" y1="344" x2="714" y2="344" stroke="#2e7d32" stroke-width="5"/>
+</svg>
