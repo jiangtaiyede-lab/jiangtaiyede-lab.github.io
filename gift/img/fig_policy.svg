@@ -1,20 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
 <rect width="1200" height="420" fill="#ffffff"/>
-<text x="60" y="70" font-family="sans-serif" font-size="30" font-weight="900" fill="#20262b">運営方針を3つにまとめると</text>
+<text x="60" y="70" font-family="sans-serif" font-size="30" font-weight="900" fill="#20262b">情報の扱い方と約束</text>
 <g font-family="sans-serif">
 <rect x="60" y="110" width="340" height="240" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
-<text x="90" y="165" font-size="24" font-weight="900" fill="#c62828">公式が正本</text>
-<text x="90" y="215" font-size="20" fill="#20262b">確認できない価格は</text>
-<text x="90" y="250" font-size="20" fill="#20262b">書かない</text>
+<text x="90" y="165" font-size="24" font-weight="900" fill="#c62828">公式の発表で確認</text>
+<text x="90" y="215" font-size="20" fill="#20262b">価格と仕様は、メーカーと</text>
+<text x="90" y="250" font-size="20" fill="#20262b">公式ストアの発表をもとに</text>
+<text x="90" y="285" font-size="20" fill="#20262b">載せています</text>
 <rect x="430" y="110" width="340" height="240" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
-<text x="460" y="165" font-size="24" font-weight="900" fill="#c62828">点数は付けない</text>
-<text x="460" y="215" font-size="20" fill="#20262b">星や順位ではなく、</text>
-<text x="460" y="250" font-size="20" fill="#20262b">仕様と「こういう人に」</text>
-<text x="460" y="285" font-size="20" fill="#20262b">で整理する</text>
+<text x="460" y="165" font-size="24" font-weight="900" fill="#c62828">点数は付けません</text>
+<text x="460" y="215" font-size="20" fill="#20262b">星や点数ではなく、</text>
+<text x="460" y="250" font-size="20" fill="#20262b">仕様と価格そのもので</text>
+<text x="460" y="285" font-size="20" fill="#20262b">比べられる形にします</text>
 <rect x="800" y="110" width="340" height="240" rx="12" fill="#fdf3f0" stroke="#e0c8c4"/>
-<text x="830" y="165" font-size="24" font-weight="900" fill="#c62828">計算過程を見せる</text>
-<text x="830" y="215" font-size="20" fill="#20262b">予算の組み合わせと</text>
-<text x="830" y="250" font-size="20" fill="#20262b">集計の方法を、</text>
-<text x="830" y="285" font-size="20" fill="#20262b">そのまま載せる</text>
+<text x="830" y="165" font-size="24" font-weight="900" fill="#c62828">計算の過程も見せます</text>
+<text x="830" y="215" font-size="20" fill="#20262b">合計金額は、どの商品を</text>
+<text x="830" y="250" font-size="20" fill="#20262b">いくらで足したかまで</text>
+<text x="830" y="285" font-size="20" fill="#20262b">そのまま載せます</text>
 </g>
 </svg>
